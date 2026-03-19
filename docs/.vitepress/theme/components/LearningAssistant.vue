@@ -69,8 +69,8 @@ const sendMessage = async () => {
   scrollToBottom()
 
   try {
-      // Send request to the Railway deployed proxy backend
-      const response = await fetch('https://astronclaw-tutorial-production.up.railway.app/api/chat', {
+      // Use the local Vercel serverless function endpoint instead of Railway
+      const response = await fetch('/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
