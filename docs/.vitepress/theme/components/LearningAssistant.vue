@@ -70,7 +70,7 @@ const sendMessage = async () => {
 
   try {
     // Send request to our remote secure proxy instead of directly to the LLM API
-    const response = await fetch('https://agent.xfyun.cn/api/chat', {
+    const response = await fetch('https://loomy.xunfei.cn/api/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
