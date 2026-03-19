@@ -9,8 +9,13 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
-// Allow all origins for now to avoid CORS issues
-app.use(cors());
+// Allow all origins with explicit CORS options for preflight support
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+app.options('*', cors());
 app.use(express.json());
 
 // Proxy endpoint for chat completions
