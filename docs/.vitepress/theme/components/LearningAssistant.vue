@@ -173,12 +173,22 @@ const sendMessage = async () => {
     right: 16px;
     z-index: 1000;
   }
-  
+
+  .chat-toggle {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+
   .chat-window {
-    width: calc(100vw - 32px);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
     max-width: none;
-    height: 450px;
-    max-height: calc(100vh - 100px);
+    height: 70vh;
+    max-height: calc(100vh - 60px);
+    border-radius: 16px 16px 0 0;
   }
 }
 

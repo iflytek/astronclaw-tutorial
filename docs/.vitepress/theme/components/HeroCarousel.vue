@@ -160,4 +160,16 @@ onUnmounted(() => {
 .carousel-fade-leave-to {
   opacity: 0;
 }
+
+@media (max-width: 768px) {
+  .carousel-link {
+    right: 0;
+    font-size: 12px;
+    top: -2px;
+  }
+
+  .carousel-stage {
+    padding-top: 8px;
+  }
+}
 </style>
