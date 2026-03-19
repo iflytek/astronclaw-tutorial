@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/astronclaw-tutorial/',
   title: "AstronClaw Tutorial",
   description: "基于 AstronClaw 打造的个人云端 AI 助手与 Loomy 桌面级搭子",
   
