@@ -81,7 +81,7 @@
   }
 
   .VPNavBarTitle .title {
-    max-width: calc(100vw - 156px);
+    max-width: calc(100vw - 132px);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -89,7 +89,7 @@
 
   /* 首页 hero 区域适配 */
   .VPHero {
-    padding-top: 32px !important;
+    padding-top: 40px !important;
     padding-bottom: 24px !important;
   }
 
@@ -98,14 +98,22 @@
     width: 100% !important;
   }
 
+  .VPHero .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
   .VPHero .image {
-    margin: 0 auto 8px !important;
+    margin: 0 auto 16px !important;
     order: -1;
+    width: 100% !important;
   }
 
   .VPHero .image-container {
-    width: min(64vw, 260px) !important;
-    height: min(64vw, 260px) !important;
+    width: min(72vw, 300px) !important;
+    height: auto !important;
+    min-height: min(86vw, 360px) !important;
+    margin: 0 auto !important;
   }
 
   .VPHero .image-bg {
@@ -151,11 +159,15 @@
     padding: 12px 20px !important;
     font-size: 16px !important;
     height: auto !important;
+    min-height: 56px !important;
     line-height: 1.5 !important;
     border-radius: 999px !important;
+    white-space: normal !important;
+    text-align: center !important;
+    overflow-wrap: anywhere;
   }
 
-  /* 首页 feature 卡片全宽显示 */
+  /* 首页 feature 卡片全宽显示，避免文本被截断 */
   .VPHomeFeatures,
   .VPFeatures,
   .VPFeatures .container {
@@ -164,10 +176,15 @@
     padding-right: 0 !important;
   }
 
+  .VPFeatures {
+    padding: 0 16px !important;
+  }
+
   .VPFeatures .items {
     display: flex !important;
     flex-direction: column !important;
     gap: 16px !important;
+    margin: 0 !important;
   }
 
   .VPFeatures .items .item {
@@ -176,20 +193,48 @@
     padding: 0 !important;
   }
 
+  .VPFeature,
+  .VPFeature .box {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
   .VPFeature {
     padding: 20px !important;
     border-radius: 24px !important;
+  }
+
+  .VPFeature .box {
+    padding: 0 !important;
+  }
+
+  .VPFeature .title,
+  .VPFeature .details {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    word-break: break-word;
+    overflow-wrap: anywhere;
   }
 }
 
 @media (max-width: 480px) {
   .VPNavBarTitle .title {
-    max-width: calc(100vw - 132px);
+    max-width: calc(100vw - 120px);
+  }
+
+  .VPHero {
+    padding-top: 32px !important;
   }
 
   .VPHero .container {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .VPHero .image-container {
+    width: min(78vw, 300px) !important;
+    min-height: min(94vw, 360px) !important;
   }
 
   .VPFeature {
