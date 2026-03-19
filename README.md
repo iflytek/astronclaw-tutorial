@@ -1,4 +1,4 @@
-# AstronClaw & Loomy 官方教程 🦞
+# AstronClaw & Loomy 教程 🦞
 
 <p align="center">
   <a href="https://iflytek.github.io/astronclaw-tutorial/">
