@@ -1,5 +1,4 @@
 const express = require('express');
-const cors = require('cors');
 const dotenv = require('dotenv');
 
 // Load environment variables from .env file
@@ -7,15 +6,34 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const ALLOWED_ORIGINS = new Set([
+  'https://iflytek.github.io',
+  'http://localhost:5173',
+  'http://127.0.0.1:5173'
+]);
+
+function applyCors(req, res) {
+  const requestOrigin = req.headers.origin;
+
+  if (requestOrigin && ALLOWED_ORIGINS.has(requestOrigin)) {
+    res.setHeader('Access-Control-Allow-Origin', requestOrigin);
+    res.setHeader('Vary', 'Origin');
+  }
+
+  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+}
 
 // Middleware
-// Allow all origins with explicit CORS options for preflight support
-app.use(cors({
-  origin: '*',
-  methods: ['GET', 'POST', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
-app.options('*', cors());
+app.use((req, res, next) => {
+  applyCors(req, res);
+
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(204);
+  }
+
+  next();
+});
 app.use(express.json());
 
 // Proxy endpoint for chat completions
