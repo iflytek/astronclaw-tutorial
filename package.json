@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:dev": "node scripts/generate-index.js && vitepress dev docs",
+    "docs:build": "node scripts/generate-index.js && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "server": "node server.js",
     "dev": "npm run server & npm run docs:dev"

@@ -44,8 +44,18 @@ const messages = ref([
   }
 ])
 
-onMounted(() => {
+let docsIndex = []
+
+onMounted(async () => {
   scrollToBottom()
+  try {
+    const res = await fetch('/docs-index.json')
+    if (res.ok) {
+      docsIndex = await res.json()
+    }
+  } catch (e) {
+    console.error('Failed to load docs index', e)
+  }
 })
 
 const toggleChat = () => {
@@ -59,6 +69,41 @@ const scrollToBottom = async () => {
   }
 }
 
+function searchDocs(query) {
+  if (!docsIndex.length) return ''
+  const keywords = query.toLowerCase().match(/[a-z0-9]+|[\u4e00-\u9fa5]/g) || []
+  if (!keywords.length) return ''
+
+  const results = docsIndex.map(doc => {
+    let score = 0
+    const text = (doc.heading + ' ' + doc.content).toLowerCase()
+    
+    if (text.includes(query.toLowerCase())) {
+        score += 50
+    }
+
+    for(let i=0; i<keywords.length; i++) {
+        if(text.includes(keywords[i])) score += 1
+        if(i < keywords.length - 1) {
+            const bigram = keywords[i] + keywords[i+1]
+            if(text.includes(bigram)) score += 5
+        }
+        if(i < keywords.length - 2) {
+            const trigram = keywords[i] + keywords[i+1] + keywords[i+2]
+            if(text.includes(trigram)) score += 10
+        }
+    }
+
+    if (doc.heading.toLowerCase().includes(query.toLowerCase())) score += 30
+
+    return { ...doc, score }
+  }).filter(doc => doc.score > 5).sort((a, b) => b.score - a.score).slice(0, 3)
+
+  if (results.length === 0) return ''
+
+  return '\n\n【知识库参考信息】\n' + results.map(r => `章节: ${r.heading}\n内容: ${r.content}`).join('\n\n')
+}
+
 const sendMessage = async () => {
   const text = inputText.value.trim()
   if (!text || isLoading.value) return
@@ -67,6 +112,9 @@ const sendMessage = async () => {
   inputText.value = ''
   isLoading.value = true
   scrollToBottom()
+
+  const context = searchDocs(text)
+  const systemPrompt = `你是一个项目学习助手，你的任务是提问用户有什么需求/希望使用哪款工具（AstronClaw 或 Loomy）并进行推荐，永远引导用户进行下一步操作。请保持回答简短友好。请务必基于【知识库参考信息】中的内容来回答用户的问题（如果存在）。\n${context}`
 
   try {
       // Use the local Vercel serverless function endpoint instead of Railway
@@ -80,9 +128,9 @@ const sendMessage = async () => {
         messages: [
           {
             role: 'system',
-            content: '你是一个项目学习助手，你的任务是提问用户有什么需求/希望使用哪款工具（AstronClaw 或 Loomy）并进行推荐，永远引导用户进行下一步操作。请保持回答简短友好。'
+            content: systemPrompt
           },
-          ...messages.value.filter(m => m.role !== 'assistant' || m.content !== '抱歉，我遇到了一些问题，请稍后再试。' && !m.content.startsWith('请求失败:')).map(m => ({ role: m.role, content: m.content }))
+          ...messages.value.filter(m => m.role !== 'assistant' || (m.content !== '抱歉，我遇到了一些问题，请稍后再试。' && !m.content.startsWith('请求失败:'))).map(m => ({ role: m.role, content: m.content }))
         ]
       })
     })
