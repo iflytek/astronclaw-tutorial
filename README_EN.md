@@ -1,13 +1,19 @@
 # AstronClaw & Loomy Official Tutorial 🦞
 
 <p align="center">
+  <a href="https://iflytek.github.io/astronclaw-tutorial/en/">
+    <img src="https://img.shields.io/badge/AstronClaw_&_Loomy-Tutorial-blue?style=for-the-badge&logo=readthedocs" alt="AstronClaw Tutorial">
+  </a>
+</p>
+
+<p align="center">
   <b>English</b> | <a href="README.md">简体中文</a>
 </p>
 
 <p align="center">
   <a href="https://iflytek.github.io/astronclaw-tutorial/en/">🚀 <b>Read Online</b></a> | 
-  <a href="https://agent.xfyun.cn/astron-claw">🦞 <b>Try AstronClaw</b></a> |
-  <a href="https://loomy.xunfei.cn/">💻 <b>Download Loomy</b></a>
+  <a href="https://agent.xfyun.cn/astron-claw">☁️ <b>Try Cloud AstronClaw</b></a> |
+  <a href="https://loomy.xunfei.cn/">💻 <b>Download Desktop Loomy</b></a>
 </p>
 
 <p align="center">
