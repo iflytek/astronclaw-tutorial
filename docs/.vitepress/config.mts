@@ -24,7 +24,7 @@ export default defineConfig({
           { text: 'Loomy 桌面助理', link: '/guide/loomy/introduction' },
           { text: '体验 AstronClaw', link: 'https://agent.xfyun.cn/astron-claw' },
           { text: '下载 Loomy', link: 'https://loomy.xunfei.cn/' },
-          { text: 'GitHub', link: 'https://github.com/iflytek' }
+          { text: 'GitHub', link: 'https://github.com/iflytek/astronclaw-tutorial' }
         ],
         sidebar: [
           {
@@ -71,7 +71,7 @@ export default defineConfig({
           { text: 'Loomy Desktop', link: '/en/guide/loomy/introduction' },
           { text: 'Try AstronClaw', link: 'https://agent.xfyun.cn/astron-claw' },
           { text: 'Download Loomy', link: 'https://loomy.xunfei.cn/' },
-          { text: 'GitHub', link: 'https://github.com/iflytek' }
+          { text: 'GitHub', link: 'https://github.com/iflytek/astronclaw-tutorial' }
         ],
         sidebar: [
           {
