@@ -55,7 +55,7 @@ export default defineConfig({
         ],
         footer: {
           message: '基于 Apache License 2.0 许可发布。',
-          copyright: 'Copyright © 2025 iFlytek Co., Ltd.'
+          copyright: `Copyright © ${new Date().getFullYear()} iFlytek Co., Ltd.`
         }
       }
     },
@@ -102,7 +102,7 @@ export default defineConfig({
         ],
         footer: {
           message: 'Released under the Apache License 2.0.',
-          copyright: 'Copyright © 2025 iFlytek Co., Ltd.'
+          copyright: `Copyright © ${new Date().getFullYear()} iFlytek Co., Ltd.`
         }
       }
     }
