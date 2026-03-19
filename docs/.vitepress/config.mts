@@ -110,6 +110,5 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/logo.png' // Placeholder if we had one
   }
 })
