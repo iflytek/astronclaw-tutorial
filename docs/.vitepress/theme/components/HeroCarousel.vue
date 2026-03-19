@@ -23,17 +23,17 @@ const slides = computed(() => {
 })
 
 const currentSlide = ref(0)
-let timer = null
+let carouselTimer = null
 
 function startTimer() {
-  timer = setInterval(() => {
+  carouselTimer = setInterval(() => {
     currentSlide.value = (currentSlide.value + 1) % slides.value.length
   }, 5000)
 }
 
 function goTo(index) {
   currentSlide.value = index
-  clearInterval(timer)
+  clearInterval(carouselTimer)
   startTimer()
 }
 
@@ -42,7 +42,7 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
-  if (timer) clearInterval(timer)
+  if (carouselTimer) clearInterval(carouselTimer)
 })
 </script>
 
