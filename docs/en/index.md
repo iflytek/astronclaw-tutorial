@@ -90,11 +90,18 @@ features:
   font-weight: 500;
 }
 @media (max-width: 768px) {
+  .home-qr-section {
+    padding: 0 12px;
+  }
   .qr-container {
     gap: 24px;
+    margin-top: 24px;
+  }
+  .qr-card {
+    width: 100%;
   }
   .qr-card img {
-    width: 180px;
+    width: min(180px, 100%);
   }
 }
 </style>

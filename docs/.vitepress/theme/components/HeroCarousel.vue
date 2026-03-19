@@ -92,20 +92,25 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .carousel-link {
   position: absolute;
-  top: -4px;
-  right: -16px;
+  top: -8px;
+  right: 0;
   display: inline-flex;
   align-items: center;
   gap: 4px;
+  max-width: min(100%, 220px);
   font-size: 13px;
   font-weight: 500;
   color: var(--vp-c-brand-1);
   text-decoration: none;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: right;
+  line-height: 1.4;
   transition: color 0.25s;
   z-index: 1;
 }
@@ -162,14 +167,29 @@ onUnmounted(() => {
 }
 
 @media (max-width: 768px) {
+  .hero-carousel {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
   .carousel-link {
-    right: 0;
+    position: static;
+    order: -1;
+    align-self: center;
+    justify-content: center;
+    max-width: min(100%, 240px);
     font-size: 12px;
-    top: -2px;
+    text-align: center;
   }
 
   .carousel-stage {
-    padding-top: 8px;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .carousel-img {
+    width: 100%;
+    height: 100%;
   }
 }
 </style>
