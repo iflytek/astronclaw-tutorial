@@ -43,12 +43,12 @@ const isEn = computed(() => route.path.startsWith('/en/'))
 }
 
 /* 桌面端导航栏样式 */
-:global(.VPNavBar) .custom-toggles {
+:global(.VPNavBar .custom-toggles) {
   margin-left: 16px;
 }
 
 /* 移动端菜单栏样式 */
-:global(.VPNavScreen) .custom-toggles {
+:global(.VPNavScreen .custom-toggles) {
   margin-top: 16px;
   padding: 12px 16px;
   background-color: var(--vp-c-bg-soft);
@@ -56,7 +56,7 @@ const isEn = computed(() => route.path.startsWith('/en/'))
   justify-content: space-between;
 }
 
-:global(.VPNavScreen) .divider {
+:global(.VPNavScreen .divider) {
   display: none;
 }
 
@@ -80,7 +80,7 @@ const isEn = computed(() => route.path.startsWith('/en/'))
   font-weight: 500;
 }
 
-:global(.VPNavScreen) .toggle-btn {
+:global(.VPNavScreen .toggle-btn) {
   flex: 1;
   padding: 8px 0;
   background-color: var(--vp-c-bg);
@@ -88,7 +88,7 @@ const isEn = computed(() => route.path.startsWith('/en/'))
   border: 1px solid var(--vp-c-border);
 }
 
-:global(.VPNavScreen) .toggle-btn:first-child {
+:global(.VPNavScreen .toggle-btn:first-child) {
   margin-right: 12px;
 }
 
@@ -96,7 +96,7 @@ const isEn = computed(() => route.path.startsWith('/en/'))
   color: var(--vp-c-brand-1);
 }
 
-:global(.VPNavScreen) .toggle-btn:hover {
+:global(.VPNavScreen .toggle-btn:hover) {
   border-color: var(--vp-c-brand-1);
 }
 
@@ -105,7 +105,7 @@ const isEn = computed(() => route.path.startsWith('/en/'))
   height: 24px;
 }
 
-:global(.VPNavScreen) .lang-btn {
+:global(.VPNavScreen .lang-btn) {
   width: auto;
   height: auto;
 }

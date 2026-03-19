@@ -32,8 +32,8 @@
   display: none !important;
 }
 
-/* 强制显示导航栏右侧的操作区，避免被折叠成省略号按钮 */
-@media (max-width: 1279px) {
+/* 强制显示导航栏右侧的操作区，避免被折叠成省略号按钮（仅中等屏幕） */
+@media (min-width: 769px) and (max-width: 1279px) {
   .VPNavBar .menu {
     display: flex !important;
   }
@@ -43,6 +43,50 @@
   }
   .VPNavBarHamburger {
     display: none !important;
+  }
+}
+
+/* 移动端适配：恢复默认的汉堡菜单行为 */
+@media (max-width: 768px) {
+  /* 让 VitePress 默认的汉堡菜单在移动端正常显示 */
+  .VPNavBarHamburger {
+    display: flex !important;
+  }
+
+  /* 隐藏导航栏中的完整菜单，使用汉堡菜单代替 */
+  .VPNavBar .menu {
+    display: none !important;
+  }
+
+  /* 首页 hero 区域适配 */
+  .VPHero .text {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+  }
+
+  .VPHero .tagline {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* 首页 feature 卡片全宽显示 */
+  .VPFeatures .container {
+    max-width: 100% !important;
+  }
+
+  .VPFeatures .items {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .VPFeatures .items .item {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .VPFeature {
+    padding: 20px 24px !important;
   }
 }
 
