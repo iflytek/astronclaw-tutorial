@@ -1,0 +1,55 @@
+:root {
+  --medium-zoom-bg: rgba(255, 255, 255, 0.9);
+}
+
+.dark {
+  --medium-zoom-bg: rgba(0, 0, 0, 0.9);
+}
+
+.medium-zoom-overlay {
+  z-index: 100;
+}
+
+.medium-zoom-image--opened {
+  z-index: 101;
+}
+
+:root {
+  --vp-c-brand-1: #3eaf7c;
+  --vp-c-brand-2: #3498db;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  
+  /* 调整导航栏右侧菜单的行为，防止它过早折叠为省略号 */
+  --vp-nav-screen-width: 100vw;
+}
+
+/* 隐藏默认的语言和主题切换按钮，使用自定义的 CustomToggles 组件 */
+.VPNavBarTranslations,
+.VPNavBarAppearance,
+.VPNavScreenTranslations,
+.VPNavScreenAppearance {
+  display: none !important;
+}
+
+/* 强制显示导航栏右侧的操作区，避免被折叠成省略号按钮 */
+@media (max-width: 1279px) {
+  .VPNavBar .menu {
+    display: flex !important;
+  }
+  .VPNavBar .menu + .social-links,
+  .VPNavBar .social-links {
+    display: flex !important;
+  }
+  .VPNavBarHamburger {
+    display: none !important;
+  }
+}
+
+/* 移除更多按钮（省略号） */
+.VPNavBarExtra {
+  display: none !important;
+}
+.VPNavBarMenu > .VPNavBarExtra {
+  display: none !important;
+}
