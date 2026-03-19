@@ -11,13 +11,15 @@ const slides = computed(() => {
       image: 'https://bjcdn.openstorage.cn/aicontest/2026-03-18/29c37a17-5b33-4804-90b5-85599c29e2d5.png',
       alt: 'AstronClaw Logo',
       linkText: isEn ? 'Try Cloud AstronClaw' : '体验云端 AstronClaw',
-      linkUrl: 'https://agent.xfyun.cn/astron-claw'
+      linkUrl: 'https://agent.xfyun.cn/astron-claw',
+      imageClass: 'is-astronclaw'
     },
     {
       image: 'https://loomy.xunfei.cn/images/logo_light.png',
       alt: 'Loomy Logo',
       linkText: isEn ? 'Download Loomy Desktop' : '下载 Loomy 桌面端',
-      linkUrl: 'https://loomy.xunfei.cn/'
+      linkUrl: 'https://loomy.xunfei.cn/',
+      imageClass: 'is-loomy'
     }
   ]
 })
@@ -62,14 +64,16 @@ onUnmounted(() => {
       </svg>
     </a>
 
-    <div class="carousel-stage">
+    <div class="carousel-stage" :class="slides[currentSlide].imageClass">
       <Transition name="carousel-fade" mode="out-in">
-        <img
-          :key="currentSlide"
-          :src="slides[currentSlide].image"
-          :alt="slides[currentSlide].alt"
-          class="carousel-img"
-        />
+        <div :key="currentSlide" class="carousel-image-shell" :class="slides[currentSlide].imageClass">
+          <img
+            :src="slides[currentSlide].image"
+            :alt="slides[currentSlide].alt"
+            class="carousel-img"
+            :class="slides[currentSlide].imageClass"
+          />
+        </div>
       </Transition>
     </div>
 
@@ -130,10 +134,32 @@ onUnmounted(() => {
   padding-top: 20px;
 }
 
+.carousel-image-shell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image-shell.is-loomy {
+  width: min(100%, 420px);
+  padding: 18px 24px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #171717 0%, #2a2f3a 100%);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
+}
+
 .carousel-img {
   max-width: 60%;
   max-height: 60%;
   object-fit: contain;
+}
+
+.carousel-img.is-loomy {
+  max-width: 100%;
+  max-height: 100%;
+  width: min(100%, 320px);
 }
 
 .carousel-dots {
@@ -197,17 +223,33 @@ onUnmounted(() => {
     min-height: min(60vw, 240px);
   }
 
+  .carousel-image-shell {
+    min-height: inherit;
+  }
+
+  .carousel-image-shell.is-loomy {
+    width: min(100%, 340px);
+    min-height: min(46vw, 180px);
+    padding: 20px;
+    border-radius: 24px;
+  }
+
   .carousel-dots {
     order: 1;
     padding-bottom: 0;
   }
 
   .carousel-img {
-    max-width: 60%;
+    max-width: 72%;
     max-height: 100%;
     width: auto;
     height: auto;
     object-fit: contain;
+  }
+
+  .carousel-img.is-loomy {
+    max-width: 100%;
+    width: min(100%, 260px);
   }
 }
 
@@ -219,6 +261,21 @@ onUnmounted(() => {
 
   .carousel-stage {
     min-height: min(56vw, 220px);
+  }
+
+  .carousel-image-shell.is-loomy {
+    width: min(100%, 300px);
+    min-height: min(44vw, 160px);
+    padding: 16px 18px;
+    border-radius: 20px;
+  }
+
+  .carousel-img {
+    max-width: 78%;
+  }
+
+  .carousel-img.is-loomy {
+    width: min(100%, 220px);
   }
 }
 </style>
