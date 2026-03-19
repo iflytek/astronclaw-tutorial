@@ -155,6 +155,8 @@ const sendMessage = async () => {
 .chat-window {
   width: 380px;
   height: 550px;
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 48px);
   background-color: var(--vp-c-bg);
   border: 2px solid var(--vp-c-brand-1);
   border-radius: 16px;
@@ -163,6 +165,21 @@ const sendMessage = async () => {
   flex-direction: column;
   overflow: hidden;
   animation: slideUp 0.3s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+  .learning-assistant {
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+  }
+  
+  .chat-window {
+    width: calc(100vw - 32px);
+    max-width: none;
+    height: 450px;
+    max-height: calc(100vh - 100px);
+  }
 }
 
 @keyframes slideUp {

@@ -42,16 +42,65 @@ features:
 ---
 
 <br>
-<h2 align="center">Join the Community</h2>
-<p align="center" style="color: var(--vp-c-text-2); margin-top: 8px;">Scan the QR code to join our official communities and chat with developers and users</p>
+<div class="home-qr-section">
+  <h2>Join the Community</h2>
+  <p class="desc">Scan the QR code to join our official communities and chat with developers and users</p>
 
-<div style="display: flex; justify-content: center; gap: 40px; margin-top: 32px; flex-wrap: wrap;">
-  <div style="text-align: center;">
-    <img src="/astronclaw-qr.jpg" alt="AstronClaw Official Community" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-    <p style="margin-top: 12px; font-weight: 500;">☁️ AstronClaw Community</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="/loomy-qr.png" alt="Loomy Community" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-    <p style="margin-top: 12px; font-weight: 500;">💻 Loomy Community</p>
+  <div class="qr-container">
+    <div class="qr-card">
+      <img src="/astronclaw-qr.jpg" alt="AstronClaw Official Community">
+      <p>☁️ AstronClaw Community</p>
+    </div>
+    <div class="qr-card">
+      <img src="/loomy-qr.png" alt="Loomy Community">
+      <p>💻 Loomy Community</p>
+    </div>
   </div>
 </div>
+
+<style>
+.home-qr-section {
+  text-align: center;
+  padding: 0 24px;
+}
+.home-qr-section h2 {
+  border-top: none;
+  margin: 0;
+  padding: 0;
+}
+.home-qr-section .desc {
+  color: var(--vp-c-text-2);
+  margin-top: 8px;
+}
+.qr-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.qr-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qr-card img {
+  width: 220px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.qr-card p {
+  margin-top: 12px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .qr-container {
+    gap: 24px;
+  }
+  .qr-card img {
+    width: 180px;
+  }
+}
+</style>
