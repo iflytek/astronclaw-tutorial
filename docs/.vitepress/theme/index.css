@@ -21,15 +21,15 @@
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
   
   /* 自定义首页按钮颜色 */
-  --vp-button-brand-border: #9b59b6;
+  --vp-button-brand-border: #9A8CFF;
   --vp-button-brand-text: #fff;
-  --vp-button-brand-bg: #9b59b6;
-  --vp-button-brand-hover-border: #8e44ad;
+  --vp-button-brand-bg: #9A8CFF;
+  --vp-button-brand-hover-border: #8B7CFF;
   --vp-button-brand-hover-text: #fff;
-  --vp-button-brand-hover-bg: #8e44ad;
-  --vp-button-brand-active-border: #8e44ad;
+  --vp-button-brand-hover-bg: #8B7CFF;
+  --vp-button-brand-active-border: #8B7CFF;
   --vp-button-brand-active-text: #fff;
-  --vp-button-brand-active-bg: #8e44ad;
+  --vp-button-brand-active-bg: #8B7CFF;
 
   --vp-button-alt-border: #2ecc71;
   --vp-button-alt-text: #fff;
