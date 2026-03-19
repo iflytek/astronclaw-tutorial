@@ -69,8 +69,8 @@ const sendMessage = async () => {
   scrollToBottom()
 
   try {
-      // Send request to the current origin (iflytek.github.io)
-      const response = await fetch('/api/chat', {
+      // Send request to the Railway deployed proxy backend
+      const response = await fetch('https://astronclaw-tutorial-production.up.railway.app/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
