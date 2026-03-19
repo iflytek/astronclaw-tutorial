@@ -9,7 +9,12 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors());
+// Allow CORS for GitHub Pages origin
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://iflytek.github.io'],
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json());
 
 // Proxy endpoint for chat completions
