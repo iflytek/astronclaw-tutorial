@@ -94,6 +94,7 @@ onUnmounted(() => {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding: 12px 0 8px;
 }
 
 .carousel-link {
@@ -168,28 +169,53 @@ onUnmounted(() => {
 
 @media (max-width: 768px) {
   .hero-carousel {
+    position: relative;
+    inset: auto;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
   }
 
   .carousel-link {
     position: static;
-    order: -1;
+    order: 2;
     align-self: center;
     justify-content: center;
-    max-width: min(100%, 240px);
-    font-size: 12px;
+    max-width: min(100%, 260px);
+    font-size: 14px;
     text-align: center;
+    line-height: 1.5;
   }
 
   .carousel-stage {
+    order: 0;
+    flex: 0 0 auto;
     padding-top: 0;
     width: 100%;
+    min-height: min(60vw, 240px);
+  }
+
+  .carousel-dots {
+    order: 1;
+    padding-bottom: 0;
   }
 
   .carousel-img {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-link {
+    max-width: min(100%, 240px);
+    font-size: 13px;
+  }
+
+  .carousel-stage {
+    min-height: min(56vw, 220px);
   }
 }
 </style>
