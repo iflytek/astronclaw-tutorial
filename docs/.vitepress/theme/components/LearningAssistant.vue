@@ -32,7 +32,7 @@
 <script setup>
 import { ref, nextTick, onMounted } from 'vue'
 
-const isOpen = ref(true)
+const isOpen = ref(typeof window !== 'undefined' ? window.innerWidth > 768 : true)
 const isLoading = ref(false)
 const inputText = ref('')
 const messagesContainer = ref(null)
