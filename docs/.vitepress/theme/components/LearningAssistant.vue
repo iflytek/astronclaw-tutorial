@@ -69,12 +69,12 @@ const sendMessage = async () => {
   scrollToBottom()
 
   try {
-        // Send request to the mock API endpoint to bypass CORS
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      // Send request to the current origin (iflytek.github.io)
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
       body: JSON.stringify({
         model: 'astron-code-latest',
         messages: [
@@ -93,11 +93,14 @@ const sendMessage = async () => {
     }
 
     const data = await response.json()
-    // Mock response parsing for jsonplaceholder
-    messages.value.push({
-      role: 'assistant',
-      content: '收到你的消息了！由于目前线上环境没有配置真实的代理服务器，我这是一个模拟回复。如果需要体验完整功能，请在本地运行项目，或者配置有效的 API 代理。'
-    })
+    if (data.choices && data.choices.length > 0) {
+      messages.value.push({
+        role: 'assistant',
+        content: data.choices[0].message.content
+      })
+    } else {
+      messages.value.push({ role: 'assistant', content: '抱歉，我遇到了一些问题，请稍后再试。' })
+    }
   } catch (error) {
     console.error('Error calling AI:', error)
     messages.value.push({ role: 'assistant', content: `请求失败: ${error.message}` })
