@@ -14,7 +14,7 @@ const slides = computed(() => {
       linkUrl: 'https://agent.xfyun.cn/astron-claw'
     },
     {
-      image: 'https://loomy.xunfei.cn/images/logo-light.svg',
+      image: 'https://loomy.xunfei.cn/images/logo_light.png',
       alt: 'Loomy Logo',
       linkText: isEn ? 'Download Loomy Desktop' : '下载 Loomy 桌面端',
       linkUrl: 'https://loomy.xunfei.cn/'
