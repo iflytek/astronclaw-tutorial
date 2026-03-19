@@ -20,6 +20,27 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
   
+  /* 自定义首页按钮颜色 */
+  --vp-button-brand-border: #9b59b6;
+  --vp-button-brand-text: #fff;
+  --vp-button-brand-bg: #9b59b6;
+  --vp-button-brand-hover-border: #8e44ad;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #8e44ad;
+  --vp-button-brand-active-border: #8e44ad;
+  --vp-button-brand-active-text: #fff;
+  --vp-button-brand-active-bg: #8e44ad;
+
+  --vp-button-alt-border: #2ecc71;
+  --vp-button-alt-text: #fff;
+  --vp-button-alt-bg: #2ecc71;
+  --vp-button-alt-hover-border: #27ae60;
+  --vp-button-alt-hover-text: #fff;
+  --vp-button-alt-hover-bg: #27ae60;
+  --vp-button-alt-active-border: #27ae60;
+  --vp-button-alt-active-text: #fff;
+  --vp-button-alt-active-bg: #27ae60;
+
   /* 调整导航栏右侧菜单的行为，防止它过早折叠为省略号 */
   --vp-nav-screen-width: 100vw;
 }
