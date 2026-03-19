@@ -79,11 +79,13 @@ npm run docs:build
 
 Issues and Pull Requests are welcome! Let's polish it together and help more people bring AI into their daily workflows.
 
-<p align="center">
-  <img src="docs/public/astronclaw-qr.jpg" alt="AstronClaw Official Community" width="250">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/public/loomy-qr.png" alt="Loomy Community" width="250">
-</p>
+## Join the Community
+
+Welcome to join our official communities to communicate with developers and other users:
+
+| ☁️ AstronClaw Official Community | 💻 Loomy Community |
+| :---: | :---: |
+| <img src="docs/public/astronclaw-qr.jpg" alt="AstronClaw Official Community" width="250"> | <img src="docs/public/loomy-qr.png" alt="Loomy Community" width="250"> |
 
 ## License
 

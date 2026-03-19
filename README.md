@@ -79,11 +79,13 @@ npm run docs:build
 
 欢迎提交 Issue 和 PR！让我们一起把它打磨得更好，帮助更多人让 AI 真正进入日常工作流。
 
-<p align="center">
-  <img src="docs/public/astronclaw-qr.jpg" alt="AstronClaw 官方社群" width="250">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/public/loomy-qr.png" alt="Loomy 交流群" width="250">
-</p>
+## 加入交流群
+
+欢迎扫码加入官方交流群，与开发者和其他用户一起交流：
+
+| ☁️ AstronClaw 官方社群 | 💻 Loomy 交流群 |
+| :---: | :---: |
+| <img src="docs/public/astronclaw-qr.jpg" alt="AstronClaw 官方社群" width="250"> | <img src="docs/public/loomy-qr.png" alt="Loomy 交流群" width="250"> |
 
 ## 开源协议
 

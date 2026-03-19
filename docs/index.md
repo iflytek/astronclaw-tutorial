@@ -38,4 +38,20 @@ features:
     link: /guide/loomy/scenarios
   - title: 06 高安全与零运维成本
     details: 平台托管、企业级安全防护；Loomy 目录级授权保障本地数据隐私，让 AI 安全落地。
+
 ---
+
+<br>
+<h2 align="center">加入交流群</h2>
+<p align="center" style="color: var(--vp-c-text-2); margin-top: 8px;">扫码加入官方社群，与开发者和众多用户一起交流</p>
+
+<div style="display: flex; justify-content: center; gap: 40px; margin-top: 32px; flex-wrap: wrap;">
+  <div style="text-align: center;">
+    <img src="/astronclaw-qr.jpg" alt="AstronClaw 官方社群" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <p style="margin-top: 12px; font-weight: 500;">☁️ AstronClaw 官方社群</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="/loomy-qr.png" alt="Loomy 交流群" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <p style="margin-top: 12px; font-weight: 500;">💻 Loomy 交流群</p>
+  </div>
+</div>

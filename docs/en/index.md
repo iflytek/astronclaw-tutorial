@@ -38,4 +38,20 @@ features:
     link: /en/guide/loomy/scenarios
   - title: 06 High Security & Zero Maintenance Cost
     details: Platform hosting, enterprise-level security protection; Loomy's directory-level authorization ensures local data privacy, making AI land safely.
+
 ---
+
+<br>
+<h2 align="center">Join the Community</h2>
+<p align="center" style="color: var(--vp-c-text-2); margin-top: 8px;">Scan the QR code to join our official communities and chat with developers and users</p>
+
+<div style="display: flex; justify-content: center; gap: 40px; margin-top: 32px; flex-wrap: wrap;">
+  <div style="text-align: center;">
+    <img src="/astronclaw-qr.jpg" alt="AstronClaw Official Community" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <p style="margin-top: 12px; font-weight: 500;">☁️ AstronClaw Community</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="/loomy-qr.png" alt="Loomy Community" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <p style="margin-top: 12px; font-weight: 500;">💻 Loomy Community</p>
+  </div>
+</div>
