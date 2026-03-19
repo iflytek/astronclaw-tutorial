@@ -7,6 +7,12 @@
 </p>
 
 <p align="center">
+  <img src="https://bjcdn.openstorage.cn/aicontest/2026-03-18/29c37a17-5b33-4804-90b5-85599c29e2d5.png" alt="AstronClaw Logo" height="60">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://loomy.xunfei.cn/images/logo-light.svg" alt="Loomy Logo" height="60">
+</p>
+
+<p align="center">
   <b>English</b> | <a href="README.md">简体中文</a>
 </p>
 
@@ -72,6 +78,12 @@ npm run docs:build
 ## Contributing
 
 Issues and Pull Requests are welcome! Let's polish it together and help more people bring AI into their daily workflows.
+
+<p align="center">
+  <img src="docs/public/astronclaw-qr.jpg" alt="AstronClaw Official Community" width="250">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/public/loomy-qr.png" alt="Loomy Community" width="250">
+</p>
 
 ## License
 

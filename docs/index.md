@@ -4,6 +4,9 @@ layout: home
 hero:
   name: "Hello AstronClaw"
   tagline: "基于 OpenClaw 核心能力，为你打造可深度定制的云端及桌面 AI 助手。"
+  image:
+    src: https://bjcdn.openstorage.cn/aicontest/2026-03-18/29c37a17-5b33-4804-90b5-85599c29e2d5.png
+    alt: AstronClaw Logo
   actions:
     - theme: brand
       text: 领养云端 AstronClaw
