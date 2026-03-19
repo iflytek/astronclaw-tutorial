@@ -14,12 +14,6 @@ hero:
     - theme: alt
       text: Meet Desktop Loomy
       link: /en/guide/loomy/introduction
-    - theme: alt
-      text: Try Cloud AstronClaw
-      link: https://agent.xfyun.cn/astron-claw
-    - theme: alt
-      text: Download Loomy Desktop
-      link: https://loomy.xunfei.cn/
 
 features:
   - title: 01 One-Click Cloud Deployment

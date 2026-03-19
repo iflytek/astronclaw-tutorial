@@ -14,12 +14,6 @@ hero:
     - theme: alt
       text: 认识桌面搭子 Loomy
       link: /guide/loomy/introduction
-    - theme: alt
-      text: 体验云端 AstronClaw
-      link: https://agent.xfyun.cn/astron-claw
-    - theme: alt
-      text: 下载 Loomy 桌面端
-      link: https://loomy.xunfei.cn/
 
 features:
   - title: 01 云端一键极速部署
