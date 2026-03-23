@@ -32,7 +32,7 @@ module.exports = async function handler(req, res) {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${process.env.VITE_API_KEY}`
       },
-      body: JSON.stringify(req.body)
+      body: JSON.stringify({ ...req.body, stream: false })
     });
 
     if (!response.ok) {

@@ -172,6 +172,9 @@ const sendMessage = async () => {
   const context = searchDocs(text)
   const systemPrompt = `${i18n.value.systemPrompt}${context}`
 
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), 30000)
+
   try {
       // Use the local Vercel serverless function endpoint instead of Railway
       const response = await fetch('/api/chat', {
@@ -179,8 +182,10 @@ const sendMessage = async () => {
         headers: {
           'Content-Type': 'application/json'
         },
+        signal: controller.signal,
       body: JSON.stringify({
         model: 'astron-code-latest',
+        stream: false,
         messages: [
           {
             role: 'system',
@@ -209,6 +214,7 @@ const sendMessage = async () => {
     console.error('Error calling AI:', error)
     messages.value.push({ role: 'assistant', content: `${i18n.value.errorPrefix}${error.message}` })
   } finally {
+    clearTimeout(timeoutId)
     isLoading.value = false
     scrollToBottom()
   }
