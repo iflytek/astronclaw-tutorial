@@ -1,438 +1,1097 @@
 [
   {
+    "lang": "zh",
     "heading": "1. 规则说明",
     "content": "本规则适用于 AstronClaw 服务中的订阅套餐、积分获取、积分使用及计费机制。 \r\nAstronClaw 使用**积分（Points）**作为统一计费单位，用于衡量用户在平台上的： \r\n*   计算资源消耗 \r\n*   大模型调用 \r\n*   Skill能力调用 \r\n*   Agent任务执行"
   },
   {
+    "lang": "zh",
     "heading": "2. 订阅套餐",
     "content": "AstronClaw 提供不同等级的订阅套餐，以满足个人开发者、AI爱好者及专业用户的不同需求。 \r\n\r\n| 套餐版本 | 原价 | 首购特惠 | 每月赠送积分 | 核心权益 |\r\n| :--- | :--- | :--- | :--- | :--- |\r\n| **基础版** | ¥168/月 | ¥16.8/月（首购1折） | 35000积分 | 一键部署AstronClaw、开箱即用Skill、标准任务处理能力、支持积分增购 |\r\n| **专业版** | ¥568/月 | ¥56.8/月（首购1折） | 120000积分 | 一键部署AstronClaw、开箱即用Skill、高峰时段任务优先处理、支持积分增购、新功能抢先体验 |\r\n\r\n> 订阅需同意《AstronClaw 订阅版专用协议》"
   },
   {
+    "lang": "zh",
     "heading": "3. 积分类型",
     "content": "AstronClaw 平台积分分为三种类型，不同积分的有效期不同。 \r\n\r\n| 积分类型 | 有效期 | 说明 |\r\n| :--- | :--- | :--- |\r\n| **会员积分** | 当月有效 | 随订阅套餐赠送，不可累积到下个月 |\r\n| **增购积分** | 购买日起 1年有效 | 用户额外购买的积分 |\r\n| **活动积分** | 以活动规则为准 | 参与官方活动获得 |\r\n\r\n**说明：**\r\n*   会员积分为**非自然月重置** \r\n*   若会员终止，未使用积分将自动失效"
   },
   {
+    "lang": "zh",
     "heading": "4.1 套餐订阅",
     "content": "订阅基础版或专业版后，积分**立即到账**。"
   },
   {
+    "lang": "zh",
     "heading": "4.2 积分增购",
     "content": "用户可以随时购买积分包，突破套餐限制。 \r\n\r\n| 积分数量 | 标准价格 | 专业版9折 |\r\n| :--- | :--- | :--- |\r\n| 1000积分 | ¥10 | ¥9 |\r\n| 5000积分 | ¥50 | ¥45 |\r\n| 10000积分 | ¥100 | ¥90 |\r\n| 20000积分 | ¥200 | ¥180 |"
   },
   {
+    "lang": "zh",
     "heading": "4.3 活动奖励",
     "content": "AstronClaw 会不定期推出活动，奖励积分。"
   },
   {
+    "lang": "zh",
     "heading": "5. 积分消耗规则",
     "content": "执行任务时会消耗积分，积分消耗取决于： \r\n*   模型调用 \r\n*   Skill能力调用 \r\n*   Agent任务复杂度 \r\n*   Token消耗"
   },
   {
+    "lang": "zh",
     "heading": "6. 模型积分消耗",
     "content": "| 模型 | 输入价格 | 输出价格 | 计费单位 |\r\n| :--- | :--- | :--- | :--- |\r\n| MiniMax-M2.5 | 2.1 元/百万Tokens | 8.4 元/百万Tokens | Tokens |\r\n| Kimi-K2.5 | 4 元/百万Tokens | 21 元/百万Tokens | Tokens |\r\n| GLM-5 | 6 元/百万Tokens | 22 元/百万Tokens | Tokens |\r\n| 星火X2 | 3.7 元/百万Tokens | 9 元/百万Tokens | Tokens |\r\n\r\n**积分抵扣示例：**\r\n| 模型 | 输入 | 输出 |\r\n| :--- | :--- | :--- |\r\n| MiniMax-M2.5 | 2.1积分 / 万Tokens | 8.4积分 / 万Tokens |\r\n| Kimi-K2.5 | 4积分 / 万Tokens | 21积分 / 万Tokens |\r\n| GLM-5 | 6积分 / 万Tokens | 22积分 / 万Tokens |\r\n| 星火X2 | 3.7积分 / 万Tokens | 9积分 / 万Tokens |"
   },
   {
+    "lang": "zh",
     "heading": "7. Skill调用积分消耗（示例）",
     "content": "| 场景 | Skill | 积分消耗 |\r\n| :--- | :--- | :--- |\r\n| 网络搜索 | 聚合搜索 | 6积分/次 |\r\n| 日常办公 | 票据识别 | 6积分/次 |\r\n| 日常办公 | 公文校对 | 600积分/次 |\r\n| 日常办公 | 智能简历生成 | 80积分/次 |\r\n| 日常办公 | 文本翻译 | 45积分/次 |\r\n| AI大模型 | 图片理解 | 27积分/次 |\r\n| 图像识别 | OCR | 3积分/次 |\r\n| 语音合成 | 超拟人语音 | 150积分/万字符 |\r\n| 语音合成 | 一句话复刻 | 700积分/次 |"
   },
   {
+    "lang": "zh",
     "heading": "8. 免费Skill与模板",
     "content": "以下官方模板**免费使用（0积分）**： \r\n*   行业研报生成 \r\n*   金融投研日报 \r\n*   多Agent投研团队 \r\n*   行业深度研报 \r\n*   资讯采集报告 \r\n*   社交媒体爆款分析 \r\n*   前端设计生成 \r\n*   Skill创建工具 \r\n*   Canvas设计工具 \r\n*   学习计划生成"
   },
   {
+    "lang": "zh",
     "heading": "9. 积分抵扣顺序",
     "content": "系统按照以下顺序扣除积分： \r\n1.  **优先消耗**即将过期的积分 \r\n\r\n若到期时间一致： \r\n**活动积分 → 会员积分 → 增购积分**"
   },
   {
+    "lang": "zh",
     "heading": "升级",
     "content": "用户可以随时升级套餐： \r\n*   新套餐权益**立即生效** \r\n*   剩余会员积分按比例折算"
   },
   {
+    "lang": "zh",
     "heading": "降级",
     "content": "暂不支持主动降级。 \r\n建议在当前套餐到期后重新订阅。"
   },
   {
+    "lang": "zh",
     "heading": "11. 促销与福利",
     "content": "AstronClaw 将不定期推出： \r\n*   新用户优惠 \r\n*   积分奖励活动 \r\n*   节日促销"
   },
   {
+    "lang": "zh",
     "heading": "异常退回",
     "content": "若任务执行出现以下情况： \r\n*   系统错误 \r\n*   服务中断 \r\n*   审核失败 \r\n系统将**自动退还全部积分**。"
   },
   {
+    "lang": "zh",
     "heading": "不可退款",
     "content": "已购买：套餐、积分包 \r\n不支持提现或转让。"
   },
   {
+    "lang": "zh",
     "heading": "作弊处理",
     "content": "若发现以下行为： \r\n*   利用漏洞刷积分 \r\n*   非法调用API \r\n平台有权： \r\n*   清零积分 \r\n*   封禁账户"
   },
   {
+    "lang": "zh",
     "heading": "13. 常见问题（FAQ）",
     "content": "**Q1：当月积分用完怎么办？**\r\nA：可以购买积分包、提前续费或升级套餐。\r\n\r\n**Q2：系统优先扣除哪种积分？**\r\nA：系统优先扣除即将过期的积分（通常为会员积分）。\r\n\r\n**Q3：可以同时使用多个套餐吗？**\r\nA：不可以。每个账户仅可订阅一个套餐。\r\n\r\n**Q4：如何查看积分使用情况？**\r\nA：可在积分管理页面查看剩余积分、积分明细和购买记录。"
   },
   {
+    "lang": "zh",
     "heading": "渠道配置指南",
     "content": "AstronClaw 支持连接多种企业协作平台和社交媒体，让你可以在熟悉的工具中直接与 AI 助手对话。"
   },
   {
+    "lang": "zh",
     "heading": "飞书渠道配置指南",
     "content": "本指南介绍如何将**AstronClaw接入飞书（Feishu / Lark）**，从而在飞书中直接与 AstronClaw 智能体对话并执行任务。"
   },
   {
+    "lang": "zh",
     "heading": "前置条件",
     "content": "*   拥有 **飞书管理员权限**\r\n*   已成功 **部署 AstronClaw**\r\n*   已进入 **渠道配置（Channels）模块**"
   },
   {
+    "lang": "zh",
     "heading": "操作步骤",
     "content": "**步骤一：创建飞书应用**\r\n1.  打开[飞书开放平台](https://open.feishu.cn/app)\r\n2.  点击 **创建企业自建应用**\r\n    ![创建飞书应用](/astronclaw/channels/feishu-app-create.png)\r\n3.  填写应用信息（应用名称建议：AstronClaw Assistant），点击 **创建**。\r\n\r\n**步骤二：获取应用凭证**\r\n进入应用后台后，点击左侧菜单 **凭证与基础信息**，复制 `App ID` 和 `App Secret`，这些信息将在 AstronClaw 渠道配置中使用。\r\n![获取飞书凭证](/astronclaw/channels/feishu-app-credential.png)\r\n\r\n**步骤三：配置应用权限并启用机器人能力**\r\n1.  在左侧导航进入 **权限管理**，点击 批量导入 按钮，粘贴 JSON 配置一键导入所需权限：\r\n    ![配置飞书权限](/astronclaw/channels/feishu-app-permission.png)\r\n2.  在 应用能力 > 机器人 页面：开启机器人能力并配置机器人名称：\r\n    ![开启飞书机器人](/astronclaw/channels/feishu-app-robot.png)\r\n\r\n**步骤四：配置事件订阅**\r\n1.  在 AstronClaw「渠道配置」页面填入步骤二获取的 App ID 与 APP Secret，点击保存配置，等待右上角变为绿色已配置。\r\n    ![配置AstronClaw飞书渠道](/astronclaw/channels/feishu-app-config.png)\r\n2.  回到飞书配置页面开启 **事件订阅**，选择 使用长连接接收事件，点击保存。\r\n3.  添加事件：`im.message.receive_v1`（接收消息）。\r\n    ![添加飞书事件 1](/astronclaw/channels/feishu-app-event1.png)\r\n    ![添加飞书事件 2](/astronclaw/channels/feishu-app-event2.png)\r\n\r\n**步骤五：发布飞书应用**\r\n在 版本管理与发布 页面创建版本，提交审核并发布。\r\n\r\n---"
   },
   {
+    "lang": "zh",
     "heading": "操作步骤",
     "content": "**步骤一：创建钉钉应用**\r\n1.  登录钉钉开放平台，在左侧目录树中选择企业内部应用 > 钉钉应用，单击创建应用按钮。\r\n    ![创建钉钉应用](/astronclaw/channels/dingding-app-create.png)\r\n2.  配置应用名称、图标等信息后，单击保存。\r\n\r\n**步骤二：为钉钉应用添加权限**\r\n钉钉应用需要申请的权限：`Card.Instance.Write`、`Card.Streaming.Write`、`qyapi_robot_sendmsg`。\r\n1.  在左侧目录树选择开发配置 > 权限管理。\r\n2.  搜索 `Card`，勾选互动卡片实例写权限与AI卡片流式更新权限，批量申请。\r\n    ![申请卡片权限](/astronclaw/channels/dingding-app-permission1.png)\r\n3.  搜索 `qyapi_robot_sendmsg`，开通企业内机器人发送消息权限。\r\n    ![申请发送消息权限](/astronclaw/channels/dingding-app-permission2.png)\r\n\r\n**步骤三：配置钉钉机器人**\r\n1.  选择应用能力 > 添加应用能力，添加机器人。\r\n    ![添加钉钉机器人](/astronclaw/channels/dingding-app-robot1.png)\r\n2.  打开机器人配置开关。\r\n    ![开启钉钉机器人](/astronclaw/channels/dingding-app-robot2.png)\r\n3.  将消息接收模式调整为 Stream 模式，单击发布保存配置。\r\n    ![配置钉钉Stream模式](/astronclaw/channels/dingding-app-robot3.png)\r\n\r\n**步骤四：发布应用版本**\r\n在版本管理与发布页面创建新版本并发布。\r\n![发布钉钉应用](/astronclaw/channels/dingding-app-publish.webp)\r\n\r\n**步骤五：获取应用信息并配置 AstronClaw**\r\n1.  在基础信息 > 凭证与基础信息，复制 `Client ID`、`Client Secret` 等信息。\r\n    ![获取钉钉凭证](/astronclaw/channels/dingding-app-credential.webp)\r\n2.  进入 AstronClaw「渠道配置」选择「钉钉」，填写凭证并保存。\r\n\r\n---"
   },
   {
+    "lang": "zh",
     "heading": "方法一：手动配置",
     "content": "**步骤一：创建企业微信机器人**\r\n1.  登录 [企业微信管理后台](https://work.weixin.qq.com/wework_admin/frame)。\r\n2.  在左侧目录树选择工作台 > 智能办公，单击智能机器人。\r\n    ![智能机器人](/astronclaw/channels/wecom-app-create1.webp)\r\n3.  单击创建机器人，并选择手动创建。\r\n    ![手动创建企微机器人](/astronclaw/channels/wecom-app-create2.webp)\r\n4.  设置机器人的名称和头像。\r\n    ![设置企微机器人名称](/astronclaw/channels/wecom-app-create3.webp)\r\n\r\n**步骤二：开启长连接**\r\n1.  在机器人配置页面右下角，单击 API模式创建。\r\n    ![企微API模式](/astronclaw/channels/wecom-app-conn1.webp)\r\n2.  设置连接方式为使用长连接。\r\n    ![企微使用长连接](/astronclaw/channels/wecom-app-conn2.webp)\r\n3.  获取 Secret、复制 Bot ID 和 Secret ID，并单击保存。\r\n    ![获取企微凭证](/astronclaw/channels/wecom-app-conn3.webp)\r\n\r\n**步骤三：在 AstronClaw 中完成配置**\r\n进入 AstronClaw「渠道配置」选择「企业微信」，填写 Bot ID 和 Secret，点击「保存配置」。"
   },
   {
+    "lang": "zh",
     "heading": "方法二：扫码自动配置（推荐）",
     "content": "1.  在 AstronClaw 配置页面点击获取二维码，使用企业微信扫描二维码完成授权配置。\r\n    ![企微扫码授权](/astronclaw/channels/wecom-app-scan.png)\r\n2.  点击「一键创建智能机器人」，将自动完成创建。系统将自动识别并填写机器人相应的BOT ID和APP SECRET，点击「保存配置」。\r\n    ![企微一键创建 1](/astronclaw/channels/wecom-app-auto1.jpg)\r\n    ![企微一键创建 2](/astronclaw/channels/wecom-app-auto2.jpg)\r\n\r\n---"
   },
   {
+    "lang": "zh",
     "heading": "微博渠道配置指南",
     "content": "**步骤一：获取凭证**\r\n打开微博客户端，私信 `https://weibo.com/u/6808810981`\r\n![私信微博账号](/astronclaw/channels/weibo-app-credential1.png)\r\n\r\n私信发送消息：`连接龙虾`。得到应用凭证：\r\n![获取微博凭证](/astronclaw/channels/weibo-app-credential2.png)\r\n\r\n**步骤二：在 AstronClaw 中完成配置**\r\n1.  进入 AstronClaw「渠道配置」页面\r\n2.  选择「微博」渠道\r\n3.  填写步骤一中获取的 App Id 和 AppSecret\r\n4.  点击「保存配置」\r\n    ![配置微博渠道](/astronclaw/channels/weibo-app-config.png)"
   },
   {
+    "lang": "zh",
     "heading": "一键部署需要什么条件？",
     "content": "需要订阅基础版或专业版套餐。未订阅用户点击部署时会引导升级。"
   },
   {
+    "lang": "zh",
     "heading": "如果 AstronClaw 不响应怎么办？",
     "content": "*   刷新页面 \r\n*   进入设置点击 **重启AstronClaw** \r\n*   如仍无效，尝试设置中的自动修复"
   },
   {
+    "lang": "zh",
     "heading": "重启、重置、删除有什么区别？",
     "content": "| 操作 | 效果 |\r\n| :--- | :--- |\r\n| **重启** | 保留数据，清空缓存（类似重启电脑） |\r\n| **重置** | 删除历史记录和技能，恢复默认设置（类似重装系统） |\r\n| **删除** | 彻底删除 AstronClaw 及所有数据（不可恢复） |"
   },
   {
+    "lang": "zh",
     "heading": "支持哪些文件上传？",
     "content": "*   **支持格式**：pdf、doc、txt、jpg 等，类型不限 \r\n*   **普通文件**：每个文件大小不超过 50MB，总文件大小不超过 250MB，数量不超过 5 个 \r\n*   **音频文件**：不超过 100MB，总文件大小不超过 500MB，数量不超过 5 个 \r\n*   **图片文件**：不超过 20MB，总文件大小不超过 100MB，数量不超过 5 个"
   },
   {
+    "lang": "zh",
     "heading": "如何切换对话模型？",
     "content": "进入 **设置** 页面，在模型选择区域切换对话模型。"
   },
   {
+    "lang": "zh",
     "heading": "AstronClaw 可以发送文件给我吗？",
     "content": "目前 AstronClaw 可以接收你上传的文件并用工具处理，但尚不能在界面中直接发送文件给你。该功能将在未来版本中推出。现阶段，你可以通过其他已配置的渠道访问生成的文件。"
   },
   {
+    "lang": "zh",
     "heading": "快速上手指南",
     "content": "只需几个简单的步骤，即可拥有一只属于你的、全天候在线的云端数字龙虾。"
   },
   {
+    "lang": "zh",
     "heading": "第一步：立即部署",
     "content": "进入 **AstronClaw** 页面，点击 `立即部署` 按钮，系统将自动为你创建 AstronClaw。"
   },
   {
+    "lang": "zh",
     "heading": "第二步：开始对话",
     "content": "部署完成后进入对话首页：\r\n*   **欢迎语**：Hi，我是 AstronClaw！\r\n*   **文件上传**：\r\n    *   支持 `pdf/doc/txt/jpg` 等格式\r\n    *   文件大小不超过 50MB，总文件大小不超过 250MB，数量不超过 5 个\r\n    *   音频文件大小不超过 100MB，总文件大小不超过 500MB，数量不超过 5 个\r\n    *   图片大小不超过 20MB，总文件大小不超过 100MB，数量不超过 5 个"
   },
   {
+    "lang": "zh",
     "heading": "第三步：安装技能",
     "content": "进入 **Skills市场**，浏览和安装官方预置技能：\r\n*   支持名称模糊搜索\r\n*   点击安装即可一键配置使用\r\n\r\n*(更多技能相关的详细介绍，请参考 [技能系统详解](./skills.md))*"
   },
   {
+    "lang": "zh",
     "heading": "第四步：配置消息渠道",
     "content": "进入 **渠道配置** 页面，连接企业协作平台。AstronClaw 现已支持：\r\n*   飞书渠道\r\n*   钉钉渠道\r\n*   企业微信渠道\r\n\r\n只需简单配置相关 App ID 和凭据，你的数字龙虾即可在这些聊天软件中随时待命！"
   },
   {
+    "lang": "zh",
     "heading": "AstronClaw 核心优势与对比",
     "content": "基于 OpenClaw 核心能力，为你打造可深度定制的个人 AI 助手。集成高效技能，实现多渠道信息交互。\r\n\r\n本地运行 OpenClaw 虽然灵活，但需要折腾环境、配置密钥、保持设备开机——一旦电脑休眠，助手就下线了。\r\n**AstronClaw 让一切变得简单**：云端一键部署、全天候在线运行、浏览器直接访问技能库。省去终端命令，省去服务器开销，省去安装烦恼。"
   },
   {
+    "lang": "zh",
     "heading": "核心优势",
     "content": "| 优势 | 说明 |\r\n| :--- | :--- |\r\n| **极速部署** | 极简流程，零代码配置，告别环境依赖 |\r\n| **生态扩展** | 内置多种模型与丰富官方技能，支持自定义技能生成 |\r\n| **安全可靠** | 企业级安全防护，数据加密传输，保障您的资产安全 |"
   },
   {
+    "lang": "zh",
     "heading": "对比本地 OpenClaw",
     "content": "| 对比项 | AstronClaw（云端） | 本地 OpenClaw |\r\n| :--- | :--- | :--- |\r\n| **部署方式** | 一键部署，约 1 分钟完成 | 需要 CLI / Docker 安装，操作复杂 |\r\n| **环境配置** | 无需环境依赖 | 需要 Node、Docker 等 |\r\n| **技能安装** | 技能市场一键安装 | 手动搜索、下载、安装技能 |\r\n| **运行状态** | 云端 7×24 小时运行 | 电脑关闭即停止 |\r\n| **消息渠道** | 支持飞书、钉钉、企微 | 需自行配置 |\r\n| **运维成本** | 平台托管，零运维 | 需自建服务器或保持设备开机 |"
   },
   {
+    "lang": "zh",
     "heading": "实际应用场景",
     "content": "通过内置技能与自动化工作流，AstronClaw 可以帮助你快速完成多种复杂任务。以下是几个典型的应用场景："
   },
   {
+    "lang": "zh",
     "heading": "1. 行业研报",
     "content": "**指令示例：**\r\n> 帮我整理这份行业研报的核心观点、关键数据和未来趋势，并输出 3 条投资启示 \r\n\r\n**输出效果：**\r\n*   提炼核心观点 \r\n*   整理关键数据 \r\n*   分析未来趋势 \r\n*   输出投资建议"
   },
   {
+    "lang": "zh",
     "heading": "2. 资讯播客",
     "content": "**指令示例：**\r\n> 帮我整理每日热门 AI 资讯，生成 3 分钟音频播客，并在每天早上 9 点准时推送 \r\n\r\n**输出效果：**\r\n*   自动采集热门资讯 \r\n*   生成播客脚本 \r\n*   讯飞超拟人合成语音 \r\n*   定时推送"
   },
   {
+    "lang": "zh",
     "heading": "3. PPT 自动生成",
     "content": "**指令示例：**\r\n> 做一个关于 \"新能源汽车市场\" 主题的中文 PPT，配上清晰的图表和数据 \r\n\r\n**输出效果：**\r\n*   市场数据收集 \r\n*   图表自动生成 \r\n*   输出 `.pptx` 文件"
   },
   {
+    "lang": "zh",
     "heading": "技能系统 (Skills)",
     "content": "技能（Skills）是 AstronClaw 的核心能力模块，相当于 Agent 可调用的“工具与能力插件”。通过技能，AstronClaw 可以从简单的“聊天”升级为真正的“执行任务”。"
   },
   {
+    "lang": "zh",
     "heading": "一、什么是技能？",
     "content": "**技能 = 可被 AstronClaw 调用的能力单元**，包括：\r\n*   外部工具（搜索 / OCR / API）\r\n*   模型能力（语音 / 图像 / 推理）\r\n*   工作流（多步骤自动执行任务）\r\n*   行业模板（研报 / PPT / 分析报告）"
   },
   {
+    "lang": "zh",
     "heading": "二、技能如何获取",
     "content": "AstronClaw 支持 3 种技能获取方式："
   },
   {
+    "lang": "zh",
     "heading": "1. 技能市场手动安装",
     "content": "进入【Skills市场】：\r\n*   支持关键词搜索（如：PPT / 搜索 / OCR）\r\n*   浏览官方推荐技能\r\n*   点击「安装」即可使用\r\n> **特点**：稳定、官方验证；适合已知需求场景。"
   },
   {
+    "lang": "zh",
     "heading": "2. 仓库搜索安装",
     "content": "AstronClaw 支持从技能仓库进行扩展：\r\n*   搜索技能（官方 / 第三方）\r\n*   浏览技能说明\r\n*   手动安装到「我的技能」\r\n> **适用**：寻找特定能力（如行业工具、垂类能力）；扩展生态能力边界。"
   },
   {
+    "lang": "zh",
     "heading": "3. 对话自动安装 (推荐)",
     "content": "用户可以直接在对话中描述需求，让 AstronClaw 自动完成技能获取与安装：\r\n> **系统行为**：自动理解需求 → 在技能市场/仓库中搜索匹配技能 → 自动完成安装 → 立即可用\r\n> **特点**：无需进入技能市场，无需手动操作，完整自动化闭环。"
   },
   {
+    "lang": "zh",
     "heading": "三、技能如何被调用",
     "content": "AstronClaw 支持 3 种调用方式：\r\n\r\n1.  **自动调用**：用户自然表达需求，系统自动调用相关技能。\r\n2.  **指定调用**：用户明确指令让 AstronClaw 执行某个技能。\r\n3.  **多技能链式调用**：系统自动完成连续任务，例如：`搜索` → `分析` → `图表` → `PPT生成`。"
   },
   {
+    "lang": "zh",
     "heading": "四、技能市场与自定义",
     "content": "当前技能市场（Skills Market）提供 **130+** 官方技能，持续扩展中：\r\n*   **数据分析**（CSV / 图表）\r\n*   **内容生成**（PPT / 文档）\r\n*   **信息获取**（搜索 / 资讯）\r\n*   **AI能力**（OCR / 语音）"
   },
   {
+    "lang": "zh",
     "heading": "自定义技能",
     "content": "AstronClaw 支持用户创建专属技能：\r\n*   **上传创建**：支持上传 `.zip` / `.md` 文件自动生成技能\r\n*   **对话创建**：直接在与 AstronClaw 对话中描述需求，AI 将为你编写和生成专属技能配置。"
   },
   {
+    "lang": "zh",
     "heading": "我的技能（管理）",
     "content": "在“我的技能”面板，你可以：\r\n*   **新建**：上传文件创建\r\n*   **删除**：移除技能\r\n*   **下载**：导出技能\r\n*   **启用/禁用**：控制技能调用状态"
   },
   {
+    "lang": "zh",
     "heading": "我的文件会被上传到云端吗？",
     "content": "Loomy 的文件操作默认在本地完成，不会直接把你的整个工作目录上传到云端。但为了实现 AI 理解、总结和分析，相关文本内容会发送给大模型 API 服务商进行处理。"
   },
   {
+    "lang": "zh",
     "heading": "AI 能访问我的哪些文件？",
     "content": "Loomy 只能访问你**明确授权的工作目录**。对于未授权目录中的文件，如果任务执行过程中确实需要访问，Loomy 会先征求你的同意，不会默认直接读取。"
   },
   {
+    "lang": "zh",
     "heading": "Loomy 可以使用我自己的模型服务提供商 API Key 吗？",
     "content": "可以。Loomy 提供默认的模型服务，方便用户开箱即用；如果你有自己的模型服务提供商，也可以在 Loomy 中自行配置 API Key 进行使用。\r\n当你使用自己的 API Key 时，Loomy 不会额外上传任何涉密信息。相关 Key 只会保存在本地，并在你发起对应模型调用时被本地使用，不会被 Loomy 平台托管或同步到云端。"
   },
   {
+    "lang": "zh",
     "heading": "适合什么样的用户？",
     "content": "Loomy 适合需要频繁处理信息整理、内容创作、文档协作、任务跟进和跨工具执行的人群。比如：\r\n*   自媒体运营\r\n*   办公室白领\r\n*   内容团队\r\n*   小型业务团队\r\n*   电商从业者\r\n*   希望把重复流程交给 AI 协助完成的个人用户\r\n\r\n如果你的工作中经常需要在聊天、邮件、文档、网页和待办之间反复切换，Loomy 会更容易发挥价值。"
   },
   {
+    "lang": "zh",
     "heading": "介绍",
     "content": "**Loomy** 是一款面向真实办公场景的 AI 工作搭子，基于 AstronClaw 的强大底层引擎，聚焦**“低门槛、高安全、强适配、主动协作”**四个核心方向，帮助用户把复杂、重复、跨工具的工作流程真正落到执行层。\r\n\r\n相比偏极客化、部署复杂的 Agent 工具，Loomy 更强调**开箱即用**和**国内办公环境适配**。"
   },
   {
+    "lang": "zh",
     "heading": "为什么选择 Loomy？",
     "content": "*   **极简上手**：用户无需折腾命令行和复杂环境配置，只需完成基础授权和工具绑定，就可以开始使用 AI 对话、任务管理、工作目录切换、远程协作等能力。\r\n*   **不仅是“听指令”**：Loomy 不只希望做一个听指令的助手，而是一个更像同事的工作伙伴。它可以围绕用户目标拆解任务、串联多种工具、执行多步骤流程。\r\n*   **理解习惯**：在日常使用中逐步理解用户习惯，提供更贴近实际工作的协作体验。"
   },
   {
+    "lang": "zh",
     "heading": "安全与落地性",
     "content": "在产品定位上，Loomy 也特别强调安全和落地性。\r\n通过**目录级授权**、**企业场景适配**、**本地化工具接入**等方式，尽量降低数据风险和部署门槛，让 AI 真正能进入团队工作流，而不是停留在演示阶段。"
   },
   {
+    "lang": "zh",
     "heading": "模型配置",
     "content": "Loomy 支持多种大模型服务，你可以使用默认提供的模型，也可以添加自定义的 AI 提供商。所有配置信息都保存在本地，不会上传你的任何密钥数据。\r\n\r\n**访问模型设置**\r\n点击应用左侧菜单栏的「设置」，然后选择「模型」选项，即可进入模型配置页面。\r\n\r\n![访问模型设置](/loomy/models/model-setting.png)\r\n\r\n**默认模型配置**\r\nLoomy 默认提供以下大模型服务，开箱即用：\r\n*   MiniMax - MiniMax-M2.5\r\n*   豆包（Doubao） - doubao-seed-2.0-pro\r\n*   DeepSeek - DeepSeek-v3.2\r\n*   通义千问（Qwen） - qwen3.5-plus\r\n\r\n**添加自定义提供商**\r\n在「设置 -> 模型」中，点击「+ 添加自定义提供商」，填写 API Key、API 地址、模型名称等信息即可。"
   },
   {
+    "lang": "zh",
     "heading": "聊天功能",
     "content": "聊天功能是你与 AI 交互的核心界面。通过自然语言对话，Loomy 可以帮你完成各种任务。"
   },
   {
+    "lang": "zh",
     "heading": "1. 使用技能",
     "content": "*   **方式一：快捷指令 \"/\"**：在输入框中输入 `/`，会自动弹出技能选择菜单。\r\n*   **方式二：AI 自主识别**：直接描述需求，Loomy 会自动识别并调用相应的技能（例如：“帮我整理下载文件夹”）。"
   },
   {
+    "lang": "zh",
     "heading": "2. 任务执行",
     "content": "*   **单任务执行**：同一时间只能处理一个任务，新的消息会进入等待队列。\r\n*   **中断任务**：如果需要中断正在执行的任务，可以点击「停止」按钮。"
   },
   {
+    "lang": "zh",
     "heading": "3. 上下文与工具调用",
     "content": "*   **上下文管理**：Loomy 会记住对话历史，保持上下文连续性。长对话会消耗更多积分。\r\n*   **工具调用**：当任务需要使用外部工具时，Loomy 会自动调用已配置的 MCP 服务（如邮件操作、网页浏览等）。"
   },
   {
+    "lang": "zh",
     "heading": "加入 Waiting List",
     "content": "首先在官网申请加入 Waiting List，提交基础信息后等待审核。\r\n\r\n![加入 Waiting List](/loomy/quick-start/waiting.png)"
   },
   {
+    "lang": "zh",
     "heading": "获取邀请码",
     "content": "申请通过后，你会获得专属邀请码。邀请码是当前登录和体验 Loomy 的必要凭证，请妥善保存。\r\n\r\n![获取邀请码](/loomy/quick-start/qmail.png)\r\n\r\n进入 Loomy 官网，选择相应平台，点击下载按钮，即可下载 Loomy 客户端。\r\n\r\n![下载 Loomy](/loomy/quick-start/download.png)"
   },
   {
+    "lang": "zh",
     "heading": "登录 Loomy",
     "content": "打开 Loomy 后，输入邀请码即可完成登录并开始使用。\r\n\r\n![登录 Loomy](/loomy/quick-start/login.png)"
   },
   {
+    "lang": "zh",
     "heading": "开始体验",
     "content": "登录成功后，你就可以体验 Loomy 的核心能力，包括 AI 对话、任务管理、工作目录切换以及后续逐步开放的更多协作能力。"
   },
   {
+    "lang": "zh",
     "heading": "远程控制",
     "content": "远程控制功能让你在不坐在电脑前时，仍然可以通过即时通讯工具向 Loomy 发送指令，查看任务进度、触发操作或获取执行结果。"
   },
   {
+    "lang": "zh",
     "heading": "适用场景",
     "content": "*   出差或临时离开工位时，远程查看任务是否执行完成\r\n*   通过消息触发 Loomy 执行固定流程\r\n*   在手机上快速查询当前待办、运行状态或关键结果\r\n\r\n> **注意：** 使用远程控制时，必须保证 Loomy 在你的本地设备上处于**后台运行**状态。\r\n\r\n---"
   },
   {
+    "lang": "zh",
     "heading": "接入 QQ 机器人",
     "content": "1.  打开 Loomy 左侧菜单中的「设置」，找到远程控制或对应的机器人接入配置区域。\r\n\r\n![QQ机器人设置](/loomy/qq/remote_qq_1.png)\r\n\r\n**如果不想自己配置，可以直接使用 QQ OpenClaw 机器人：**\r\n\r\n1. 登录 QQ 开放平台：[QQ OpenClaw 机器人创建页](https://q.qq.com/qqbot/openclaw/index.html)，点击创建机器人，复制 AppID 和 AppSecret。\r\n\r\n![创建机器人 1](/loomy/qq/remote_qq_2.png)\r\n![创建机器人 2](/loomy/qq/remote_qq_3.png)\r\n\r\n2. 将获取的 AppID 和 AppSecret 填入 Loomy 机器人配置信息中，点击启用 QQ 机器人，测试连接，保存配置即可。\r\n\r\n![填入凭证](/loomy/qq/remote_qq_4.png)\r\n\r\n此时远程控制里的 QQ 机器人显示“已连接”。\r\n\r\n![已连接](/loomy/qq/remote_qq_5.png)\r\n\r\n3. 打开你的 QQ，出现新对话窗口，显示机器人已创建成功，可以开始对话啦~\r\n\r\n**如果你想自己配置权限：**\r\n\r\n1. 登录 [QQ 开放平台](https://q.qq.com/#/apps)，点击机器人 -> 创建机器人，填写名称、头像、描述等信息。\r\n\r\n![自己配置机器人](/loomy/qq/Q1.png)\r\n\r\n2. **回调配置**，选择你需要添加的事件。\r\n\r\n![回调配置](/loomy/qq/Q3.png)\r\n\r\n3. **开发管理**，复制 AppID 和 AppSecret。\r\n4. 同上，将获取的 AppID 和 AppSecret 填入 Loomy 机器人配置信息中，点击启用 QQ 机器人，测试连接，保存配置即可。\r\n\r\n![填入凭证](/loomy/qq/remote_qq_4.png)\r\n\r\n此时远程控制里的 QQ 机器人显示“已连接”。\r\n\r\n![已连接](/loomy/qq/remote_qq_5.png)\r\n\r\n5. 打开你的 QQ，出现新对话窗口，显示机器人已创建成功，可以开始对话啦~\r\n\r\n---"
   },
   {
+    "lang": "zh",
     "heading": "接入飞书机器人",
     "content": "1.  在飞书开放平台创建企业自建应用，并启用机器人能力。\r\n你可以先参考飞书官方提供的机器人创建说明：\r\n* [飞书官方：三分钟设置机器人](https://open.feishu.cn/document/develop-an-echo-bot/introduction)\r\n* [飞书开放平台控制台](https://open.feishu.cn/app?lang=zh-CN)\r\n\r\n按指引点击“创建应用”，填写相应信息：\r\n\r\n![创建飞书应用 1](/loomy/feishu/feishu-1.png)\r\n![创建飞书应用 2](/loomy/feishu/feishu-2.png)\r\n\r\n2. 完成应用创建后，发布机器人，确保机器人状态为“已发布”，然后点击“已发布”，即可跳转至机器人列表页面：\r\n\r\n![发布飞书应用 1](/loomy/feishu/feishu-3.png)\r\n![发布飞书应用 2](/loomy/feishu/feishu-4.png)\r\n\r\n在列表中找到刚才创建的机器人应用：\r\n\r\n![找到应用](/loomy/feishu/feishu-4-1.png)\r\n\r\n3. 在“凭证和基础信息”页面中复制 `App ID` 和 `App Secret`：\r\n\r\n![获取凭证](/loomy/feishu/feishu-5.png)\r\n\r\n4. 打开 Loomy 客户端，进入「设置」中的「远程控制」功能：\r\n\r\n![Loomy 远程控制设置](/loomy/feishu/feishu-6.png)\r\n\r\n5. 选择配置飞书机器人，填写 `App ID` 和 `App Secret`，点击测试连接，确认连接成功后启用机器人，保存配置：\r\n\r\n![填写飞书配置](/loomy/feishu/feishu-7.png)\r\n\r\n6. 打开你的手机飞书，找到“开发者小助手”，当你收到应用审批通过提醒后，点击打开应用即可使用：\r\n\r\n![飞书使用效果 1](/loomy/feishu/feishu-8.jpg)\r\n![飞书使用效果 2](/loomy/feishu/feishu-9.jpg)\r\n\r\n---"
   },
   {
+    "lang": "zh",
     "heading": "接入钉钉机器人",
     "content": "1. 登录 [钉钉开放平台](https://open-dev.dingtalk.com/)：\r\n\r\n进入「应用开发」→「钉钉应用」→「一键自动创建 OpenClaw 机器人应用」，复制 Client ID 和 Client Secret。\r\n\r\n![创建钉钉应用 1](/loomy/dingding/dingding-1.jpg)\r\n![创建钉钉应用 2](/loomy/dingding/dingding-2.jpg)\r\n\r\n确认后自动发布第一个版本，可获取 Client ID 和 Client Secret。\r\n\r\n2. 将获取的 Client ID 和 Client Secret 填入 Loomy 机器人配置信息中，点击启用钉钉机器人，测试连接，保存配置。\r\n\r\n![填写钉钉配置](/loomy/dingding/dingding-4.png)\r\n\r\n3. 点击事件订阅，选择 stream 推送模式，点击已完成接入，验证连接通道。验证成功后可自由选择事件，保存后发布新版本。\r\n\r\n![钉钉事件订阅](/loomy/dingding/dingding-5.jpg)\r\n\r\n4. 打开你的钉钉，出现新对话窗口，显示机器人已创建成功，可以开始对话啦~"
   },
   {
+    "lang": "zh",
     "heading": "典型场景",
     "content": "Loomy 适合那些需要频繁在信息整理、内容创作、任务执行和跨工具协作之间切换的工作场景，尤其适合个人工作者、小团队以及高频办公用户。\r\n\r\n以下是 Loomy 的几个典型落地场景："
   },
   {
+    "lang": "zh",
     "heading": "1. 晨间智能播报",
     "content": "想要快速了解今天的重要信息？Loomy 可以帮你整合天气、邮件、日程和热点资讯，生成一份专属晨间播报，让你从容开启新的一天。\r\n\r\n**使用场景**\r\n> 今天周一，帮我看看今天合肥天气适不适合出去玩，有什么有意思的新闻，邮箱里有没有需要回的东西，做成一张卡片给我\r\n\r\nLoomy 会帮你：\r\n*   **天气播报**：查询实时天气，分析是否适合户外活动，智能推荐穿搭建议\r\n*   **新闻摘要**：精选当日热点和有趣资讯，3分钟掌握关键信息\r\n*   **邮件速览**：扫描未读邮件，标注重要邮件和待回复事项\r\n*   **卡片生成**：将所有信息整合成一张精美的晨间播报卡片\r\n\r\n![晨间智能播报](/loomy/scenarios/case1.png)"
   },
   {
+    "lang": "zh",
     "heading": "2. 学习进度管理",
     "content": "需要复盘学习进度？Loomy 可以帮你分析执行情况，找出问题所在，并给出更现实的调整建议。\r\n\r\n**使用场景**\r\n> 这周是我备考 CPA 会计科目的第三周，完成情况是这样的：\r\n>\r\n> 周一到周三：按计划学完了金融资产章节 周四：加班没学 周五：只做了一半的练习题 周末：补了周四的进度，但周五的题还没做完\r\n>\r\n> 帮我复盘一下这周的执行率，分析一下我容易断在哪，下周的计划怎么调整能更现实一点。\r\n\r\nLoomy 会为你：\r\n*   **执行率分析**：计算本周完成度，识别计划与实际的差距\r\n*   **断点诊断**：分析容易中断学习的时间节点和原因\r\n*   **计划优化**：基于实际情况，调整下周计划的节奏和任务量\r\n*   **提醒建议**：给出关键时间点的提醒建议，保持学习连续性\r\n\r\n![学习进度管理](/loomy/scenarios/case4.png)"
   },
   {
+    "lang": "zh",
     "heading": "3. 内容创作与运营",
     "content": "从选题策划到内容发布，再到数据复盘，Loomy 串联选题、热点分析、内容创作与分发，让自媒体创作更快进入产出状态。\r\n\r\n**使用场景**\r\n> 我运营一个抖音账号，定位是科技数码测评。最近流量有点下滑，帮我分析一下这周科技圈有哪些热门话题，给我推荐 3 个选题方向，每个方向给出标题、核心卖点和预估的受众反应。\r\n\r\nLoomy 会帮你：\r\n*   **热点追踪**：实时抓取圈内热门话题，分析讨论热度和趋势走向\r\n*   **选题推荐**：结合账号定位，推荐高潜力选题方向\r\n*   **初稿生成**：选定选题后，快速生成视频脚本或图文初稿\r\n\r\n![内容创作与运营](/loomy/scenarios/case2.png)"
   },
   {
+    "lang": "zh",
     "heading": "4. 文档智能管理",
     "content": "Loomy 打通文件整理、知识沉淀与内容输出环节，把碎片化工作变成可复用的高效流程。\r\n\r\n**使用场景**\r\n> 我下载文件夹里堆了一堆乱七八糟的文件，还有几个随手存的截图。帮我按类型和项目自动分类归档，建好文件夹结构，告诉我你是怎么归档的。\r\n\r\nLoomy 会为你：\r\n*   **智能识别**：识别文件类型（文档、图片、表格、PDF等）\r\n*   **结构化归档**：创建清晰的文件夹层级，按\"项目/类型/日期\"自动归档\r\n*   **归档报告**：生成归档说明，告诉你每个文件被放到了哪里，方便后续查找\r\n\r\n![文档智能管理 1](/loomy/scenarios/case3-1.png)\r\n![文档智能管理 2](/loomy/scenarios/case3-2.png)"
   },
   {
+    "lang": "zh",
     "heading": "5. 电商直播助手",
     "content": "Loomy 帮助电商从业者快速获取商品信息、分析市场数据，并生成专业的直播话术和营销文案。\r\n\r\n**使用场景**\r\n> 打开京东，把首页的前十条商品以及他的设计文案、订单销量等信息保存到本地，假设我现在直播要推广这十个商品，我应该如何设计直播话术？\r\n\r\nLoomy 会帮你：\r\n*   **商品信息抓取**：提取商品页面前十条商品的详细信息\r\n*   **卖点提炼**：分析商品优势，提炼核心卖点，突出性价比和用户痛点\r\n*   **话术生成**：基于商品特点和销量数据，为每个商品生成吸引人的直播话术\r\n\r\n![电商直播助手](/loomy/scenarios/case5.png)"
   },
   {
+    "lang": "zh",
     "heading": "定时任务",
     "content": "定时任务可以让 Loomy 在指定时间自动执行固定流程，帮助你把重复性的工作交给 AI 持续处理。\r\n\r\n**运行前提**\r\n定时任务要正常执行，必须保证 Loomy 处于后台运行状态。如果应用被完全退出、系统强制结束进程，或者相关后台能力被关闭，定时任务将无法按计划触发。\r\n\r\n![定时任务设置](/loomy/scheduled-tasks/mission.png)"
   },
   {
+    "lang": "zh",
     "heading": "适合什么任务",
     "content": "定时任务尤其适合那些“每天都要做”“每周都要做”或者“固定时间提醒”的工作，例如：\r\n*   定时整理邮件摘要\r\n*   周期性生成日报、周报\r\n*   固定时间检查任务状态\r\n*   在特定时间触发内容整理或信息收集"
   },
   {
+    "lang": "zh",
     "heading": "基本能力",
     "content": "通过定时任务，你可以提前定义好执行内容和触发时间，让 Loomy 在满足条件时自动运行，而不需要你每次手动重复下达指令。\r\n\r\n一个完整的定时任务通常包含：\r\n*   任务名称\r\n*   触发时间或执行周期\r\n*   执行指令或 Prompt\r\n*   依赖的工具和权限\r\n*   执行结果的查看方式\r\n\r\n要让这些任务按时触发，除了任务配置本身正确之外，也需要确保 Loomy 在设备上持续后台运行。"
   },
   {
+    "lang": "zh",
     "heading": "使用建议",
     "content": "为了让定时任务更稳定，建议在创建时尽量把任务描述写清楚，特别是：\r\n*   希望 Loomy 做什么\r\n*   结果输出到哪里\r\n*   是否需要依赖某个工具\r\n*   出错时你期望如何处理\r\n\r\n> **创建建议：**\r\n> 如果一个任务涉及多步操作或外部工具调用，建议先**手动跑通一次**，再设置为定时任务，以降低自动执行时的跑偏概率。"
   },
   {
+    "lang": "zh",
     "heading": "常见问题",
     "content": "**定时任务适合处理复杂流程吗？**\r\n可以，但前提是流程足够清晰、权限和工具都已经配置完成。越明确的任务，自动执行效果通常越稳定。\r\n\r\n**定时任务失败后怎么办？**\r\n建议优先检查任务描述、触发条件、模型配置和工具授权状态。很多失败都来自依赖未配置完整，或者任务描述不够具体。\r\n\r\n**为什么到了时间没有自动执行？**\r\n最常见的原因是 Loomy 没有在后台持续运行，或者相关权限、工具依赖没有准备完整。建议优先确认应用状态，再检查任务配置和执行条件。\r\n\r\n---"
   },
   {
+    "lang": "zh",
     "heading": "积分体系",
     "content": "积分用于支持 Loomy 默认模型服务和相关核心能力调用。在你使用对话、任务执行或其他相关能力时，系统会根据对应规则消耗积分。\r\n\r\n![积分说明](/loomy/credit/credit.png)"
   },
   {
+    "lang": "zh",
     "heading": "积分有什么用",
     "content": "积分主要用于支撑 Loomy 在执行任务过程中的资源消耗，包括但不限于默认模型调用、任务处理和部分高价值能力的使用。\r\n\r\n**使用自定义模型时是否扣积分**\r\n如果你在 Loomy 中配置并使用自己的 AI 模型服务提供商 API Key，相关模型调用通常不会消耗 Loomy 积分。\r\n也就是说：\r\n*   使用 Loomy 默认提供的模型服务时，会按照对应规则消耗积分\r\n*   使用你自己配置的模型服务提供商时，模型调用本身不会扣除 Loomy 积分\r\n\r\n具体是否涉及其他能力消耗，以产品内当前规则和实际功能说明为准。\r\n\r\n> **API Key 安全说明**\r\n> 你自行配置的 API Key 只会保存在本地设备中，Loomy 不会托管、上传或泄露这些密钥信息。\r\n> **妥善保管你的密钥**：API Key 属于敏感信息，请不要随意分享给他人，也不要在不可信环境中保存或传输。若密钥泄露，可能会导致第三方冒用你的模型服务额度或访问能力。"
   },
   {
+    "lang": "zh",
     "heading": "如何获得积分",
     "content": "你可以通过以下方式获得积分：\r\n*   申请加入 Waiting List 并通过审核\r\n*   分享给你的好友。好友通过你的分享加入后，你和你的好友将分别获得 `5000` 积分\r\n*   参与官方活动或内测\r\n*   通过积分包充值方式获取，具体价格和积分包内容请以对应页面的实际展示信息为准\r\n\r\n![获取积分](/loomy/credit/credit-add.png)\r\n\r\n具体的发放方式和规则，以产品内当前展示的信息为准。"
   },
   {
+    "lang": "zh",
     "heading": "如何查看积分",
     "content": "你可以在 Loomy 客户端中查看当前积分余额以及历史变动记录。常见可查看的信息包括：\r\n*   当前剩余积分\r\n*   获得时间\r\n*   获得方式\r\n*   消耗记录"
   },
   {
+    "lang": "zh",
     "heading": "5000 积分可以做什么",
     "content": "`5000` 积分通常已经可以支持一批常见的办公任务。对于一般强度的办公场景，大致可以执行 `50` 次左右的任务。\r\n\r\n例如，一个相对完整的办公任务链路可能包括：\r\n1.  围绕“项目立项”主题，通过搜索引擎搜索和整理多类信息\r\n2.  将搜索结果汇总成报告并保存到本地\r\n3.  根据报告撰写邮件，向领导申请项目预算\r\n4.  后续围绕项目细节，与领导进行约 `10` 次邮件往来沟通\r\n\r\n类似这样的任务，`5000` 积分通常可以支持大约 `50` 次，具体会受到任务长度、上下文复杂度、调用模型次数以及是否联动外部工具等因素影响。"
   },
   {
+    "lang": "zh",
     "heading": "使用建议",
     "content": "如果你的任务属于多轮次、长时间、跨工具的复杂流程，通常会比普通单轮对话消耗更多积分。建议在执行前先确认任务目标和流程，避免无效消耗。\r\n如果你已经有稳定可用的模型服务，也可以考虑自行配置 API Key，在部分场景下减少 Loomy 默认模型服务带来的积分消耗。"
   },
   {
+    "lang": "zh",
     "heading": "常见问题",
     "content": "**积分会在什么情况下消耗更快？**\r\n通常是多步骤任务、长上下文任务、频繁调用模型或联动多个工具时，积分消耗会更明显。\r\n\r\n**可以查看历史积分记录吗？**\r\n可以。Loomy 会提供积分余额和相关变动记录，方便你了解积分的获得与消耗情况。\r\n\r\n**使用自己的 API Key 会扣积分吗？**\r\n不会。使用你自己配置的 AI 模型服务提供商 API Key 时，相关模型调用不会扣除 Loomy 积分，但请以当前产品规则和功能说明为准。"
   },
   {
+    "lang": "zh",
     "heading": "工具箱 (MCP)",
     "content": "Loomy 的工具箱功能让 AI 能够连接和使用各种外部工具，大幅扩展 AI 的能力边界。通过配置 **MCP（Model Context Protocol）** 服务，Loomy 可以读取操作数据、执行实际操作、获取实时信息并串联工作流。\r\n\r\n**访问工具箱设置**\r\n点击应用左侧菜单栏的「设置」，然后选择「工具箱」选项，即可进入工具箱配置页面。\r\n\r\n![工具箱设置](/loomy/toolbox/mcp.png)"
   },
   {
+    "lang": "zh",
     "heading": "内置 MCP 服务",
     "content": "*   **浏览器 MCP** - 让 AI 能够控制浏览器访问网页、提取信息\r\n*   **QQ 邮箱 MCP** - 连接 QQ 邮箱，读取和发送邮件\r\n*   **系统日历 MCP** - 管理系统日历，创建和查询日程安排\r\n\r\n你可以随时在「设置」->「工具箱」中添加外部自定义的 MCP 配置文件。"
   },
   {
+    "lang": "zh",
     "heading": "配置示例：QQ 邮箱 MCP",
     "content": "下面以配置 QQ 邮箱 MCP 为例，演示如何配置和使用工具箱功能。\r\n\r\n**1. 配置邮箱信息**\r\n点击「QQ 邮箱 MCP」卡片右侧的「配置」按钮，填写以下信息：\r\n*   **邮箱账号**：你的 QQ 邮箱地址（如：example@qq.com）\r\n*   **授权码**：QQ 邮箱的授权码（不是 QQ 密码）\r\n\r\n![QQ邮箱配置](/loomy/toolbox/qmail.png)\r\n\r\n配置完成后，状态会显示为「已配置」。\r\n\r\n**2. 使用场景示例**\r\n配置完成后，你可以通过自然语言让 Loomy 帮你处理邮件相关任务。\r\n\r\n**场景一：查看未读邮件**\r\n创建一个新任务，发送消息：\r\n> 帮我看下我最近的未读邮件\r\n\r\nLoomy 会自动连接你的 QQ 邮箱，获取最近三天的未读邮件并展示给你。\r\n\r\n![查看未读邮件](/loomy/toolbox/toolbox-email-read.png)\r\n\r\n**场景二：撰写并发送邮件**\r\n你也可以让 Loomy 帮你撰写和发送邮件：\r\n> 帮我写今日周报并发送给我老板\r\n\r\nLoomy 会根据你的工作内容生成周报，并通过 QQ 邮箱发送给指定收件人。\r\n\r\n![撰写并发送邮件](/loomy/toolbox/toolbox-email-send.png)"
   },
   {
+    "lang": "zh",
     "heading": "常见问题",
     "content": "**QQ 邮箱授权码怎么获取？**\r\nQQ 邮箱的授权码是用于第三方客户端登录的专用密码，获取步骤如下：\r\n\r\n*   **步骤 1：进入设置页面**。登录 QQ 邮箱后，点击右上角的「设置」按钮。\r\n\r\n    ![QQ邮箱设置](/loomy/toolbox/toolbox-qq-step1.png)\r\n\r\n*   **步骤 2：进入账号与安全**。在设置页面中，点击左下角的「账号与安全」选项。\r\n\r\n    ![账号与安全](/loomy/toolbox/toolbox-qq-step2.png)\r\n\r\n*   **步骤 3：进入安全管理**。在账号与安全页面中，选择「安全管理」。\r\n\r\n    ![安全管理](/loomy/toolbox/toolbox-qq-step3.png)\r\n\r\n*   **步骤 4：生成授权码**。点击「添加授权码」按钮，按照提示完成验证后，系统会生成一个授权码。\r\n\r\n    ![生成授权码](/loomy/toolbox/toolbox-qq-step4.png)\r\n\r\n> **注意：**\r\n> * 授权码只会显示一次，请妥善保存\r\n> * 授权码不是你的 QQ 密码，而是专门用于第三方应用登录的密码\r\n> * 如果忘记授权码，可以删除后重新生成\r\n\r\n---"
   },
   {
+    "lang": "zh",
     "heading": "技能系统 (Skills)",
     "content": "Loomy 的技能系统让 AI 具备更多专业能力，帮你完成各种办公和生活场景的任务。从邮件撰写、表格处理到小红书运营、股票分析，每个技能都是 AI 的一项\"本领\"。"
   },
   {
+    "lang": "zh",
     "heading": "什么是技能？",
     "content": "技能（Skills）可以理解为大模型掌握的\"专业能力\"。每安装一个技能，就相当于给 AI 增加一项本领。如果把大模型比作一个人，那么技能就是这个人会做的事情。你安装的技能越多，AI 能帮你完成的任务就越丰富。\r\n\r\n> **举个例子**：作为小红书自媒体运营者，你想让 AI 写一篇小红书软文。安装\"小红书卡片生成器\"技能后，AI 就能按照小红书的风格和要求输出专业内容。"
   },
   {
+    "lang": "zh",
     "heading": "在哪里找到技能？",
     "content": "在 Loomy 左侧菜单栏中点击「技能」入口，即可查看所有官方版内置技能。\r\n\r\n![查找技能](/loomy/skills/where_skills.png)\r\n\r\n点击任意技能卡片，可以查看该技能的详细描述，并设置 AI 调用该技能的权限。权限分为三种：\r\n\r\n| 权限 | 说明 |\r\n|---|---|\r\n| **允许** | AI 判断需要调用时直接使用，无需确认 |\r\n| **询问** | AI 需要调用时会先询问你是否同意，确认后才会执行 |\r\n| **禁止** | 完全禁用该技能，AI 不会调用 |\r\n\r\n建议对日常高频使用的技能设置「允许」，对涉及敏感操作（如发送邮件）的技能设置「询问」，这样既保持效率，也保留了对关键操作的掌控权。\r\n\r\n![技能权限设置](/loomy/skills/skills_view.png)"
   },
   {
+    "lang": "zh",
     "heading": "如何使用技能？",
     "content": "Loomy 提供两种方式使用技能，让你的工作更加灵活高效。\r\n\r\n**方式一：快捷指令 \"/\"**\r\n在对话框中输入 `/`，会自动弹出技能选择菜单。选择需要的技能后发送消息，AI 就会调用该技能完成任务。\r\n\r\n![快捷指令调用](/loomy/skills/quick_skills.png)\r\n\r\n**方式二：AI 自主识别**\r\n无需手动选择，AI 会根据你的输入内容，自动在已安装的技能中搜索匹配，识别成功后自动调用相应技能完成任务。\r\n*   当你说\"帮我写一封商务邮件\"，AI 会自动调用\"邮件起草助手\"\r\n*   当你说\"分析这个 Excel 表格\"，AI 会自动调用\"Excel 表格专家\""
   },
   {
+    "lang": "zh",
     "heading": "办公文档类",
     "content": "*   **Word 文档专家**：专业的 Word 文档处理工具。支持创建、读取、编辑和处理 .docx 文件。\r\n*   **Excel 表格专家**：专业的电子表格处理工具。支持打开、读取、编辑、修复 Excel 文件。\r\n*   **PPT 演示专家**：专业的 PowerPoint 演示文稿处理工具。支持创建幻灯片、读取和提取 .pptx 文件内容。\r\n*   **PDF 处理专家**：专业的 PDF 文件处理工具。支持读取和提取 PDF 中的文本/表格、合并/拆分 PDF、OCR 识别等。"
   },
   {
+    "lang": "zh",
     "heading": "商务沟通类",
     "content": "*   **邮件起草助手**：专业的商务邮件撰写工具。提供结构化的邮件框架和多种语气选择。"
   },
   {
+    "lang": "zh",
     "heading": "内容创作类",
     "content": "*   **小红书卡片生成器**：专业的小红书图文卡片生成工具。提供 11 种视觉风格和 8 种布局方案。\r\n*   **前端设计大师**：专业的前端界面设计工具。创建独特、高质量的生产级前端界面。"
   },
   {
+    "lang": "zh",
     "heading": "财经投资类",
     "content": "*   **财经资讯助手**：专注中国 A 股市场资讯查询。聚合热点要闻、多源资讯。\r\n*   **股票复盘助手**：专业的股票交易复盘和财报分析工具。"
   },
   {
+    "lang": "zh",
     "heading": "热点追踪类",
     "content": "*   **抖音热榜追踪**：实时获取抖音热榜/热搜榜数据，提供标题、热度值、跳转链接及封面图。"
   },
   {
+    "lang": "zh",
     "heading": "研究分析类",
     "content": "*   **深度研究助手**：专业的深度研究工具，提供系统化、多角度的研究方法。"
   },
   {
+    "lang": "zh",
     "heading": "生活娱乐类",
     "content": "*   **命理大师**：专业的命理分析工具。支持中国传统命理和西方星座运势。"
   },
   {
+    "lang": "zh",
     "heading": "常见问题",
     "content": "**如何知道 AI 使用了哪个技能？**\r\n当 AI 调用技能时，会在对话中显示技能名称和调用状态。你可以清楚地看到 AI 正在使用哪个技能完成任务。\r\n\r\n**可以禁用或删除已安装的技能吗？**\r\n可以。在技能列表中找到对应的技能卡片，点击「禁用」即可。禁用后，AI 将无法使用该技能，但你可以随时重新启用。\r\n\r\n**技能会消耗额外的积分吗？**\r\n技能本身不额外收费，但使用技能时会正常消耗对话积分。不同技能的复杂度不同，消耗的积分也会有所差异。"
+  },
+  {
+    "lang": "en",
+    "heading": "1. Rule Description",
+    "content": "This rule applies to subscription plans, point acquisition, point usage, and billing mechanisms in the AstronClaw service.\nAstronClaw uses **Points** as the unified billing unit to measure the user's:\n*   Computing resource consumption\n*   Large model calls\n*   Skill capability calls\n*   Agent task execution"
+  },
+  {
+    "lang": "en",
+    "heading": "2. Subscription Plans",
+    "content": "AstronClaw provides different levels of subscription plans to meet the different needs of individual developers, AI enthusiasts, and professional users.\n\n| Plan Version | Original Price | First Purchase Offer | Monthly Gift Points | Core Benefits |\n| :--- | :--- | :--- | :--- | :--- |\n| **Basic** | ¥168/month | ¥16.8/month (90% off first purchase) | 35,000 Points | One-click deploy AstronClaw, out-of-the-box Skills, standard task processing capability, supports point top-up |\n| **Professional** | ¥568/month | ¥56.8/month (90% off first purchase) | 120,000 Points | One-click deploy AstronClaw, out-of-the-box Skills, priority processing during peak hours, supports point top-up, early access to new features |\n\n> Subscription requires agreement to the \"AstronClaw Subscription Edition Special Agreement\""
+  },
+  {
+    "lang": "en",
+    "heading": "3. Point Types",
+    "content": "AstronClaw platform points are divided into three types, with different validity periods.\n\n| Point Type | Validity Period | Description |\n| :--- | :--- | :--- |\n| **Member Points** | Valid for the current month | Gifted with subscription plan, cannot be accumulated to the next month |\n| **Top-up Points** | Valid for 1 year from purchase | Points additionally purchased by the user |\n| **Event Points** | Subject to event rules | Obtained by participating in official events |\n\n**Description:**\n*   Member points are **reset on a non-calendar month basis**\n*   If membership is terminated, unused points will automatically expire"
+  },
+  {
+    "lang": "en",
+    "heading": "4. Point Acquisition",
+    "content": "Users can obtain points in the following ways:"
+  },
+  {
+    "lang": "en",
+    "heading": "4.1 Plan Subscription",
+    "content": "After subscribing to the Basic or Professional plan, points are **credited immediately**."
+  },
+  {
+    "lang": "en",
+    "heading": "4.2 Point Top-up",
+    "content": "Users can purchase point packages at any time to break through plan limits.\n\n| Point Amount | Standard Price | Professional 10% Off |\n| :--- | :--- | :--- |\n| 1,000 Points | ¥10 | ¥9 |\n| 5,000 Points | ¥50 | ¥45 |\n| 10,000 Points | ¥100 | ¥90 |\n| 20,000 Points | ¥200 | ¥180 |"
+  },
+  {
+    "lang": "en",
+    "heading": "4.3 Event Rewards",
+    "content": "AstronClaw will occasionally launch events to reward points."
+  },
+  {
+    "lang": "en",
+    "heading": "5. Point Consumption Rules",
+    "content": "Points will be consumed when executing tasks, and point consumption depends on:\n*   Model calls\n*   Skill capability calls\n*   Agent task complexity\n*   Token consumption"
+  },
+  {
+    "lang": "en",
+    "heading": "6. Model Point Consumption",
+    "content": "| Model | Input Price | Output Price | Billing Unit |\n| :--- | :--- | :--- | :--- |\n| MiniMax-M2.5 | 2.1 RMB/Million Tokens | 8.4 RMB/Million Tokens | Tokens |\n| Kimi-K2.5 | 4 RMB/Million Tokens | 21 RMB/Million Tokens | Tokens |\n| GLM-5 | 6 RMB/Million Tokens | 22 RMB/Million Tokens | Tokens |\n| Spark X2 | 3.7 RMB/Million Tokens | 9 RMB/Million Tokens | Tokens |\n\n**Point Deduction Example:**\n| Model | Input | Output |\n| :--- | :--- | :--- |\n| MiniMax-M2.5 | 2.1 Points / 10k Tokens | 8.4 Points / 10k Tokens |\n| Kimi-K2.5 | 4 Points / 10k Tokens | 21 Points / 10k Tokens |\n| GLM-5 | 6 Points / 10k Tokens | 22 Points / 10k Tokens |\n| Spark X2 | 3.7 Points / 10k Tokens | 9 Points / 10k Tokens |"
+  },
+  {
+    "lang": "en",
+    "heading": "7. Skill Call Point Consumption (Example)",
+    "content": "| Scenario | Skill | Point Consumption |\n| :--- | :--- | :--- |\n| Web Search | Aggregate Search | 6 Points/time |\n| Daily Office | Invoice Recognition | 6 Points/time |\n| Daily Office | Document Proofreading | 600 Points/time |\n| Daily Office | Smart Resume Generation | 80 Points/time |\n| Daily Office | Text Translation | 45 Points/time |\n| AI Large Model | Image Understanding | 27 Points/time |\n| Image Recognition | OCR | 3 Points/time |\n| Speech Synthesis | Ultra-realistic Voice | 150 Points/10k chars |\n| Speech Synthesis | One-sentence Voice Clone | 700 Points/time |"
+  },
+  {
+    "lang": "en",
+    "heading": "8. Free Skills and Templates",
+    "content": "The following official templates are **free to use (0 points)**:\n*   Industry Research Report Generation\n*   Financial Investment Research Daily\n*   Multi-Agent Investment Research Team\n*   In-depth Industry Research Report\n*   News Collection Report\n*   Social Media Hit Analysis\n*   Frontend Design Generation\n*   Skill Creation Tool\n*   Canvas Design Tool\n*   Study Plan Generation"
+  },
+  {
+    "lang": "en",
+    "heading": "9. Point Deduction Order",
+    "content": "The system deducts points in the following order:\n1.  **Prioritize consuming** points that are about to expire\n\nIf expiration times are the same:\n**Event Points → Member Points → Top-up Points**"
+  },
+  {
+    "lang": "en",
+    "heading": "Upgrade",
+    "content": "Users can upgrade their plan at any time:\n*   New plan benefits **take effect immediately**\n*   Remaining member points are converted proportionally"
+  },
+  {
+    "lang": "en",
+    "heading": "Downgrade",
+    "content": "Active downgrading is not currently supported.\nIt is recommended to resubscribe after the current plan expires."
+  },
+  {
+    "lang": "en",
+    "heading": "11. Promotions and Benefits",
+    "content": "AstronClaw will occasionally launch:\n*   New user discounts\n*   Point reward events\n*   Holiday promotions"
+  },
+  {
+    "lang": "en",
+    "heading": "Abnormal Return",
+    "content": "If the following situations occur during task execution:\n*   System error\n*   Service interruption\n*   Review failure\nThe system will **automatically refund all points**."
+  },
+  {
+    "lang": "en",
+    "heading": "Non-refundable",
+    "content": "Purchased: Plans, point packages\nWithdrawal or transfer is not supported."
+  },
+  {
+    "lang": "en",
+    "heading": "Cheating Handling",
+    "content": "If the following behaviors are found:\n*   Using loopholes to farm points\n*   Illegal API calls\nThe platform has the right to:\n*   Clear points\n*   Ban accounts"
+  },
+  {
+    "lang": "en",
+    "heading": "13. Frequently Asked Questions (FAQ)",
+    "content": "**Q1: What if my monthly points run out?**\nA: You can purchase point packages, renew early, or upgrade your plan.\n\n**Q2: Which points does the system deduct first?**\nA: The system prioritizes deducting points that are about to expire (usually member points).\n\n**Q3: Can I use multiple plans at the same time?**\nA: No. Each account can only subscribe to one plan.\n\n**Q4: How can I check my point usage?**\nA: You can check remaining points, point details, and purchase records on the point management page."
+  },
+  {
+    "lang": "en",
+    "heading": "Channel Configuration Guide",
+    "content": "AstronClaw supports connecting to various enterprise collaboration platforms and social media, allowing you to interact with the AI assistant directly in your familiar tools."
+  },
+  {
+    "lang": "en",
+    "heading": "Feishu Channel Configuration Guide",
+    "content": "This guide introduces how to **connect AstronClaw to Feishu (Lark)**, so you can interact directly with the AstronClaw agent and execute tasks within Feishu."
+  },
+  {
+    "lang": "en",
+    "heading": "Prerequisites",
+    "content": "*   Have **Feishu Administrator Permissions**\n*   Successfully **Deployed AstronClaw**\n*   Entered the **Channels configuration module**"
+  },
+  {
+    "lang": "en",
+    "heading": "Steps",
+    "content": "**Step 1: Create a Feishu App**\n1.  Open the [Feishu Open Platform](https://open.feishu.cn/app)\n2.  Click **Create Custom App**\n    ![Create Feishu App](/astronclaw/channels/feishu-app-create.png)\n3.  Fill in the app information (Suggested App Name: AstronClaw Assistant), and click **Create**.\n\n**Step 2: Get App Credentials**\nAfter entering the app background, click the left menu **Credentials & Basic Info**, copy the `App ID` and `App Secret`. This information will be used in the AstronClaw channel configuration.\n![Get Feishu Credentials](/astronclaw/channels/feishu-app-credential.png)\n\n**Step 3: Configure App Permissions and Enable Bot Capabilities**\n1.  Go to **Permission Management** in the left navigation, click the Batch Import button, and paste the JSON configuration to import required permissions with one click:\n    ![Configure Feishu Permissions](/astronclaw/channels/feishu-app-permission.png)\n2.  On the App Capabilities > Bot page: Enable bot capabilities and configure the bot name:\n    ![Enable Feishu Bot](/astronclaw/channels/feishu-app-robot.png)\n\n**Step 4: Configure Event Subscription**\n1.  Fill in the App ID and App Secret obtained in Step 2 on the AstronClaw \"Channel Configuration\" page, click save configuration, and wait for the top right corner to turn green (configured).\n    ![Configure AstronClaw Feishu Channel](/astronclaw/channels/feishu-app-config.png)\n2.  Return to the Feishu configuration page to enable **Event Subscription**, choose to use a persistent connection to receive events, and click save.\n3.  Add event: `im.message.receive_v1` (Receive messages).\n    ![Add Feishu Event 1](/astronclaw/channels/feishu-app-event1.png)\n    ![Add Feishu Event 2](/astronclaw/channels/feishu-app-event2.png)\n\n**Step 5: Publish Feishu App**\nCreate a version on the Version Management and Publish page, submit for review, and publish.\n\n---"
+  },
+  {
+    "lang": "en",
+    "heading": "Steps",
+    "content": "**Step 1: Create a DingTalk App**\n1.  Log in to the DingTalk Open Platform, select Enterprise Internal App > DingTalk App in the left directory tree, and click the Create App button.\n    ![Create DingTalk App](/astronclaw/channels/dingding-app-create.png)\n2.  After configuring the app name, icon, and other information, click Save.\n\n**Step 2: Add Permissions for DingTalk App**\nPermissions required for the DingTalk app: `Card.Instance.Write`, `Card.Streaming.Write`, `qyapi_robot_sendmsg`.\n1.  Select Development Configuration > Permission Management in the left directory tree.\n2.  Search for `Card`, check the interactive card instance write permission and AI card stream update permission, and apply in batch.\n    ![Apply Card Permissions](/astronclaw/channels/dingding-app-permission1.png)\n3.  Search for `qyapi_robot_sendmsg` and open the permission to send messages for the enterprise internal robot.\n    ![Apply Send Message Permission](/astronclaw/channels/dingding-app-permission2.png)\n\n**Step 3: Configure DingTalk Bot**\n1.  Select App Capabilities > Add App Capability, and add a bot.\n    ![Add DingTalk Bot](/astronclaw/channels/dingding-app-robot1.png)\n2.  Turn on the bot configuration switch.\n    ![Enable DingTalk Bot](/astronclaw/channels/dingding-app-robot2.png)\n3.  Change the message receiving mode to Stream mode, and click publish to save the configuration.\n    ![Configure DingTalk Stream Mode](/astronclaw/channels/dingding-app-robot3.png)\n\n**Step 4: Publish App Version**\nCreate a new version and publish on the Version Management and Publish page.\n![Publish DingTalk App](/astronclaw/channels/dingding-app-publish.webp)\n\n**Step 5: Get App Info and Configure AstronClaw**\n1.  In Basic Info > Credentials & Basic Info, copy `Client ID`, `Client Secret`, and other information.\n    ![Get DingTalk Credentials](/astronclaw/channels/dingding-app-credential.webp)\n2.  Enter AstronClaw \"Channel Configuration\", select \"DingTalk\", fill in the credentials, and save.\n\n---"
+  },
+  {
+    "lang": "en",
+    "heading": "Method 1: Manual Configuration",
+    "content": "**Step 1: Create WeCom Bot**\n1.  Log in to the [WeCom Management Background](https://work.weixin.qq.com/wework_admin/frame).\n2.  Select Workspace > Smart Office in the left directory tree, and click Smart Bot.\n    ![Smart Bot](/astronclaw/channels/wecom-app-create1.webp)\n3.  Click Create Bot, and choose Manual Creation.\n    ![Manual Creation WeCom Bot](/astronclaw/channels/wecom-app-create2.webp)\n4.  Set the name and avatar of the bot.\n    ![Set WeCom Bot Name](/astronclaw/channels/wecom-app-create3.webp)\n\n**Step 2: Enable Persistent Connection**\n1.  In the lower right corner of the bot configuration page, click API Mode Creation.\n    ![WeCom API Mode](/astronclaw/channels/wecom-app-conn1.webp)\n2.  Set the connection method to use a persistent connection.\n    ![WeCom Use Persistent Connection](/astronclaw/channels/wecom-app-conn2.webp)\n3.  Get Secret, copy Bot ID and Secret ID, and click Save.\n    ![Get WeCom Credentials](/astronclaw/channels/wecom-app-conn3.webp)\n\n**Step 3: Complete Configuration in AstronClaw**\nEnter AstronClaw \"Channel Configuration\", select \"WeCom\", fill in the Bot ID and Secret, and click \"Save Configuration\"."
+  },
+  {
+    "lang": "en",
+    "heading": "Method 2: Scan Code Automatic Configuration (Recommended)",
+    "content": "1.  Click get QR code on the AstronClaw configuration page, and use WeCom to scan the QR code to complete authorization configuration.\n    ![WeCom Scan Code Authorization](/astronclaw/channels/wecom-app-scan.png)\n2.  Click \"One-click Create Smart Bot\", and it will be created automatically. The system will automatically identify and fill in the corresponding BOT ID and APP SECRET of the bot, click \"Save Configuration\".\n    ![WeCom One-click Create 1](/astronclaw/channels/wecom-app-auto1.jpg)\n    ![WeCom One-click Create 2](/astronclaw/channels/wecom-app-auto2.jpg)\n\n---"
+  },
+  {
+    "lang": "en",
+    "heading": "Weibo Channel Configuration Guide",
+    "content": "**Step 1: Get Credentials**\nOpen the Weibo client and send a private message to `https://weibo.com/u/6808810981`\n![Private Message Weibo Account](/astronclaw/channels/weibo-app-credential1.png)\n\nSend private message: `Connect Lobster`. Get the app credentials:\n![Get Weibo Credentials](/astronclaw/channels/weibo-app-credential2.png)\n\n**Step 2: Complete Configuration in AstronClaw**\n1.  Enter the AstronClaw \"Channel Configuration\" page\n2.  Select the \"Weibo\" channel\n3.  Fill in the App Id and AppSecret obtained in Step 1\n4.  Click \"Save Configuration\"\n    ![Configure Weibo Channel](/astronclaw/channels/weibo-app-config.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "What are the conditions for one-click deployment?",
+    "content": "You need to subscribe to the Basic or Professional plan. Unsubscribed users will be guided to upgrade when they click deploy."
+  },
+  {
+    "lang": "en",
+    "heading": "What should I do if AstronClaw is not responding?",
+    "content": "*   Refresh the page\n*   Go to settings and click **Restart AstronClaw**\n*   If it still doesn't work, try auto-repair in the settings"
+  },
+  {
+    "lang": "en",
+    "heading": "What is the difference between restart, reset, and delete?",
+    "content": "| Operation | Effect |\n| :--- | :--- |\n| **Restart** | Keeps data, clears cache (similar to restarting a computer) |\n| **Reset** | Deletes history and skills, restores default settings (similar to reinstalling the OS) |\n| **Delete** | Completely deletes AstronClaw and all data (irrecoverable) |"
+  },
+  {
+    "lang": "en",
+    "heading": "What file uploads are supported?",
+    "content": "*   **Supported Formats**: pdf, doc, txt, jpg, etc., unlimited types\n*   **Normal Files**: Each file size should not exceed 50MB, total file size should not exceed 250MB, number of files should not exceed 5\n*   **Audio Files**: Not exceeding 100MB, total file size not exceeding 500MB, number of files not exceeding 5\n*   **Image Files**: Not exceeding 20MB, total file size not exceeding 100MB, number of files not exceeding 5"
+  },
+  {
+    "lang": "en",
+    "heading": "How to switch the chat model?",
+    "content": "Enter the **Settings** page and switch the chat model in the model selection area."
+  },
+  {
+    "lang": "en",
+    "heading": "Can AstronClaw send files to me?",
+    "content": "Currently, AstronClaw can receive files you upload and process them with tools, but it cannot directly send files to you in the interface yet. This feature will be launched in future versions. At this stage, you can access the generated files through other configured channels."
+  },
+  {
+    "lang": "en",
+    "heading": "Getting Started",
+    "content": "With just a few simple steps, you can have your own 24/7 online cloud digital lobster."
+  },
+  {
+    "lang": "en",
+    "heading": "Step 1: Deploy Now",
+    "content": "Go to the **AstronClaw** page and click the `Deploy Now` button. The system will automatically create an AstronClaw for you."
+  },
+  {
+    "lang": "en",
+    "heading": "Step 2: Start Chatting",
+    "content": "After deployment is complete, enter the chat home page:\n*   **Welcome Message**: Hi, I am AstronClaw!\n*   **File Upload**:\n    *   Supports formats like `pdf/doc/txt/jpg`\n    *   File size should not exceed 50MB, total file size should not exceed 250MB, and the number of files should not exceed 5\n    *   Audio file size should not exceed 100MB, total audio file size should not exceed 500MB, and the number of files should not exceed 5\n    *   Image size should not exceed 20MB, total image size should not exceed 100MB, and the number of files should not exceed 5"
+  },
+  {
+    "lang": "en",
+    "heading": "Step 3: Install Skills",
+    "content": "Enter the **Skills Market** to browse and install official preset skills:\n*   Supports fuzzy name search\n*   Click install to configure and use with one click\n\n*(For more detailed introduction about skills, please refer to [Detailed Explanation of Skill System](./skills.md))*"
+  },
+  {
+    "lang": "en",
+    "heading": "Step 4: Configure Message Channels",
+    "content": "Enter the **Channel Configuration** page to connect to enterprise collaboration platforms. AstronClaw now supports:\n*   Feishu Channel\n*   DingTalk Channel\n*   WeCom Channel\n\nWith just a simple configuration of the relevant App ID and credentials, your digital lobster can be on standby at any time in these chat softwares!"
+  },
+  {
+    "lang": "en",
+    "heading": "AstronClaw: Cloud AI Assistant",
+    "content": "Based on **OpenClaw core capabilities**, we build a deeply customizable personal AI assistant for you. It integrates efficient skills and achieves multi-channel information interaction.\n\nWhile running OpenClaw locally is flexible, it requires configuring the environment, setting up keys, and keeping the device on—once the computer sleeps, the assistant goes offline.\n\n**AstronClaw makes everything simple**: One-click cloud deployment, 24/7 online running, direct browser access to the skills library. Skip the terminal commands, server costs, and installation hassles.\n\n👉 **[Deploy your AstronClaw now](https://openclaw.ai)**\n\nReading time: about 5 minutes\n\n---"
+  },
+  {
+    "lang": "en",
+    "heading": "Core Advantages",
+    "content": "| Advantage | Description |\n|---|---|\n| Rapid Deployment | Minimalist process, zero code config, no environment dependencies |\n| Ecosystem Expansion | Built-in models & rich official skills, supports custom skill generation |\n| Secure & Reliable | Enterprise-level security, data encryption, protecting your assets |"
+  },
+  {
+    "lang": "en",
+    "heading": "AstronClaw vs Local OpenClaw",
+    "content": "| Comparison | AstronClaw (Cloud) | Local OpenClaw |\n|---|---|---|\n| Deployment | One-click, takes ~1 min | Needs CLI / Docker, complex |\n| Environment | No dependencies needed | Needs Node, Docker, etc. |\n| Skills Install | One-click from Skill Market | Manual search, download, install |\n| Uptime | Cloud 24/7 running | Stops when computer is off |\n| Channels | Feishu, DingTalk, WeCom, Weibo | Needs manual configuration |\n| Maintenance | Platform hosted, zero ops | Needs self-hosted server or PC on |"
+  },
+  {
+    "lang": "en",
+    "heading": "Application Scenarios",
+    "content": "Through built-in skills and automated workflows, AstronClaw can help you quickly complete a variety of complex tasks. Here are a few typical application scenarios:"
+  },
+  {
+    "lang": "en",
+    "heading": "1. Industry Research Report",
+    "content": "**Instruction Example:**\n> Help me organize the core viewpoints, key data, and future trends of this industry research report, and output 3 investment implications\n\n**Output Effect:**\n*   Extract core viewpoints\n*   Organize key data\n*   Analyze future trends\n*   Output investment advice"
+  },
+  {
+    "lang": "en",
+    "heading": "2. News Podcast",
+    "content": "**Instruction Example:**\n> Help me organize daily hot AI news, generate a 3-minute audio podcast, and push it punctually at 9 AM every day\n\n**Output Effect:**\n*   Automatically collect hot news\n*   Generate podcast script\n*   iFlytek ultra-realistic synthetic voice\n*   Scheduled push"
+  },
+  {
+    "lang": "en",
+    "heading": "3. PPT Automatic Generation",
+    "content": "**Instruction Example:**\n> Make a Chinese PPT on the theme of \"New Energy Vehicle Market\", accompanied by clear charts and data\n\n**Output Effect:**\n*   Market data collection\n*   Automatic chart generation\n*   Output `.pptx` file"
+  },
+  {
+    "lang": "en",
+    "heading": "Skills System (Skills)",
+    "content": "Skills are the core capability module of AstronClaw, equivalent to the \"tools and capability plugins\" that the Agent can call. Through skills, AstronClaw can upgrade from simple \"chat\" to real \"task execution\"."
+  },
+  {
+    "lang": "en",
+    "heading": "I. What is a Skill?",
+    "content": "**Skill = Capability unit that can be called by AstronClaw**, including:\n*   External tools (Search / OCR / API)\n*   Model capabilities (Voice / Image / Reasoning)\n*   Workflows (Multi-step automated task execution)\n*   Industry templates (Research reports / PPT / Analysis reports)"
+  },
+  {
+    "lang": "en",
+    "heading": "II. How to Get Skills",
+    "content": "AstronClaw supports 3 ways to get skills:"
+  },
+  {
+    "lang": "en",
+    "heading": "1. Manual Installation from Skills Market",
+    "content": "Enter the [Skills Market]:\n*   Supports keyword search (e.g., PPT / Search / OCR)\n*   Browse official recommended skills\n*   Click \"Install\" to use\n> **Features**: Stable, officially verified; suitable for known requirement scenarios."
+  },
+  {
+    "lang": "en",
+    "heading": "2. Search and Install from Repository",
+    "content": "AstronClaw supports extending from the skills repository:\n*   Search skills (Official / Third-party)\n*   Browse skill descriptions\n*   Manually install to \"My Skills\"\n> **Applicable**: Finding specific capabilities (like industry tools, vertical capabilities); expanding ecological capability boundaries."
+  },
+  {
+    "lang": "en",
+    "heading": "3. Automatic Installation via Chat (Recommended)",
+    "content": "Users can directly describe their needs in the chat, and let AstronClaw automatically complete skill acquisition and installation:\n> **System Behavior**: Automatically understand requirements → Search for matching skills in the Skills Market/Repository → Automatically complete installation → Ready to use immediately\n> **Features**: No need to enter the Skills Market, no manual operation, complete automated closed loop."
+  },
+  {
+    "lang": "en",
+    "heading": "III. How Skills are Called",
+    "content": "AstronClaw supports 3 calling methods:\n\n1.  **Automatic Call**: The user naturally expresses their needs, and the system automatically calls related skills.\n2.  **Specific Call**: The user gives explicit instructions for AstronClaw to execute a certain skill.\n3.  **Multi-Skill Chain Call**: The system automatically completes continuous tasks, for example: `Search` → `Analysis` → `Chart` → `PPT Generation`."
+  },
+  {
+    "lang": "en",
+    "heading": "IV. Skills Market and Customization",
+    "content": "The current Skills Market provides **130+** official skills and is continuously expanding:\n*   **Data Analysis** (CSV / Charts)\n*   **Content Generation** (PPT / Documents)\n*   **Information Acquisition** (Search / News)\n*   **AI Capabilities** (OCR / Voice)"
+  },
+  {
+    "lang": "en",
+    "heading": "Custom Skills",
+    "content": "AstronClaw supports users to create exclusive skills:\n*   **Upload to Create**: Supports uploading `.zip` / `.md` files to automatically generate skills\n*   **Chat to Create**: Directly describe your needs in a chat with AstronClaw, and the AI will write and generate exclusive skill configurations for you."
+  },
+  {
+    "lang": "en",
+    "heading": "My Skills (Management)",
+    "content": "In the \"My Skills\" panel, you can:\n*   **Create**: Upload files to create\n*   **Delete**: Remove skills\n*   **Download**: Export skills\n*   **Enable/Disable**: Control the calling status of skills"
+  },
+  {
+    "lang": "en",
+    "heading": "Will my files be uploaded to the cloud?",
+    "content": "Loomy's file operations are completed locally by default, and it will not directly upload your entire working directory to the cloud. However, in order to achieve AI understanding, summary, and analysis, relevant text content will be sent to large model API service providers for processing."
+  },
+  {
+    "lang": "en",
+    "heading": "Which of my files can AI access?",
+    "content": "Loomy can only access the **working directories you explicitly authorize**. For files in unauthorized directories, if access is truly needed during task execution, Loomy will first seek your consent and will not read them directly by default."
+  },
+  {
+    "lang": "en",
+    "heading": "Can Loomy use my own model service provider API Key?",
+    "content": "Yes. Loomy provides default model services for users out of the box; if you have your own model service provider, you can also configure your own API Key in Loomy to use.\nWhen you use your own API Key, Loomy will not upload any additional confidential information. The relevant Key will only be saved locally and used locally when you initiate the corresponding model call, and will not be hosted or synchronized to the cloud by the Loomy platform."
+  },
+  {
+    "lang": "en",
+    "heading": "What kind of users is it suitable for?",
+    "content": "Loomy is suitable for people who need to frequently handle information organization, content creation, document collaboration, task follow-up, and cross-tool execution. For example:\n*   Self-media operations\n*   Office white-collar workers\n*   Content teams\n*   Small business teams\n*   E-commerce practitioners\n*   Individual users who hope to hand over repetitive processes to AI for assistance\n\nIf your work frequently requires switching back and forth between chats, emails, documents, web pages, and to-dos, Loomy will be easier to play its value."
+  },
+  {
+    "lang": "en",
+    "heading": "Loomy: Your Desktop Companion",
+    "content": "Loomy is a desktop application based on the OpenClaw framework. It goes beyond web-based AI assistants by directly integrating with your local operating system and files, becoming your reliable work companion.\n\n---"
+  },
+  {
+    "lang": "en",
+    "heading": "Why Loomy?",
+    "content": "While cloud assistants (like AstronClaw) are great for anytime, anywhere access, many professional tasks require deep interaction with local files, applications, and operating systems. Loomy fills this gap by offering:\n\n1.  **Local Context**: Directly read and edit local files without uploading them manually.\n2.  **OS Integration**: Automate system tasks, manage calendars, or send emails through local clients.\n3.  **Privacy Control**: Sensitive data stays on your machine, processed securely."
+  },
+  {
+    "lang": "en",
+    "heading": "Key Features",
+    "content": "*   **File Mastery**: Drag, drop, and process documents (Word, Excel, PDF) natively.\n*   **Skill Toolbox**: Extend capabilities with customized local skills.\n*   **Scheduled Tasks**: Run background operations even when you are away from the keyboard.\n*   **Remote Control**: Trigger local actions remotely via mobile apps like WeChat or Feishu."
+  },
+  {
+    "lang": "en",
+    "heading": "Model Configuration",
+    "content": "Loomy supports a variety of large model services. You can use the default provided models, or you can add custom AI providers. All configuration information is saved locally, and none of your key data will be uploaded.\n\n**Access Model Settings**\nClick \"Settings\" on the left menu bar of the application, and then select the \"Model\" option to enter the model configuration page.\n\n![Access Model Settings](/loomy/models/model-setting.png)\n\n**Default Model Configuration**\nLoomy provides the following large model services by default, out of the box:\n*   MiniMax - MiniMax-M2.5\n*   Doubao - doubao-seed-2.0-pro\n*   DeepSeek - DeepSeek-v3.2\n*   Qwen - qwen3.5-plus\n\n**Add Custom Provider**\nIn \"Settings -> Model\", click \"+ Add Custom Provider\", fill in the API Key, API Address, Model Name, and other information."
+  },
+  {
+    "lang": "en",
+    "heading": "Chat Function",
+    "content": "The chat function is the core interface for your interaction with AI. Through natural language conversation, Loomy can help you complete various tasks."
+  },
+  {
+    "lang": "en",
+    "heading": "1. Using Skills",
+    "content": "*   **Method 1: Shortcut Command \"/\"**: Enter `/` in the input box, and a skill selection menu will automatically pop up.\n*   **Method 2: AI Autonomous Recognition**: Directly describe your needs, and Loomy will automatically identify and call the corresponding skills (for example: \"Help me organize the download folder\")."
+  },
+  {
+    "lang": "en",
+    "heading": "2. Task Execution",
+    "content": "*   **Single Task Execution**: Only one task can be processed at the same time, new messages will enter the waiting queue.\n*   **Interrupt Task**: If you need to interrupt a task in progress, you can click the \"Stop\" button."
+  },
+  {
+    "lang": "en",
+    "heading": "3. Context and Tool Calling",
+    "content": "*   **Context Management**: Loomy will remember the conversation history to maintain context continuity. Long conversations will consume more points.\n*   **Tool Calling**: When a task requires the use of external tools, Loomy will automatically call configured MCP services (such as email operations, web browsing, etc.)."
+  },
+  {
+    "lang": "en",
+    "heading": "Join Waiting List",
+    "content": "First, apply to join the Waiting List on the official website, submit basic information, and wait for review.\n\n![Join Waiting List](/loomy/quick-start/waiting.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "Get Invitation Code",
+    "content": "After your application is approved, you will receive an exclusive invitation code. The invitation code is a necessary credential to log in and experience Loomy currently, please keep it safe.\n\n![Get Invitation Code](/loomy/quick-start/qmail.png)\n\nGo to the Loomy official website, select the corresponding platform, click the download button to download the Loomy client.\n\n![Download Loomy](/loomy/quick-start/download.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "Log in to Loomy",
+    "content": "After opening Loomy, enter the invitation code to complete the login and start using it.\n\n![Log in to Loomy](/loomy/quick-start/login.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "Start Experience",
+    "content": "After successfully logging in, you can experience Loomy's core capabilities, including AI chat, task management, working directory switching, and more collaborative capabilities that will be gradually opened in the future."
+  },
+  {
+    "lang": "en",
+    "heading": "Remote Control",
+    "content": "The remote control feature allows you to send commands to Loomy through instant messaging tools, check task progress, trigger operations, or get execution results even when you are not sitting in front of your computer."
+  },
+  {
+    "lang": "en",
+    "heading": "Applicable Scenarios",
+    "content": "*   Remotely check whether tasks are completed when on a business trip or temporarily away from your desk\n*   Trigger Loomy to execute a fixed process through messages\n*   Quickly query current to-dos, running status, or key results on your phone\n\n> **Note:** When using remote control, you must ensure that Loomy is running in the **background** on your local device.\n\n---"
+  },
+  {
+    "lang": "en",
+    "heading": "Connect to QQ Bot",
+    "content": "1.  Open \"Settings\" in the left menu of Loomy, and find the remote control or corresponding bot connection configuration area.\n\n![QQ Bot Settings](/loomy/qq/remote_qq_1.png)\n\n**If you don't want to configure it yourself, you can directly use the QQ OpenClaw bot:**\n\n1. Log in to the QQ Open Platform: [QQ OpenClaw Bot Creation Page](https://q.qq.com/qqbot/openclaw/index.html), click create bot, and copy the AppID and AppSecret.\n\n![Create Bot 1](/loomy/qq/remote_qq_2.png)\n![Create Bot 2](/loomy/qq/remote_qq_3.png)\n\n2. Fill in the obtained AppID and AppSecret into the Loomy bot configuration information, click enable QQ bot, test the connection, and save the configuration.\n\n![Fill in Credentials](/loomy/qq/remote_qq_4.png)\n\nAt this time, the QQ bot in the remote control shows \"Connected\".\n\n![Connected](/loomy/qq/remote_qq_5.png)\n\n3. Open your QQ, a new chat window will appear showing that the bot has been created successfully, and you can start chatting~\n\n**If you want to configure permissions yourself:**\n\n1. Log in to the [QQ Open Platform](https://q.qq.com/#/apps), click Bot -> Create Bot, and fill in the name, avatar, description, and other information.\n\n![Configure Bot Yourself](/loomy/qq/Q1.png)\n\n2. **Callback Configuration**, select the events you need to add.\n\n![Callback Configuration](/loomy/qq/Q3.png)\n\n3. **Development Management**, copy AppID and AppSecret.\n4. Same as above, fill in the obtained AppID and AppSecret into the Loomy bot configuration information, click enable QQ bot, test the connection, and save the configuration.\n\n![Fill in Credentials](/loomy/qq/remote_qq_4.png)\n\nAt this time, the QQ bot in the remote control shows \"Connected\".\n\n![Connected](/loomy/qq/remote_qq_5.png)\n\n5. Open your QQ, a new chat window will appear showing that the bot has been created successfully, and you can start chatting~\n\n---"
+  },
+  {
+    "lang": "en",
+    "heading": "Connect to Feishu Bot",
+    "content": "1.  Create an enterprise custom app on the Feishu Open Platform and enable bot capabilities.\nYou can refer to the official bot creation instructions provided by Feishu first:\n* [Feishu Official: Set up a bot in three minutes](https://open.feishu.cn/document/develop-an-echo-bot/introduction)\n* [Feishu Open Platform Console](https://open.feishu.cn/app?lang=en-US)\n\nFollow the instructions to click \"Create App\" and fill in the corresponding information:\n\n![Create Feishu App 1](/loomy/feishu/feishu-1.png)\n![Create Feishu App 2](/loomy/feishu/feishu-2.png)\n\n2. After completing the app creation, publish the bot, ensure the bot status is \"Published\", and then click \"Published\" to jump to the bot list page:\n\n![Publish Feishu App 1](/loomy/feishu/feishu-3.png)\n![Publish Feishu App 2](/loomy/feishu/feishu-4.png)\n\nFind the bot app you just created in the list:\n\n![Find App](/loomy/feishu/feishu-4-1.png)\n\n3. Copy `App ID` and `App Secret` on the \"Credentials and Basic Info\" page:\n\n![Get Credentials](/loomy/feishu/feishu-5.png)\n\n4. Open the Loomy client and enter the \"Remote Control\" function in \"Settings\":\n\n![Loomy Remote Control Settings](/loomy/feishu/feishu-6.png)\n\n5. Choose to configure the Feishu bot, fill in the `App ID` and `App Secret`, click test connection, and after confirming the connection is successful, enable the bot and save the configuration:\n\n![Fill in Feishu Configuration](/loomy/feishu/feishu-7.png)\n\n6. Open your mobile Feishu, find \"Developer Assistant\", and when you receive the application approval reminder, click to open the app and start using it:\n\n![Feishu Use Effect 1](/loomy/feishu/feishu-8.jpg)\n![Feishu Use Effect 2](/loomy/feishu/feishu-9.jpg)\n\n---"
+  },
+  {
+    "lang": "en",
+    "heading": "Connect to DingTalk Bot",
+    "content": "1. Log in to the [DingTalk Open Platform](https://open-dev.dingtalk.com/):\n\nGo to \"App Development\" -> \"DingTalk App\" -> \"One-click Auto Create OpenClaw Bot App\", and copy the Client ID and Client Secret.\n\n![Create DingTalk App 1](/loomy/dingding/dingding-1.jpg)\n![Create DingTalk App 2](/loomy/dingding/dingding-2.jpg)\n\nAfter confirmation, the first version will be automatically published, and you can get the Client ID and Client Secret.\n\n2. Fill in the obtained Client ID and Client Secret into the Loomy bot configuration information, click enable DingTalk bot, test the connection, and save the configuration.\n\n![Fill in DingTalk Configuration](/loomy/dingding/dingding-4.png)\n\n3. Click event subscription, select stream push mode, click connected to verify the connection channel. After successful verification, you can freely choose events, save, and publish a new version.\n\n![DingTalk Event Subscription](/loomy/dingding/dingding-5.jpg)\n\n4. Open your DingTalk, a new chat window will appear showing that the bot has been created successfully, and you can start chatting~"
+  },
+  {
+    "lang": "en",
+    "heading": "Typical Scenarios",
+    "content": "Loomy is suitable for work scenarios that require frequent switching between information organization, content creation, task execution, and cross-tool collaboration, especially for individual workers, small teams, and high-frequency office users.\n\nHere are a few typical landing scenarios for Loomy:"
+  },
+  {
+    "lang": "en",
+    "heading": "1. Morning Smart Broadcast",
+    "content": "Want to quickly know today's important information? Loomy can help you integrate weather, emails, schedules, and hot news to generate an exclusive morning broadcast, allowing you to calmly start a new day.\n\n**Usage Scenario**\n> Today is Monday, help me see if the weather in Hefei is suitable for going out today, if there is any interesting news, if there is anything in the mailbox that needs to be replied to, and make a card for me\n\nLoomy will help you:\n*   **Weather Broadcast**: Query real-time weather, analyze whether it is suitable for outdoor activities, and smartly recommend outfit suggestions\n*   **News Summary**: Select the hot spots and interesting news of the day, master key information in 3 minutes\n*   **Email Quick View**: Scan unread emails, mark important emails and pending replies\n*   **Card Generation**: Integrate all information into an exquisite morning broadcast card\n\n![Morning Smart Broadcast](/loomy/scenarios/case1.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "2. Learning Progress Management",
+    "content": "Need to review your learning progress? Loomy can help you analyze the execution situation, find out the problem, and give more realistic adjustment suggestions.\n\n**Usage Scenario**\n> This week is my third week preparing for the CPA accounting subject, and the completion situation is like this:\n>\n> Monday to Wednesday: Studied the financial assets chapter as planned Thursday: Worked overtime and didn't study Friday: Only did half of the exercises Weekend: Made up for Thursday's progress, but Friday's questions are still not done\n>\n> Help me review the execution rate this week, analyze where I easily break off, and how to adjust next week's plan to be more realistic.\n\nLoomy will do for you:\n*   **Execution Rate Analysis**: Calculate this week's completion degree, identify the gap between plan and reality\n*   **Breakpoint Diagnosis**: Analyze time nodes and reasons for easy interruption of learning\n*   **Plan Optimization**: Based on actual conditions, adjust the rhythm and task volume of next week's plan\n*   **Reminder Suggestions**: Give reminder suggestions at key time points to maintain learning continuity\n\n![Learning Progress Management](/loomy/scenarios/case4.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "3. Content Creation and Operation",
+    "content": "From topic planning to content publishing, and then to data review, Loomy strings together topics, hotspot analysis, content creation, and distribution, allowing self-media creation to enter the output state faster.\n\n**Usage Scenario**\n> I operate a Douyin account positioned on tech and digital reviews. Recently the traffic has dropped a bit, help me analyze what hot topics are in the tech circle this week, recommend 3 topic directions for me, and give the title, core selling point, and estimated audience reaction for each direction.\n\nLoomy will help you:\n*   **Hotspot Tracking**: Crawl hot topics in the circle in real-time, analyze discussion heat and trend directions\n*   **Topic Recommendation**: Combine account positioning to recommend high-potential topic directions\n*   **First Draft Generation**: After selecting a topic, quickly generate video scripts or image-text first drafts\n\n![Content Creation and Operation](/loomy/scenarios/case2.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "4. Intelligent Document Management",
+    "content": "Loomy opens up file organization, knowledge precipitation, and content output links, turning fragmented work into a reusable efficient process.\n\n**Usage Scenario**\n> I have a pile of messy files piled up in my download folder, and a few screenshots saved casually. Help me automatically classify and archive by type and project, set up the folder structure, and tell me how you archived them.\n\nLoomy will do for you:\n*   **Intelligent Recognition**: Recognize file types (documents, images, tables, PDFs, etc.)\n*   **Structured Archiving**: Create clear folder hierarchies, automatically archive by \"Project/Type/Date\"\n*   **Archiving Report**: Generate archiving instructions to tell you where each file was placed, convenient for subsequent lookup\n\n![Intelligent Document Management 1](/loomy/scenarios/case3-1.png)\n![Intelligent Document Management 2](/loomy/scenarios/case3-2.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "5. E-commerce Live Broadcast Assistant",
+    "content": "Loomy helps e-commerce practitioners quickly get product information, analyze market data, and generate professional live broadcast scripts and marketing copy.\n\n**Usage Scenario**\n> Open JD.com, save the top ten products on the homepage, as well as their design copy, order sales, and other information locally. Suppose I am going to promote these ten products in a live broadcast now, how should I design the live broadcast script?\n\nLoomy will help you:\n*   **Product Information Crawling**: Extract detailed information of the top ten products on the product page\n*   **Selling Point Extraction**: Analyze product advantages, extract core selling points, highlight cost-effectiveness and user pain points\n*   **Script Generation**: Based on product features and sales data, generate attractive live broadcast scripts for each product\n\n![E-commerce Live Broadcast Assistant](/loomy/scenarios/case5.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "Scheduled Tasks",
+    "content": "Scheduled tasks allow Loomy to automatically execute fixed processes at specified times, helping you hand over repetitive work to AI for continuous processing.\n\n**Running Prerequisites**\nFor scheduled tasks to execute normally, Loomy must be running in the background. If the application is completely closed, the process is force-killed by the system, or related background capabilities are turned off, scheduled tasks will not be triggered as planned.\n\n![Scheduled Task Settings](/loomy/scheduled-tasks/mission.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "What tasks are suitable",
+    "content": "Scheduled tasks are particularly suitable for jobs that need to be done \"every day\", \"every week\", or require \"fixed-time reminders\", such as:\n*   Regularly organize email summaries\n*   Periodically generate daily or weekly reports\n*   Check task status at fixed times\n*   Trigger content organization or information collection at specific times"
+  },
+  {
+    "lang": "en",
+    "heading": "Basic Capabilities",
+    "content": "Through scheduled tasks, you can define the execution content and trigger time in advance, allowing Loomy to run automatically when conditions are met, without you needing to issue commands manually every time.\n\nA complete scheduled task usually includes:\n*   Task name\n*   Trigger time or execution cycle\n*   Execution command or Prompt\n*   Dependent tools and permissions\n*   How to view execution results\n\nTo make these tasks trigger on time, besides ensuring the task configuration itself is correct, you also need to ensure that Loomy continuously runs in the background on the device."
+  },
+  {
+    "lang": "en",
+    "heading": "Usage Suggestions",
+    "content": "To make scheduled tasks more stable, it is recommended to write the task description as clearly as possible when creating, especially:\n*   What you want Loomy to do\n*   Where to output the results\n*   Whether it needs to depend on a specific tool\n*   How you expect it to handle errors\n\n> **Creation Suggestion:**\n> If a task involves multi-step operations or external tool calls, it is recommended to **run it manually once** before setting it as a scheduled task to reduce the probability of deviation during automatic execution."
+  },
+  {
+    "lang": "en",
+    "heading": "Frequently Asked Questions",
+    "content": "**Are scheduled tasks suitable for processing complex processes?**\nYes, but the premise is that the process is clear enough, and permissions and tools have been configured. The more explicit the task, the more stable the automatic execution effect usually is.\n\n**What should I do if a scheduled task fails?**\nIt is recommended to first check the task description, trigger conditions, model configuration, and tool authorization status. Many failures come from incomplete configuration of dependencies or insufficiently specific task descriptions.\n\n**Why did it not automatically execute when the time came?**\nThe most common reason is that Loomy is not continuously running in the background, or related permissions and tool dependencies are not fully prepared. It is recommended to prioritize confirming the application status, and then check the task configuration and execution conditions.\n\n---"
+  },
+  {
+    "lang": "en",
+    "heading": "Point System",
+    "content": "Points are used to support Loomy's default model services and related core capability calls. When you use chat, task execution, or other related capabilities, the system will consume points according to the corresponding rules.\n\n![Point Description](/loomy/credit/credit.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "What are points used for",
+    "content": "Points are mainly used to support Loomy's resource consumption during task execution, including but not limited to default model calls, task processing, and the use of some high-value capabilities.\n\n**Are points deducted when using custom models?**\nIf you configure and use your own AI model service provider API Key in Loomy, related model calls usually will not consume Loomy points.\nThat is to say:\n*   When using the default model service provided by Loomy, points will be consumed according to corresponding rules\n*   When using your own configured model service provider, the model call itself will not deduct Loomy points\n\nWhether it involves the consumption of other capabilities is subject to the current rules and actual function descriptions within the product.\n\n> **API Key Security Instructions**\n> The API Key you configure yourself will only be saved on your local device, and Loomy will not host, upload, or leak these key information.\n> **Keep your keys safe**: API Keys are sensitive information, please do not share them randomly with others, and do not save or transmit them in untrusted environments. If the key is leaked, it may cause a third party to fraudulently use your model service quota or access capabilities."
+  },
+  {
+    "lang": "en",
+    "heading": "How to get points",
+    "content": "You can get points in the following ways:\n*   Apply to join the Waiting List and pass the review\n*   Share with your friends. After your friend joins through your share, you and your friend will each receive `5000` points\n*   Participate in official events or internal testing\n*   Obtain through point package top-up, please refer to the actual display information on the corresponding page for specific prices and point package contents\n\n![Get Points](/loomy/credit/credit-add.png)\n\nThe specific distribution methods and rules are subject to the information currently displayed in the product."
+  },
+  {
+    "lang": "en",
+    "heading": "How to check points",
+    "content": "You can check your current point balance and historical change records in the Loomy client. Common viewable information includes:\n*   Current remaining points\n*   Time of acquisition\n*   Method of acquisition\n*   Consumption records"
+  },
+  {
+    "lang": "en",
+    "heading": "What can 5000 points do",
+    "content": "`5000` points can usually support a batch of common office tasks. For general-intensity office scenarios, it can execute about `50` tasks.\n\nFor example, a relatively complete office task link might include:\n1.  Search and organize various types of information around the theme of \"Project Initiation\" through a search engine\n2.  Summarize search results into a report and save it locally\n3.  Write an email based on the report to apply for a project budget from leaders\n4.  Subsequently, have about `10` email exchanges with leaders regarding project details\n\nFor tasks like this, `5000` points can usually support about `50` times. The specific number will be affected by factors such as task length, context complexity, number of model calls, and whether external tools are linked."
+  },
+  {
+    "lang": "en",
+    "heading": "Usage Suggestions",
+    "content": "If your task belongs to a complex process with multiple rounds, long duration, and cross-tools, it will usually consume more points than ordinary single-round conversations. It is recommended to confirm the task objectives and process before execution to avoid invalid consumption.\nIf you already have a stable and usable model service, you can also consider configuring your API Key yourself to reduce the point consumption brought by Loomy's default model service in some scenarios."
+  },
+  {
+    "lang": "en",
+    "heading": "Frequently Asked Questions",
+    "content": "**Under what circumstances will points be consumed faster?**\nUsually, in multi-step tasks, long context tasks, frequent model calls, or linking multiple tools, point consumption will be more obvious.\n\n**Can I view historical point records?**\nYes. Loomy provides a point balance and related change records, making it easy for you to understand the acquisition and consumption of points.\n\n**Will using my own API Key deduct points?**\nNo. When you use your own configured AI model service provider API Key, related model calls will not deduct Loomy points, but please refer to current product rules and function descriptions."
+  },
+  {
+    "lang": "en",
+    "heading": "Toolbox (MCP)",
+    "content": "Loomy's toolbox function allows AI to connect and use various external tools, greatly expanding the boundaries of AI capabilities. By configuring **MCP (Model Context Protocol)** services, Loomy can read operation data, execute actual operations, get real-time information, and string together workflows.\n\n**Access Toolbox Settings**\nClick \"Settings\" on the left menu bar of the application, and then select the \"Toolbox\" option to enter the toolbox configuration page.\n\n![Toolbox Settings](/loomy/toolbox/mcp.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "Built-in MCP Services",
+    "content": "*   **Browser MCP** - Allows AI to control the browser to access web pages and extract information\n*   **QQ Mail MCP** - Connects to QQ Mail to read and send emails\n*   **System Calendar MCP** - Manages the system calendar to create and query schedules\n\nYou can add external custom MCP configuration files at any time in \"Settings\" -> \"Toolbox\"."
+  },
+  {
+    "lang": "en",
+    "heading": "Configuration Example: QQ Mail MCP",
+    "content": "The following takes configuring QQ Mail MCP as an example to demonstrate how to configure and use the toolbox function.\n\n**1. Configure Mailbox Information**\nClick the \"Configure\" button on the right side of the \"QQ Mail MCP\" card and fill in the following information:\n*   **Mailbox Account**: Your QQ email address (e.g., example@qq.com)\n*   **Authorization Code**: The authorization code for QQ Mail (not your QQ password)\n\n![QQ Mail Configuration](/loomy/toolbox/qmail.png)\n\nAfter the configuration is complete, the status will show as \"Configured\".\n\n**2. Usage Scenario Example**\nAfter configuration, you can ask Loomy to help you handle email-related tasks through natural language.\n\n**Scenario 1: Check Unread Emails**\nCreate a new task and send a message:\n> Help me check my recent unread emails\n\nLoomy will automatically connect to your QQ mailbox, get unread emails from the past three days, and display them to you.\n\n![Check Unread Emails](/loomy/toolbox/toolbox-email-read.png)\n\n**Scenario 2: Write and Send Emails**\nYou can also ask Loomy to help you write and send emails:\n> Help me write today's weekly report and send it to my boss\n\nLoomy will generate a weekly report based on your work content and send it to the designated recipient via QQ Mail.\n\n![Write and Send Emails](/loomy/toolbox/toolbox-email-send.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "Frequently Asked Questions",
+    "content": "**How to get the QQ Mail authorization code?**\nThe QQ Mail authorization code is a dedicated password used for third-party client logins. The steps to get it are as follows:\n\n*   **Step 1: Enter the settings page**. After logging in to QQ Mail, click the \"Settings\" button in the upper right corner.\n\n    ![QQ Mail Settings](/loomy/toolbox/toolbox-qq-step1.png)\n\n*   **Step 2: Enter Account and Security**. On the settings page, click the \"Account and Security\" option in the lower left corner.\n\n    ![Account and Security](/loomy/toolbox/toolbox-qq-step2.png)\n\n*   **Step 3: Enter Security Management**. On the Account and Security page, select \"Security Management\".\n\n    ![Security Management](/loomy/toolbox/toolbox-qq-step3.png)\n\n*   **Step 4: Generate Authorization Code**. Click the \"Add Authorization Code\" button. After completing the verification according to the prompts, the system will generate an authorization code.\n\n    ![Generate Authorization Code](/loomy/toolbox/toolbox-qq-step4.png)\n\n> **Note:**\n> * The authorization code will only be displayed once, please keep it safe\n> * The authorization code is not your QQ password, but a password specifically for third-party app logins\n> * If you forget the authorization code, you can delete it and generate a new one\n\n---"
+  },
+  {
+    "lang": "en",
+    "heading": "Skill System (Skills)",
+    "content": "Loomy's skill system gives AI more professional capabilities to help you complete tasks in various office and life scenarios. From writing emails and processing spreadsheets to Xiaohongshu operations and stock analysis, every skill is an \"ability\" of the AI."
+  },
+  {
+    "lang": "en",
+    "heading": "What is a Skill?",
+    "content": "Skills can be understood as the \"professional abilities\" mastered by large models. Every time you install a skill, it is equivalent to adding an ability to the AI. If you compare a large model to a person, skills are what this person can do. The more skills you install, the more tasks AI can help you complete.\n\n> **For example**: As a Xiaohongshu self-media operator, you want AI to write a Xiaohongshu advertorial. After installing the \"Xiaohongshu Card Generator\" skill, AI can output professional content according to Xiaohongshu's style and requirements."
+  },
+  {
+    "lang": "en",
+    "heading": "Where to find Skills?",
+    "content": "Click the \"Skills\" entry in the left menu bar of Loomy to view all official built-in skills.\n\n![Find Skills](/loomy/skills/where_skills.png)\n\nClick on any skill card to view the detailed description of the skill and set the AI's permission to call the skill. Permissions are divided into three types:\n\n| Permission | Description |\n|---|---|\n| **Allow** | AI uses it directly when it judges it is necessary, without confirmation |\n| **Ask** | AI will ask you for your consent before calling, and will only execute after confirmation |\n| **Forbid** | Completely disable the skill, AI will not call it |\n\nIt is recommended to set \"Allow\" for frequently used skills in daily life, and \"Ask\" for skills involving sensitive operations (such as sending emails), which maintains efficiency while preserving control over key operations.\n\n![Skill Permission Settings](/loomy/skills/skills_view.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "How to use Skills?",
+    "content": "Loomy provides two ways to use skills, making your work more flexible and efficient.\n\n**Method 1: Shortcut Command \"/\"**\nEnter `/` in the dialog box, and a skill selection menu will automatically pop up. After selecting the required skill and sending a message, AI will call the skill to complete the task.\n\n![Shortcut Command Call](/loomy/skills/quick_skills.png)\n\n**Method 2: AI Autonomous Recognition**\nNo need to manually select, AI will automatically search for matches among installed skills based on your input content, and automatically call the corresponding skill to complete the task after successful recognition.\n*   When you say \"Help me write a business email\", AI will automatically call the \"Email Drafting Assistant\"\n*   When you say \"Analyze this Excel spreadsheet\", AI will automatically call the \"Excel Spreadsheet Expert\""
+  },
+  {
+    "lang": "en",
+    "heading": "Office Documents",
+    "content": "*   **Word Document Expert**: Professional Word document processing tool. Supports creating, reading, editing, and processing .docx files.\n*   **Excel Spreadsheet Expert**: Professional spreadsheet processing tool. Supports opening, reading, editing, and repairing Excel files.\n*   **PPT Presentation Expert**: Professional PowerPoint presentation processing tool. Supports creating slides, reading, and extracting .pptx file content.\n*   **PDF Processing Expert**: Professional PDF file processing tool. Supports reading and extracting text/tables in PDFs, merging/splitting PDFs, OCR recognition, etc."
+  },
+  {
+    "lang": "en",
+    "heading": "Business Communication",
+    "content": "*   **Email Drafting Assistant**: Professional business email writing tool. Provides a structured email framework and multiple tone options."
+  },
+  {
+    "lang": "en",
+    "heading": "Content Creation",
+    "content": "*   **Xiaohongshu Card Generator**: Professional Xiaohongshu image and text card generation tool. Provides 11 visual styles and 8 layout schemes.\n*   **Frontend Design Master**: Professional frontend interface design tool. Create unique, high-quality production-grade frontend interfaces."
+  },
+  {
+    "lang": "en",
+    "heading": "Finance and Investment",
+    "content": "*   **Financial News Assistant**: Focuses on Chinese A-share market news queries. Aggregates hot news and multi-source information.\n*   **Stock Review Assistant**: Professional stock trading review and financial report analysis tool."
+  },
+  {
+    "lang": "en",
+    "heading": "Hotspot Tracking",
+    "content": "*   **Douyin Hot List Tracking**: Get real-time Douyin hot list/hot search list data, providing titles, heat values, jump links, and cover images."
+  },
+  {
+    "lang": "en",
+    "heading": "Research and Analysis",
+    "content": "*   **In-depth Research Assistant**: Professional in-depth research tool, providing systematic and multi-angle research methods."
+  },
+  {
+    "lang": "en",
+    "heading": "Life and Entertainment",
+    "content": "*   **Numerology Master**: Professional numerology analysis tool. Supports traditional Chinese numerology and Western horoscopes."
+  },
+  {
+    "lang": "en",
+    "heading": "Frequently Asked Questions",
+    "content": "**How to know which skill the AI used?**\nWhen AI calls a skill, the skill name and calling status will be displayed in the conversation. You can clearly see which skill the AI is using to complete the task.\n\n**Can I disable or delete installed skills?**\nYes. Find the corresponding skill card in the skill list and click \"Disable\". After disabling, AI will not be able to use the skill, but you can re-enable it at any time.\n\n**Do skills consume extra points?**\nSkills themselves are not charged extra, but using skills will consume conversation points normally. Different skills have different complexities, and the points consumed will also vary."
   }
 ]

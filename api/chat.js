@@ -1,6 +1,7 @@
 module.exports = async function handler(req, res) {
   const ALLOWED_ORIGINS = new Set([
     'https://iflytek.github.io',
+    'https://astronclaw-tutorial.space',
     'http://localhost:5173',
     'http://127.0.0.1:5173'
   ]);
