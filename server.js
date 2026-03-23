@@ -46,7 +46,7 @@ app.post('/api/chat', async (req, res) => {
         // The API key is securely used here on the backend
         'Authorization': `Bearer ${process.env.VITE_API_KEY}`
       },
-      body: JSON.stringify(req.body)
+      body: JSON.stringify({ ...req.body, stream: false })
     });
 
     if (!response.ok) {
