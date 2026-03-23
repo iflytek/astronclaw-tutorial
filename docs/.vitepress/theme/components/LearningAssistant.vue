@@ -14,10 +14,10 @@
         </div>
       </div>
       <div class="chat-input">
-        <input 
-          v-model="inputText" 
-          @keyup.enter="sendMessage" 
-          :placeholder="i18n.placeholder" 
+        <input
+          v-model="inputText"
+          @keyup.enter="sendMessage"
+          :placeholder="i18n.placeholder"
           :disabled="isLoading"
         />
         <button @click="sendMessage" :disabled="isLoading || !inputText.trim()">{{ i18n.send }}</button>
@@ -36,6 +36,8 @@ import { useData } from 'vitepress'
 const { lang } = useData()
 
 const isEn = computed(() => lang.value === 'en')
+const CHAT_REQUEST_TIMEOUT_MS = 12000
+const CHAT_ENDPOINT_FALLBACK = 'https://astronclaw-tutorial.vercel.app/api/chat'
 
 const i18n = computed(() => {
   return isEn.value ? {
@@ -76,11 +78,9 @@ const messages = ref([
 ])
 
 watch(lang, () => {
-  // If only the welcome message is there, update it to the new language
   if (messages.value.length === 1 && messages.value[0].role === 'assistant') {
     messages.value[0].content = i18n.value.welcome
   } else {
-    // Optionally add a welcome message in the new language if they switch during a chat
     messages.value.push({
       role: 'assistant',
       content: i18n.value.welcome
@@ -116,14 +116,12 @@ const scrollToBottom = async () => {
 
 function searchDocs(query) {
   if (!docsIndex.length) return ''
-  // Filter docs index based on current language
-  // docsIndex items have URLs like "/guide/..." or "/en/guide/..."
+
   const currentLangDocs = docsIndex.filter(doc => {
     if (isEn.value) {
       return doc.url.startsWith('/en/')
-    } else {
-      return !doc.url.startsWith('/en/')
     }
+    return !doc.url.startsWith('/en/')
   })
 
   if (!currentLangDocs.length) return ''
@@ -133,21 +131,21 @@ function searchDocs(query) {
   const results = currentLangDocs.map(doc => {
     let score = 0
     const text = (doc.heading + ' ' + doc.content).toLowerCase()
-    
+
     if (text.includes(query.toLowerCase())) {
-        score += 50
+      score += 50
     }
 
-    for(let i=0; i<keywords.length; i++) {
-        if(text.includes(keywords[i])) score += 1
-        if(i < keywords.length - 1) {
-            const bigram = keywords[i] + keywords[i+1]
-            if(text.includes(bigram)) score += 5
-        }
-        if(i < keywords.length - 2) {
-            const trigram = keywords[i] + keywords[i+1] + keywords[i+2]
-            if(text.includes(trigram)) score += 10
-        }
+    for (let i = 0; i < keywords.length; i += 1) {
+      if (text.includes(keywords[i])) score += 1
+      if (i < keywords.length - 1) {
+        const bigram = keywords[i] + keywords[i + 1]
+        if (text.includes(bigram)) score += 5
+      }
+      if (i < keywords.length - 2) {
+        const trigram = keywords[i] + keywords[i + 1] + keywords[i + 2]
+        if (text.includes(trigram)) score += 10
+      }
     }
 
     if (doc.heading.toLowerCase().includes(query.toLowerCase())) score += 30
@@ -158,6 +156,56 @@ function searchDocs(query) {
   if (results.length === 0) return ''
 
   return i18n.value.knowledgeBaseTitle + results.map(r => `${i18n.value.chapter}${r.heading}\n${i18n.value.content}${r.content}`).join('\n\n')
+}
+
+function getChatEndpoints() {
+  if (typeof window === 'undefined') {
+    return ['/api/chat', CHAT_ENDPOINT_FALLBACK]
+  }
+
+  const currentOrigin = window.location.origin
+  const endpoints = ['/api/chat']
+
+  if (currentOrigin !== CHAT_ENDPOINT_FALLBACK.replace('/api/chat', '')) {
+    endpoints.push(CHAT_ENDPOINT_FALLBACK)
+  }
+
+  return endpoints
+}
+
+async function requestChatCompletion(payload) {
+  const endpoints = getChatEndpoints()
+  let lastError = null
+
+  for (const endpoint of endpoints) {
+    const controller = new AbortController()
+    const timeoutId = setTimeout(() => controller.abort(new Error(`timeout:${endpoint}`)), CHAT_REQUEST_TIMEOUT_MS)
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        signal: controller.signal,
+        body: JSON.stringify(payload)
+      })
+
+      if (!response.ok) {
+        const errText = await response.text()
+        throw new Error(`API error (${endpoint}): ${response.status} ${errText}`)
+      }
+
+      return await response.json()
+    } catch (error) {
+      lastError = error
+      console.error(`Error calling AI endpoint ${endpoint}:`, error)
+    } finally {
+      clearTimeout(timeoutId)
+    }
+  }
+
+  throw lastError ?? new Error('No chat endpoint available')
 }
 
 const sendMessage = async () => {
@@ -172,36 +220,21 @@ const sendMessage = async () => {
   const context = searchDocs(text)
   const systemPrompt = `${i18n.value.systemPrompt}${context}`
 
-  const controller = new AbortController()
-  const timeoutId = setTimeout(() => controller.abort(), 30000)
-
   try {
-      // Use the local Vercel serverless function endpoint instead of Railway
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
+    const data = await requestChatCompletion({
+      model: 'astron-code-latest',
+      stream: false,
+      messages: [
+        {
+          role: 'system',
+          content: systemPrompt
         },
-        signal: controller.signal,
-      body: JSON.stringify({
-        model: 'astron-code-latest',
-        stream: false,
-        messages: [
-          {
-            role: 'system',
-            content: systemPrompt
-          },
-          ...messages.value.filter(m => m.role !== 'assistant' || (m.content !== i18n.value.errorFallback && !m.content.startsWith(i18n.value.errorPrefix))).map(m => ({ role: m.role, content: m.content }))
-        ]
-      })
+        ...messages.value
+          .filter(m => m.role !== 'assistant' || (m.content !== i18n.value.errorFallback && !m.content.startsWith(i18n.value.errorPrefix)))
+          .map(m => ({ role: m.role, content: m.content }))
+      ]
     })
 
-    if (!response.ok) {
-      const errText = await response.text();
-      throw new Error(`API error: ${response.status} ${errText}`);
-    }
-
-    const data = await response.json()
     if (data.choices && data.choices.length > 0) {
       messages.value.push({
         role: 'assistant',
@@ -214,7 +247,6 @@ const sendMessage = async () => {
     console.error('Error calling AI:', error)
     messages.value.push({ role: 'assistant', content: `${i18n.value.errorPrefix}${error.message}` })
   } finally {
-    clearTimeout(timeoutId)
     isLoading.value = false
     scrollToBottom()
   }
