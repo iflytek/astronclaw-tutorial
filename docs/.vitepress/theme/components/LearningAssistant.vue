@@ -2,7 +2,7 @@
   <div class="learning-assistant">
     <div v-if="isOpen" class="chat-window">
       <div class="chat-header">
-        <span>学习助手 (Learning Assistant)</span>
+        <span>{{ i18n.title }}</span>
         <button @click="toggleChat" class="close-btn">×</button>
       </div>
       <div class="chat-messages" ref="messagesContainer">
@@ -17,10 +17,10 @@
         <input 
           v-model="inputText" 
           @keyup.enter="sendMessage" 
-          placeholder="你想了解什么工具？..." 
+          :placeholder="i18n.placeholder" 
           :disabled="isLoading"
         />
-        <button @click="sendMessage" :disabled="isLoading || !inputText.trim()">发送</button>
+        <button @click="sendMessage" :disabled="isLoading || !inputText.trim()">{{ i18n.send }}</button>
       </div>
     </div>
     <div v-else class="chat-toggle" @click="toggleChat">
@@ -30,7 +30,38 @@
 </template>
 
 <script setup>
-import { ref, nextTick, onMounted } from 'vue'
+import { ref, nextTick, onMounted, computed, watch } from 'vue'
+import { useData } from 'vitepress'
+
+const { lang } = useData()
+
+const isEn = computed(() => lang.value === 'en')
+
+const i18n = computed(() => {
+  return isEn.value ? {
+    title: 'Learning Assistant',
+    placeholder: 'What tool would you like to know about?...',
+    send: 'Send',
+    welcome: 'Hello! I am your learning assistant. What do you need? Which tool would you like to use (AstronClaw or Loomy)? I will recommend and guide you to the next step.',
+    systemPrompt: `You are a project learning assistant. Your task is to ask the user what they need or which tool they want to use (AstronClaw or Loomy) and make recommendations, always guiding the user to the next step. Please keep your answers short and friendly. Be sure to answer the user's questions based on the content in the [Knowledge Base Reference] (if it exists).\n`,
+    errorFallback: 'Sorry, I encountered some issues. Please try again later.',
+    errorPrefix: 'Request failed: ',
+    knowledgeBaseTitle: '\n\n[Knowledge Base Reference]\n',
+    chapter: 'Chapter: ',
+    content: 'Content: '
+  } : {
+    title: '学习助手 (Learning Assistant)',
+    placeholder: '你想了解什么工具？...',
+    send: '发送',
+    welcome: '你好！我是你的学习助手。请问你有什么需求？希望使用哪款工具（AstronClaw 或 Loomy）？我会为你推荐并引导你进行下一步操作。',
+    systemPrompt: `你是一个项目学习助手，你的任务是提问用户有什么需求/希望使用哪款工具（AstronClaw 或 Loomy）并进行推荐，永远引导用户进行下一步操作。请保持回答简短友好。请务必基于【知识库参考信息】中的内容来回答用户的问题（如果存在）。\n`,
+    errorFallback: '抱歉，我遇到了一些问题，请稍后再试。',
+    errorPrefix: '请求失败: ',
+    knowledgeBaseTitle: '\n\n【知识库参考信息】\n',
+    chapter: '章节: ',
+    content: '内容: '
+  }
+})
 
 const isOpen = ref(false)
 const isLoading = ref(false)
@@ -40,9 +71,23 @@ const messagesContainer = ref(null)
 const messages = ref([
   {
     role: 'assistant',
-    content: '你好！我是你的学习助手。请问你有什么需求？希望使用哪款工具（AstronClaw 或 Loomy）？我会为你推荐并引导你进行下一步操作。'
+    content: i18n.value.welcome
   }
 ])
+
+watch(lang, () => {
+  // If only the welcome message is there, update it to the new language
+  if (messages.value.length === 1 && messages.value[0].role === 'assistant') {
+    messages.value[0].content = i18n.value.welcome
+  } else {
+    // Optionally add a welcome message in the new language if they switch during a chat
+    messages.value.push({
+      role: 'assistant',
+      content: i18n.value.welcome
+    })
+    scrollToBottom()
+  }
+})
 
 let docsIndex = []
 
@@ -71,10 +116,21 @@ const scrollToBottom = async () => {
 
 function searchDocs(query) {
   if (!docsIndex.length) return ''
+  // Filter docs index based on current language
+  // docsIndex items have URLs like "/guide/..." or "/en/guide/..."
+  const currentLangDocs = docsIndex.filter(doc => {
+    if (isEn.value) {
+      return doc.url.startsWith('/en/')
+    } else {
+      return !doc.url.startsWith('/en/')
+    }
+  })
+
+  if (!currentLangDocs.length) return ''
   const keywords = query.toLowerCase().match(/[a-z0-9]+|[\u4e00-\u9fa5]/g) || []
   if (!keywords.length) return ''
 
-  const results = docsIndex.map(doc => {
+  const results = currentLangDocs.map(doc => {
     let score = 0
     const text = (doc.heading + ' ' + doc.content).toLowerCase()
     
@@ -101,7 +157,7 @@ function searchDocs(query) {
 
   if (results.length === 0) return ''
 
-  return '\n\n【知识库参考信息】\n' + results.map(r => `章节: ${r.heading}\n内容: ${r.content}`).join('\n\n')
+  return i18n.value.knowledgeBaseTitle + results.map(r => `${i18n.value.chapter}${r.heading}\n${i18n.value.content}${r.content}`).join('\n\n')
 }
 
 const sendMessage = async () => {
@@ -114,7 +170,7 @@ const sendMessage = async () => {
   scrollToBottom()
 
   const context = searchDocs(text)
-  const systemPrompt = `你是一个项目学习助手，你的任务是提问用户有什么需求/希望使用哪款工具（AstronClaw 或 Loomy）并进行推荐，永远引导用户进行下一步操作。请保持回答简短友好。请务必基于【知识库参考信息】中的内容来回答用户的问题（如果存在）。\n${context}`
+  const systemPrompt = `${i18n.value.systemPrompt}${context}`
 
   try {
       // Use the local Vercel serverless function endpoint instead of Railway
@@ -130,7 +186,7 @@ const sendMessage = async () => {
             role: 'system',
             content: systemPrompt
           },
-          ...messages.value.filter(m => m.role !== 'assistant' || (m.content !== '抱歉，我遇到了一些问题，请稍后再试。' && !m.content.startsWith('请求失败:'))).map(m => ({ role: m.role, content: m.content }))
+          ...messages.value.filter(m => m.role !== 'assistant' || (m.content !== i18n.value.errorFallback && !m.content.startsWith(i18n.value.errorPrefix))).map(m => ({ role: m.role, content: m.content }))
         ]
       })
     })
@@ -147,11 +203,11 @@ const sendMessage = async () => {
         content: data.choices[0].message.content
       })
     } else {
-      messages.value.push({ role: 'assistant', content: '抱歉，我遇到了一些问题，请稍后再试。' })
+      messages.value.push({ role: 'assistant', content: i18n.value.errorFallback })
     }
   } catch (error) {
     console.error('Error calling AI:', error)
-    messages.value.push({ role: 'assistant', content: `请求失败: ${error.message}` })
+    messages.value.push({ role: 'assistant', content: `${i18n.value.errorPrefix}${error.message}` })
   } finally {
     isLoading.value = false
     scrollToBottom()
