@@ -1,0 +1,28 @@
+{
+  "name": "astronclaw-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "docs:dev": "node scripts/generate-index.js && vitepress dev docs",
+    "docs:build": "node scripts/generate-index.js && vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "server": "node server.js",
+    "dev": "npm run server & npm run docs:dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.30"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "medium-zoom": "^1.1.0"
+  }
+}
