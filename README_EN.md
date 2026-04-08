@@ -79,6 +79,8 @@ npm run docs:build
 
 Issues and Pull Requests are welcome! Let's polish it together and help more people bring AI into their daily workflows.
 
+Before submitting a PR, please read our [Contributing Guide](CONTRIBUTING.md). When you make your first contribution, the CLA Assistant bot will automatically leave a comment on your PR to guide you through signing the Contributor License Agreement (CLA).
+
 ## Join the Community
 
 Welcome to join our official communities to communicate with developers and other users:
