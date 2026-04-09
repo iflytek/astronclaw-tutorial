@@ -117,3 +117,27 @@ After confirmation, the first version will be automatically published, and you c
 ![DingTalk Event Subscription](/loomy/dingding/dingding-5.jpg)
 
 4. Open your DingTalk, a new chat window will appear showing that the bot has been created successfully, and you can start chatting~
+
+---
+
+## Connect to WeChat Bot
+
+The WeChat bot can serve as one of the message entries for Loomy's remote control. After configuration, you can send commands to Loomy via WeChat and receive execution results.
+
+### Applicable Scenarios
+*   Remotely trigger tasks through WeChat direct messages
+*   Check Loomy's execution results on your mobile phone
+*   Quickly confirm current task status when away from your desk
+*   Use the convenience of WeChat to control Loomy anytime, anywhere
+
+### Basic Configuration Process
+1. **Enter remote control settings**: Open the Loomy client, click "Settings" in the left menu, and find the "Remote Control" functional area.
+2. **Select WeChat Bot**: In the remote control page, find and click the "WeChat Bot" option.
+3. **Scan QR code to bind device**: After clicking the WeChat bot, a QR code will pop up. Use your mobile WeChat to scan the QR code to complete the device binding.
+4. **Confirm connection status**: After the binding is complete, the WeChat bot in the remote control page should show the "Connected" status, indicating successful configuration.
+5. **Start using**: In your mobile WeChat, find the bound Loomy bot chat window to start sending commands and receiving execution results.
+
+> **Precautions:**
+> *   **WeChat Version Requirement**: Please ensure that WeChat has been updated to version 8.0.70 or above; otherwise, the bot function may not work properly.
+> *   **Background Running Requirement**: Real task execution still relies on Loomy running locally. Please ensure that Loomy remains available in the background.
+> *   **Single Device Limit**: Currently, one Loomy account can only bind one WeChat device. If you need to change the device, please unbind the current device first, and then scan the code again to bind.
