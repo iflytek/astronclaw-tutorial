@@ -2,7 +2,17 @@
   <div class="learning-assistant">
     <div v-if="isOpen" class="chat-window">
       <div class="chat-header">
-        <span>{{ i18n.title }}</span>
+        <div class="chat-header-text">
+          <span>{{ i18n.title }}</span>
+          <a
+            class="chat-header-credit"
+            href="https://maas.xfyun.cn/modelSquare"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Powered by 讯飞星辰MaaS
+          </a>
+        </div>
         <button @click="toggleChat" class="close-btn">×</button>
       </div>
       <div class="chat-messages" ref="messagesContainer">
@@ -512,6 +522,25 @@ const sendMessage = async () => {
   font-size: 16px;
 }
 
+.chat-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chat-header-credit {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.chat-header-credit:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .close-btn {
   background: none;
   border: none;
@@ -612,4 +641,5 @@ const sendMessage = async () => {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
 </style>
