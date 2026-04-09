@@ -2,7 +2,17 @@
   <div class="learning-assistant">
     <div v-if="isOpen" class="chat-window">
       <div class="chat-header">
-        <span>{{ i18n.title }}</span>
+        <div class="chat-header-text">
+          <span>{{ i18n.title }}</span>
+          <a
+            class="chat-header-credit"
+            href="https://maas.xfyun.cn/modelSquare"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Powered by 讯飞星辰MaaS
+          </a>
+        </div>
         <button @click="toggleChat" class="close-btn">×</button>
       </div>
       <div class="chat-messages" ref="messagesContainer">
@@ -31,9 +41,6 @@
         >
           {{ i18n.send }}
         </button>
-      </div>
-      <div class="chat-footer">
-        LLM powered by <a href="https://maas.xfyun.cn/modelSquare" target="_blank" rel="noopener noreferrer">讯飞星辰MaaS</a>
       </div>
     </div>
     <div v-else class="chat-toggle" @click="toggleChat">
@@ -515,6 +522,25 @@ const sendMessage = async () => {
   font-size: 16px;
 }
 
+.chat-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chat-header-credit {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.chat-header-credit:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .close-btn {
   background: none;
   border: none;
@@ -616,22 +642,4 @@ const sendMessage = async () => {
   cursor: not-allowed;
 }
 
-.chat-footer {
-  text-align: center;
-  padding: 0 12px 12px;
-  background-color: var(--vp-c-bg);
-  font-size: 11px;
-  color: var(--vp-c-text-3);
-}
-
-.chat-footer a {
-  color: var(--vp-c-text-2);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.chat-footer a:hover {
-  color: var(--vp-c-brand-1);
-}
 </style>
