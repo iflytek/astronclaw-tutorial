@@ -133,9 +133,20 @@ The WeChat bot can serve as one of the message entries for Loomy's remote contro
 ### Basic Configuration Process
 1. **Enter remote control settings**: Open the Loomy client, click "Settings" in the left menu, and find the "Remote Control" functional area.
 2. **Select WeChat Bot**: In the remote control page, find and click the "WeChat Bot" option.
+
+![Select WeChat Bot](/loomy/wechat/wechat-1.png)
+
 3. **Scan QR code to bind device**: After clicking the WeChat bot, a QR code will pop up. Use your mobile WeChat to scan the QR code to complete the device binding.
+
+![Scan QR code to bind device](/loomy/wechat/wechat-2.png)
+
 4. **Confirm connection status**: After the binding is complete, the WeChat bot in the remote control page should show the "Connected" status, indicating successful configuration.
+
+![Confirm connection status](/loomy/wechat/wechat-3.png)
+
 5. **Start using**: In your mobile WeChat, find the bound Loomy bot chat window to start sending commands and receiving execution results.
+
+![Start using](/loomy/wechat/wechat-4.png)
 
 > **Precautions:**
 > *   **WeChat Version Requirement**: Please ensure that WeChat has been updated to version 8.0.70 or above; otherwise, the bot function may not work properly.
