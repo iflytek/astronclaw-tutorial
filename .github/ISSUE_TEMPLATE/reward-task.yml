@@ -22,31 +22,12 @@ body:
           description: URL from an External System
           placeholder: https://example.com/task/123
 
-    - type: dropdown
-      id: currency
-      attributes:
-          label: Reward currency
-          options:
-              - 'USD $'
-              - 'CAD C$'
-              - 'AUD A$'
-              - 'GBP £'
-              - 'EUR €'
-              - 'CNY ¥'
-              - 'HKD HK$'
-              - 'TWD NT$'
-              - 'SGD S$'
-              - 'KRW ₩'
-              - 'JPY ¥'
-              - 'INR ₹'
-              - 'UAH ₴'
-      validations:
-          required: true
-
     - type: input
-      id: amount
+      id: reward
       attributes:
-          label: Reward amount
+          label: Reward
+          description: Please enter the reward details (e.g. 500 CNY, 50 USD, Exclusive Badge, Custom Gift)
+          placeholder: 500 CNY / Official Badge
       validations:
           required: true
 

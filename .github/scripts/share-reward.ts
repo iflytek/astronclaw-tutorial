@@ -12,7 +12,6 @@ const [
   repositoryName,
   issueNumber,
   payer, // GitHub username of the payer (provided by workflow, defaults to issue creator)
-  currency,
   reward,
   source,
 ] = argv._;
@@ -88,21 +87,11 @@ if (!users[0])
     "No real users found (all users are bots). Skipping reward distribution.",
   );
 
-const rewardNumber = parseFloat(reward);
-
-if (isNaN(rewardNumber) || rewardNumber <= 0)
-  throw new RangeError(
-    `Reward amount is not a valid number, can not proceed with reward distribution. Received reward value: ${reward}`,
-  );
-
-const averageReward = (rewardNumber / users.length).toFixed(2);
-
 const list: Reward[] = users.map((login) => ({
   issue: `#${issueNumber}`,
   payer: `@${payer}`,
   payee: `@${login}`,
-  currency,
-  reward: parseFloat(averageReward),
+  reward: String(reward),
   source,
 }));
 const listText = YAML.stringify(list);

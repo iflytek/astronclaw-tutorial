@@ -37,9 +37,11 @@ const groupedRewards = Object.groupBy(rewards, ({ payee }) => payee);
 
 const summaryList = Object.entries(groupedRewards).map(([payee, rewards]) => {
   const reward = rewards!.reduce(
-    (acc, { currency, reward }) => {
-      acc[currency] ??= 0;
-      acc[currency] += reward;
+    (acc, { reward }) => {
+      // For custom reward string, we just append to an array or store uniquely
+      // Since it's a string, we map it as count of strings or list of strings
+      acc[reward] ??= 0;
+      acc[reward] += 1;
       return acc;
     },
     {} as Record<string, number>,
