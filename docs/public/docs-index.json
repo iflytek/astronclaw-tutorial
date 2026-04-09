@@ -306,28 +306,88 @@
   },
   {
     "lang": "zh",
-    "heading": "模型配置",
-    "content": "Loomy 支持多种大模型服务，你可以使用默认提供的模型，也可以添加自定义的 AI 提供商。所有配置信息都保存在本地，不会上传你的任何密钥数据。\r\n\r\n**访问模型设置**\r\n点击应用左侧菜单栏的「设置」，然后选择「模型」选项，即可进入模型配置页面。\r\n\r\n![访问模型设置](/loomy/models/model-setting.png)\r\n\r\n**默认模型配置**\r\nLoomy 默认提供以下大模型服务，开箱即用：\r\n*   MiniMax - MiniMax-M2.5\r\n*   豆包（Doubao） - doubao-seed-2.0-pro\r\n*   DeepSeek - DeepSeek-v3.2\r\n*   通义千问（Qwen） - qwen3.5-plus\r\n\r\n**添加自定义提供商**\r\n在「设置 -> 模型」中，点击「+ 添加自定义提供商」，填写 API Key、API 地址、模型名称等信息即可。"
+    "heading": "模型",
+    "content": "Loomy 支持多种大模型服务，你可以使用默认提供的模型，也可以添加自定义的 AI 提供商。所有配置信息都保存在本地，我们不会获取或上传你的任何密钥数据。"
+  },
+  {
+    "lang": "zh",
+    "heading": "访问模型设置",
+    "content": "点击应用左侧菜单栏的「设置」，然后选择「模型」选项，即可进入模型配置页面。\r\n\r\n![访问模型设置](/loomy/models/model-setting.png)"
+  },
+  {
+    "lang": "zh",
+    "heading": "默认模型配置",
+    "content": "Loomy 默认提供以下大模型服务，开箱即用：\r\n*   MiniMax - MiniMax-M2.5\r\n*   豆包（Doubao） - doubao-seed-2.0-pro\r\n*   DeepSeek - DeepSeek-v3.2\r\n*   通义千问（Qwen） - qwen3.5-plus\r\n\r\n这些默认提供商已经预配置好，你可以直接选择使用。"
+  },
+  {
+    "lang": "zh",
+    "heading": "切换模型",
+    "content": "在「默认模型配置」区域，你可以看到当前使用的模型。点击右侧的下拉选择器，可以切换到其他可用的模型。\r\n\r\n选择完成后，点击「保存」按钮，然后返回首页即可使用新选择的模型进行对话和任务执行。"
+  },
+  {
+    "lang": "zh",
+    "heading": "添加自定义提供商",
+    "content": "如果你想使用其他 AI 服务商，或者使用自己部署的模型服务，可以添加自定义提供商：\r\n\r\n1.  在「AI 提供商」区域，点击右上角的「+ 添加自定义提供商」按钮\r\n2.  填写提供商的相关配置信息：\r\n    *   API Key（密钥）\r\n    *   API 地址\r\n    *   模型名称\r\n    *   其他必要参数\r\n3.  点击「配置」或「保存」完成添加\r\n\r\n添加成功后，自定义提供商会出现在提供商列表中，你可以在模型选择器中切换使用。"
+  },
+  {
+    "lang": "zh",
+    "heading": "配置现有提供商",
+    "content": "对于列表中显示「未启用」状态的提供商（如 OpenAI、Google Gemini、讯飞星火、Kimi 等），你需要先进行配置才能使用：\r\n\r\n1.  点击对应提供商卡片右侧的「配置」按钮\r\n2.  填写该提供商所需的 API Key 和其他配置信息\r\n3.  保存配置后，该提供商状态会变为「已启用」\r\n4.  之后就可以在模型选择器中选择该提供商的模型"
+  },
+  {
+    "lang": "zh",
+    "heading": "数据安全说明",
+    "content": "**本地存储**：所有的 API Key、配置信息和模型设置都保存在你的本地设备上，Loomy 不会上传或获取这些敏感信息。你可以放心配置和使用各种 AI 服务。"
+  },
+  {
+    "lang": "zh",
+    "heading": "如何获取 API Key？",
+    "content": "不同的 AI 服务商获取 API Key 的方式不同，通常需要：\r\n1.  访问对应服务商的官网\r\n2.  注册账号并完成实名认证\r\n3.  在控制台或开发者中心创建 API Key\r\n4.  复制 API Key 并粘贴到 Loomy 的配置页面"
+  },
+  {
+    "lang": "zh",
+    "heading": "切换模型后需要重启应用吗？",
+    "content": "不需要。切换模型并保存后，返回首页即可立即使用新模型，无需重启应用。"
+  },
+  {
+    "lang": "zh",
+    "heading": "可以同时配置多个提供商吗？",
+    "content": "可以。你可以配置多个 AI 提供商，并在需要时随时切换使用不同的模型。\r\n\r\n---"
   },
   {
     "lang": "zh",
     "heading": "聊天功能",
-    "content": "聊天功能是你与 AI 交互的核心界面。通过自然语言对话，Loomy 可以帮你完成各种任务。"
+    "content": "聊天功能是你与 AI 交互的核心界面。通过自然语言对话，Loomy 可以帮你完成各种任务，从简单的问答到复杂的多步骤工作流程。"
   },
   {
     "lang": "zh",
-    "heading": "1. 使用技能",
-    "content": "*   **方式一：快捷指令 \"/\"**：在输入框中输入 `/`，会自动弹出技能选择菜单。\r\n*   **方式二：AI 自主识别**：直接描述需求，Loomy 会自动识别并调用相应的技能（例如：“帮我整理下载文件夹”）。"
+    "heading": "1. 开始对话",
+    "content": "在 Loomy 主界面的输入框中输入你的问题或需求，按回车键或点击发送按钮即可开始对话。\r\n示例：\r\n*   \"帮我写一封商务邮件\"\r\n*   \"分析这个 Excel 表格的数据\"\r\n*   \"今天合肥天气怎么样？\"\r\n\r\nLoomy 会根据你的输入，自动判断需要调用哪些工具或技能来完成任务。"
   },
   {
     "lang": "zh",
-    "heading": "2. 任务执行",
-    "content": "*   **单任务执行**：同一时间只能处理一个任务，新的消息会进入等待队列。\r\n*   **中断任务**：如果需要中断正在执行的任务，可以点击「停止」按钮。"
+    "heading": "2. 使用技能",
+    "content": "Loomy 提供两种方式使用技能，让你的工作更加灵活高效。\r\n\r\n*   **方式一：快捷指令 \"/\"**：在输入框中输入 `/`，会自动弹出技能选择菜单。选择需要的技能后，输入具体需求并发送。\r\n*   **方式二：AI 自主识别**：直接描述需求，Loomy 会自动识别并调用相应的技能（例如：“帮我整理下载文件夹”）。\r\n\r\n**技能权限**：你可以在「设置 - 技能」中为每个技能设置权限（允许/询问/禁止）。设置为\"询问\"时，AI 会在调用前征求你的同意。"
   },
   {
     "lang": "zh",
-    "heading": "3. 上下文与工具调用",
-    "content": "*   **上下文管理**：Loomy 会记住对话历史，保持上下文连续性。长对话会消耗更多积分。\r\n*   **工具调用**：当任务需要使用外部工具时，Loomy 会自动调用已配置的 MCP 服务（如邮件操作、网页浏览等）。"
+    "heading": "3. 任务执行",
+    "content": "*   **单任务执行**：同一时间只能处理一个任务，新的消息会进入等待队列。界面会显示当前任务的执行状态（🔄 执行中、✅ 已完成、❌ 失败）。\r\n*   **中断任务**：如果需要中断正在执行的任务，可以点击「停止」按钮。中断后，你可以重新发送修改后的指令，或开始新的任务。"
+  },
+  {
+    "lang": "zh",
+    "heading": "4. 上下文与工具调用",
+    "content": "*   **上下文管理**：Loomy 会记住对话历史，保持上下文连续性。这意味着你可以进行多轮对话，无需重复背景信息。长对话会消耗更多积分。如需开始全新的对话主题，点击「新建对话」按钮即可。\r\n*   **工具调用**：当任务需要使用外部工具时，Loomy 会自动调用已配置的 MCP 服务。常见场景包括：\r\n    *   📧 **邮件操作** - 读取、发送邮件（需配置 QQ 邮箱 MCP）\r\n    *   🌐 **网页浏览** - 访问网页、提取信息（需配置浏览器 MCP）\r\n    *   📅 **日历管理** - 创建、查询日程（需配置系统日历 MCP）\r\n    *   📄 **文件处理** - 读取、编辑本地文件"
+  },
+  {
+    "lang": "zh",
+    "heading": "5. 模型切换",
+    "content": "你可以在对话过程中随时切换使用不同的 AI 模型。点击右上角的模型选择器，选择想要使用的模型。新的对话将使用选定的模型。\r\n*   **MiniMax** - 平衡性能和速度，适合日常对话\r\n*   **豆包** - 适合中文场景\r\n*   **DeepSeek** - 深度推理能力强，适合复杂任务\r\n*   **通义千问** - 综合能力强"
+  },
+  {
+    "lang": "zh",
+    "heading": "6. 常见问题",
+    "content": "**为什么我的消息没有立即得到回复？**\r\n可能当前有任务正在执行，你的消息在等待队列中；或者任务较复杂，需要更长的处理时间；或者网络连接不稳定。\r\n\r\n**如何让 AI 更准确地理解我的需求？**\r\n描述清晰具体，提供必要的背景信息；对于复杂任务，可以分步骤描述；或者直接使用 `/` 快捷指令明确指定技能。"
   },
   {
     "lang": "zh",
@@ -372,7 +432,22 @@
   {
     "lang": "zh",
     "heading": "接入钉钉机器人",
-    "content": "1. 登录 [钉钉开放平台](https://open-dev.dingtalk.com/)：\r\n\r\n进入「应用开发」→「钉钉应用」→「一键自动创建 OpenClaw 机器人应用」，复制 Client ID 和 Client Secret。\r\n\r\n![创建钉钉应用 1](/loomy/dingding/dingding-1.jpg)\r\n![创建钉钉应用 2](/loomy/dingding/dingding-2.jpg)\r\n\r\n确认后自动发布第一个版本，可获取 Client ID 和 Client Secret。\r\n\r\n2. 将获取的 Client ID 和 Client Secret 填入 Loomy 机器人配置信息中，点击启用钉钉机器人，测试连接，保存配置。\r\n\r\n![填写钉钉配置](/loomy/dingding/dingding-4.png)\r\n\r\n3. 点击事件订阅，选择 stream 推送模式，点击已完成接入，验证连接通道。验证成功后可自由选择事件，保存后发布新版本。\r\n\r\n![钉钉事件订阅](/loomy/dingding/dingding-5.jpg)\r\n\r\n4. 打开你的钉钉，出现新对话窗口，显示机器人已创建成功，可以开始对话啦~"
+    "content": "1. 登录 [钉钉开放平台](https://open-dev.dingtalk.com/)：\r\n\r\n进入「应用开发」→「钉钉应用」→「一键自动创建 OpenClaw 机器人应用」，复制 Client ID 和 Client Secret。\r\n\r\n![创建钉钉应用 1](/loomy/dingding/dingding-1.jpg)\r\n![创建钉钉应用 2](/loomy/dingding/dingding-2.jpg)\r\n\r\n确认后自动发布第一个版本，可获取 Client ID 和 Client Secret。\r\n\r\n2. 将获取的 Client ID 和 Client Secret 填入 Loomy 机器人配置信息中，点击启用钉钉机器人，测试连接，保存配置。\r\n\r\n![填写钉钉配置](/loomy/dingding/dingding-4.png)\r\n\r\n3. 点击事件订阅，选择 stream 推送模式，点击已完成接入，验证连接通道。验证成功后可自由选择事件，保存后发布新版本。\r\n\r\n![钉钉事件订阅](/loomy/dingding/dingding-5.jpg)\r\n\r\n4. 打开你的钉钉，出现新对话窗口，显示机器人已创建成功，可以开始对话啦~\n\n---"
+  },
+  {
+    "lang": "zh",
+    "heading": "接入微信机器人",
+    "content": "微信机器人可以作为 Loomy 远程控制的消息入口之一。完成配置后，你可以通过微信向 Loomy 发送指令，并接收执行结果。"
+  },
+  {
+    "lang": "zh",
+    "heading": "适用场景",
+    "content": "*   通过微信单聊远程触发任务\n*   在手机上查看 Loomy 的执行结果\n*   不在工位前时快速确认当前任务状态\n*   利用微信的便捷性随时随地控制 Loomy"
+  },
+  {
+    "lang": "zh",
+    "heading": "基本配置流程",
+    "content": "1. **进入远程控制设置**：打开 Loomy 客户端，点击左侧菜单中的「设置」，找到「远程控制」功能区域。\n2. **选择微信机器人**：在远程控制页面中，找到并点击「微信机器人」选项。\n\n![选择微信机器人](/loomy/wechat/wechat-1.png)\n\n3. **扫码绑定设备**：点击微信机器人后，会弹出二维码。使用手机微信扫描二维码，完成设备绑定。\n\n![扫码绑定设备](/loomy/wechat/wechat-2.png)\n\n4. **确认连接状态**：绑定完成后，远程控制页面中的微信机器人应显示「已连接」状态，表示配置成功。\n\n![确认连接状态](/loomy/wechat/wechat-3.png)\n\n5. **开始使用**：在手机微信中，找到绑定的 Loomy 机器人对话窗口，即可开始发送指令并接收执行结果。\n\n![开始使用](/loomy/wechat/wechat-4.png)\n\n> **注意事项：**\n> *   **微信版本要求**：请确保微信已更新到 8.0.70 及以上版本，否则可能无法正常使用机器人功能。\n> *   **后台运行要求**：真正的任务执行仍依赖 Loomy 本地运行，请确保 Loomy 保持后台可用状态。\n> *   **单设备限制**：目前一个 Loomy 账号只能绑定一个微信设备。如需更换设备，请先解绑当前设备，再重新扫码绑定。"
   },
   {
     "lang": "zh",
@@ -856,28 +931,88 @@
   },
   {
     "lang": "en",
-    "heading": "Model Configuration",
-    "content": "Loomy supports a variety of large model services. You can use the default provided models, or you can add custom AI providers. All configuration information is saved locally, and none of your key data will be uploaded.\n\n**Access Model Settings**\nClick \"Settings\" on the left menu bar of the application, and then select the \"Model\" option to enter the model configuration page.\n\n![Access Model Settings](/loomy/models/model-setting.png)\n\n**Default Model Configuration**\nLoomy provides the following large model services by default, out of the box:\n*   MiniMax - MiniMax-M2.5\n*   Doubao - doubao-seed-2.0-pro\n*   DeepSeek - DeepSeek-v3.2\n*   Qwen - qwen3.5-plus\n\n**Add Custom Provider**\nIn \"Settings -> Model\", click \"+ Add Custom Provider\", fill in the API Key, API Address, Model Name, and other information."
+    "heading": "Models",
+    "content": "Loomy supports a variety of large model services. You can use the default provided models or add custom AI providers. All configuration information is saved locally, and we will not obtain or upload any of your key data."
+  },
+  {
+    "lang": "en",
+    "heading": "Access Model Settings",
+    "content": "Click \"Settings\" in the left menu bar of the application, and then select the \"Models\" option to enter the model configuration page.\n\n![Access Model Settings](/loomy/models/model-setting.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "Default Model Configuration",
+    "content": "Loomy provides the following large model services by default, ready to use out of the box:\n*   MiniMax - MiniMax-M2.5\n*   Doubao - doubao-seed-2.0-pro\n*   DeepSeek - DeepSeek-v3.2\n*   Qwen - qwen3.5-plus\n\nThese default providers are pre-configured, and you can choose to use them directly."
+  },
+  {
+    "lang": "en",
+    "heading": "Switch Models",
+    "content": "In the \"Default Model Configuration\" area, you can see the currently used model. Click the dropdown selector on the right to switch to other available models.\n\nAfter the selection is complete, click the \"Save\" button, and then return to the homepage to use the newly selected model for conversations and task execution."
+  },
+  {
+    "lang": "en",
+    "heading": "Add Custom Providers",
+    "content": "If you want to use other AI service providers or use your own deployed model services, you can add custom providers:\n\n1.  In the \"AI Providers\" area, click the \"+ Add Custom Provider\" button in the upper right corner\n2.  Fill in the relevant configuration information of the provider:\n    *   API Key\n    *   API Address\n    *   Model Name\n    *   Other necessary parameters\n3.  Click \"Configure\" or \"Save\" to complete the addition\n\nAfter the addition is successful, the custom provider will appear in the provider list, and you can switch to use it in the model selector."
+  },
+  {
+    "lang": "en",
+    "heading": "Configure Existing Providers",
+    "content": "For providers whose status is shown as \"Disabled\" in the list (such as OpenAI, Google Gemini, iFLYTEK Spark, Kimi, etc.), you need to configure them first before you can use them:\n\n1.  Click the \"Configure\" button on the right side of the corresponding provider card\n2.  Fill in the API Key and other configuration information required by the provider\n3.  After saving the configuration, the provider's status will change to \"Enabled\"\n4.  Then you can select the provider's model in the model selector"
+  },
+  {
+    "lang": "en",
+    "heading": "Data Security Instructions",
+    "content": "**Local Storage**: All API Keys, configuration information, and model settings are saved on your local device. Loomy will not upload or obtain this sensitive information. You can configure and use various AI services with confidence."
+  },
+  {
+    "lang": "en",
+    "heading": "How to get an API Key?",
+    "content": "Different AI service providers have different ways to get an API Key. Generally, you need to:\n1.  Visit the official website of the corresponding service provider\n2.  Register an account and complete real-name authentication\n3.  Create an API Key in the console or developer center\n4.  Copy the API Key and paste it into Loomy's configuration page"
+  },
+  {
+    "lang": "en",
+    "heading": "Do I need to restart the app after switching models?",
+    "content": "No. After switching models and saving, return to the homepage to use the new model immediately without restarting the application."
+  },
+  {
+    "lang": "en",
+    "heading": "Can I configure multiple providers at the same time?",
+    "content": "Yes. You can configure multiple AI providers and switch between different models at any time when needed.\n\n---"
   },
   {
     "lang": "en",
     "heading": "Chat Function",
-    "content": "The chat function is the core interface for your interaction with AI. Through natural language conversation, Loomy can help you complete various tasks."
+    "content": "The chat function is your core interface for interacting with AI. Through natural language conversations, Loomy can help you accomplish various tasks, from simple Q&A to complex multi-step workflows."
   },
   {
     "lang": "en",
-    "heading": "1. Using Skills",
-    "content": "*   **Method 1: Shortcut Command \"/\"**: Enter `/` in the input box, and a skill selection menu will automatically pop up.\n*   **Method 2: AI Autonomous Recognition**: Directly describe your needs, and Loomy will automatically identify and call the corresponding skills (for example: \"Help me organize the download folder\")."
+    "heading": "1. Start a Conversation",
+    "content": "Enter your question or requirement in the input box on the Loomy main interface, and press Enter or click the send button to start the conversation.\nExamples:\n*   \"Help me write a business email\"\n*   \"Analyze the data in this Excel spreadsheet\"\n*   \"What's the weather like in Hefei today?\"\n\nLoomy will automatically determine which tools or skills to call to complete the task based on your input."
   },
   {
     "lang": "en",
-    "heading": "2. Task Execution",
-    "content": "*   **Single Task Execution**: Only one task can be processed at the same time, new messages will enter the waiting queue.\n*   **Interrupt Task**: If you need to interrupt a task in progress, you can click the \"Stop\" button."
+    "heading": "2. Use Skills",
+    "content": "Loomy provides two ways to use skills, making your work more flexible and efficient.\n\n*   **Method 1: Quick Command \"/\"**: Enter `/` in the input box, and a skill selection menu will automatically pop up. Select the required skill, enter the specific requirement, and send.\n*   **Method 2: AI Autonomous Recognition**: Describe your requirement directly, and Loomy will automatically recognize and call the corresponding skill (for example: \"Help me organize the downloads folder\").\n\n**Skill Permissions**: You can set permissions (Allow/Ask/Forbid) for each skill in \"Settings - Skills\". When set to \"Ask\", AI will ask for your consent before calling."
   },
   {
     "lang": "en",
-    "heading": "3. Context and Tool Calling",
-    "content": "*   **Context Management**: Loomy will remember the conversation history to maintain context continuity. Long conversations will consume more points.\n*   **Tool Calling**: When a task requires the use of external tools, Loomy will automatically call configured MCP services (such as email operations, web browsing, etc.)."
+    "heading": "3. Task Execution",
+    "content": "*   **Single Task Execution**: Only one task can be processed at the same time, and new messages will enter the waiting queue. The interface will display the execution status of the current task (🔄 Executing, ✅ Completed, ❌ Failed).\n*   **Interrupt Task**: If you need to interrupt a running task, you can click the \"Stop\" button. After interruption, you can resend the modified command or start a new task."
+  },
+  {
+    "lang": "en",
+    "heading": "4. Context and Tool Calling",
+    "content": "*   **Context Management**: Loomy remembers the conversation history to maintain context continuity. This means you can have multi-turn conversations without repeating background information. Long conversations will consume more credits. If you need to start a completely new conversation topic, just click the \"New Chat\" button.\n*   **Tool Calling**: When a task requires the use of external tools, Loomy will automatically call the configured MCP service. Common scenarios include:\n    *   📧 **Email Operations** - Read, send emails (requires QQ Mail MCP configuration)\n    *   🌐 **Web Browsing** - Visit web pages, extract information (requires Browser MCP configuration)\n    *   📅 **Calendar Management** - Create, query schedules (requires System Calendar MCP configuration)\n    *   📄 **File Processing** - Read, edit local files"
+  },
+  {
+    "lang": "en",
+    "heading": "5. Model Switching",
+    "content": "You can switch to use different AI models at any time during the conversation. Click the model selector in the upper right corner to choose the model you want to use. New conversations will use the selected model.\n*   **MiniMax** - Balances performance and speed, suitable for daily conversations\n*   **Doubao** - Suitable for Chinese scenarios\n*   **DeepSeek** - Strong deep reasoning ability, suitable for complex tasks\n*   **Qwen** - Strong comprehensive ability"
+  },
+  {
+    "lang": "en",
+    "heading": "6. FAQ",
+    "content": "**Why didn't my message get a reply immediately?**\nIt is possible that a task is currently executing, and your message is in the waiting queue; or the task is relatively complex and requires longer processing time; or the network connection is unstable.\n\n**How can I make AI understand my requirements more accurately?**\nDescribe clearly and specifically, and provide necessary background information; for complex tasks, you can describe them step by step; or directly use the `/` quick command to explicitly specify the skill."
   },
   {
     "lang": "en",
@@ -922,7 +1057,22 @@
   {
     "lang": "en",
     "heading": "Connect to DingTalk Bot",
-    "content": "1. Log in to the [DingTalk Open Platform](https://open-dev.dingtalk.com/):\n\nGo to \"App Development\" -> \"DingTalk App\" -> \"One-click Auto Create OpenClaw Bot App\", and copy the Client ID and Client Secret.\n\n![Create DingTalk App 1](/loomy/dingding/dingding-1.jpg)\n![Create DingTalk App 2](/loomy/dingding/dingding-2.jpg)\n\nAfter confirmation, the first version will be automatically published, and you can get the Client ID and Client Secret.\n\n2. Fill in the obtained Client ID and Client Secret into the Loomy bot configuration information, click enable DingTalk bot, test the connection, and save the configuration.\n\n![Fill in DingTalk Configuration](/loomy/dingding/dingding-4.png)\n\n3. Click event subscription, select stream push mode, click connected to verify the connection channel. After successful verification, you can freely choose events, save, and publish a new version.\n\n![DingTalk Event Subscription](/loomy/dingding/dingding-5.jpg)\n\n4. Open your DingTalk, a new chat window will appear showing that the bot has been created successfully, and you can start chatting~"
+    "content": "1. Log in to the [DingTalk Open Platform](https://open-dev.dingtalk.com/):\n\nGo to \"App Development\" -> \"DingTalk App\" -> \"One-click Auto Create OpenClaw Bot App\", and copy the Client ID and Client Secret.\n\n![Create DingTalk App 1](/loomy/dingding/dingding-1.jpg)\n![Create DingTalk App 2](/loomy/dingding/dingding-2.jpg)\n\nAfter confirmation, the first version will be automatically published, and you can get the Client ID and Client Secret.\n\n2. Fill in the obtained Client ID and Client Secret into the Loomy bot configuration information, click enable DingTalk bot, test the connection, and save the configuration.\n\n![Fill in DingTalk Configuration](/loomy/dingding/dingding-4.png)\n\n3. Click event subscription, select stream push mode, click connected to verify the connection channel. After successful verification, you can freely choose events, save, and publish a new version.\n\n![DingTalk Event Subscription](/loomy/dingding/dingding-5.jpg)\n\n4. Open your DingTalk, a new chat window will appear showing that the bot has been created successfully, and you can start chatting~\n\n---"
+  },
+  {
+    "lang": "en",
+    "heading": "Connect to WeChat Bot",
+    "content": "The WeChat bot can serve as one of the message entries for Loomy's remote control. After configuration, you can send commands to Loomy via WeChat and receive execution results."
+  },
+  {
+    "lang": "en",
+    "heading": "Applicable Scenarios",
+    "content": "*   Remotely trigger tasks through WeChat direct messages\n*   Check Loomy's execution results on your mobile phone\n*   Quickly confirm current task status when away from your desk\n*   Use the convenience of WeChat to control Loomy anytime, anywhere"
+  },
+  {
+    "lang": "en",
+    "heading": "Basic Configuration Process",
+    "content": "1. **Enter remote control settings**: Open the Loomy client, click \"Settings\" in the left menu, and find the \"Remote Control\" functional area.\n2. **Select WeChat Bot**: In the remote control page, find and click the \"WeChat Bot\" option.\n\n![Select WeChat Bot](/loomy/wechat/wechat-1.png)\n\n3. **Scan QR code to bind device**: After clicking the WeChat bot, a QR code will pop up. Use your mobile WeChat to scan the QR code to complete the device binding.\n\n![Scan QR code to bind device](/loomy/wechat/wechat-2.png)\n\n4. **Confirm connection status**: After the binding is complete, the WeChat bot in the remote control page should show the \"Connected\" status, indicating successful configuration.\n\n![Confirm connection status](/loomy/wechat/wechat-3.png)\n\n5. **Start using**: In your mobile WeChat, find the bound Loomy bot chat window to start sending commands and receiving execution results.\n\n![Start using](/loomy/wechat/wechat-4.png)\n\n> **Precautions:**\n> *   **WeChat Version Requirement**: Please ensure that WeChat has been updated to version 8.0.70 or above; otherwise, the bot function may not work properly.\n> *   **Background Running Requirement**: Real task execution still relies on Loomy running locally. Please ensure that Loomy remains available in the background.\n> *   **Single Device Limit**: Currently, one Loomy account can only bind one WeChat device. If you need to change the device, please unbind the current device first, and then scan the code again to bind."
   },
   {
     "lang": "en",

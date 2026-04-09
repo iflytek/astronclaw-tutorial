@@ -32,6 +32,9 @@
           {{ i18n.send }}
         </button>
       </div>
+      <div class="chat-footer">
+        LLM powered by <a href="https://maas.xfyun.cn/modelSquare" target="_blank" rel="noopener noreferrer">讯飞星辰MaaS</a>
+      </div>
     </div>
     <div v-else class="chat-toggle" @click="toggleChat">
       🤖
@@ -611,5 +614,24 @@ const sendMessage = async () => {
 .chat-input button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.chat-footer {
+  text-align: center;
+  padding: 0 12px 12px;
+  background-color: var(--vp-c-bg);
+  font-size: 11px;
+  color: var(--vp-c-text-3);
+}
+
+.chat-footer a {
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.chat-footer a:hover {
+  color: var(--vp-c-brand-1);
 }
 </style>
