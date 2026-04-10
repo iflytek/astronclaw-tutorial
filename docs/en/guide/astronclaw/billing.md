@@ -51,6 +51,10 @@ Users can purchase point packages at any time to break through plan limits.
 AstronClaw will occasionally launch events to reward points.
 
 ## 5. Point Consumption Rules
+Points are the basic measurement unit for users to call various functions, execute tasks, and consume model resources within AstronClaw. The more complex the task, the more points it consumes.
+
+To help users understand the approximate resource consumption of common tasks, we provide typical point consumption references based on different task types. Please note that the relevant references are for estimation purposes only. **The actual deducted points may vary depending on the task content, called capabilities, processing depth, execution time, and system operation status, and are ultimately subject to the actual settlement result of the task.**
+
 Points will be consumed when executing tasks, and point consumption depends on:
 *   Model calls
 *   Skill capability calls

@@ -110,6 +110,35 @@ Enter AstronClaw "Channel Configuration", select "WeCom", fill in the Bot ID and
 
 ---
 
+## WeChat Channel Configuration Guide
+
+### Prerequisites
+*   Successfully **Deployed AstronClaw**
+*   Entered the **Channels configuration module**
+
+### Steps
+
+**Step 1: Get QR Code in AstronClaw**
+1.  Enter the AstronClaw "Channel Configuration" page
+2.  Select the "WeChat" channel
+3.  Click "Scan to Connect WeChat", and a QR code will pop up
+    ![Scan to connect WeChat 1](https://bjcdn.openstorage.cn/aicontest/2026-03-30/0efa8092-b8d4-4caf-9c5f-9c9adaa80cbc.png)
+    ![Scan to connect WeChat 2](https://bjcdn.openstorage.cn/aicontest/2026-03-30/ed272a6b-1952-4e81-beae-0dd92db65767.png)
+
+**Step 2: Use WeChat to Scan Code**
+Use WeChat to scan the QR code above, and click "Connect" on the pop-up page to complete binding.
+![Connection Confirm](https://bjcdn.openstorage.cn/aicontest/2026-03-27/aa7fc599-f956-446f-aae6-28b00efbe39d.png)
+
+> **Note:** The QR code is valid for 30 seconds. If it times out, please click "Click to Refresh" on the mask layer to get it again.
+![Timeout Refresh](https://bjcdn.openstorage.cn/aicontest/2026-03-30/1fa6ca11-0d49-4e58-8697-ba20b974795c.png)
+
+### Add Multiple Accounts and Unbind
+
+**Add Multiple Accounts:** If you need to associate multiple WeChat accounts, click "+ Add Account" and repeat the scan steps above.
+![Add Account](https://bjcdn.openstorage.cn/aicontest/2026-03-30/dfc5292c-bdc7-4620-8de5-4ef3f41946b3.png)
+
+---
+
 ## Weibo Channel Configuration Guide
 
 **Step 1: Get Credentials**

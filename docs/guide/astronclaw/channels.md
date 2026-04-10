@@ -110,6 +110,35 @@ AstronClaw 支持连接多种企业协作平台和社交媒体，让你可以在
 
 ---
 
+## 微信渠道配置指南
+
+### 前置条件
+*   已成功 **部署 AstronClaw**
+*   已进入 **渠道配置（Channels）模块**
+
+### 操作步骤
+
+**步骤一：在 AstronClaw 中获取二维码**
+1.  进入 AstronClaw「渠道配置」页面
+2.  选择「微信」渠道
+3.  点击「扫码连接微信」，即可弹出一个二维码
+    ![扫码连接微信 1](https://bjcdn.openstorage.cn/aicontest/2026-03-30/0efa8092-b8d4-4caf-9c5f-9c9adaa80cbc.png)
+    ![扫码连接微信 2](https://bjcdn.openstorage.cn/aicontest/2026-03-30/ed272a6b-1952-4e81-beae-0dd92db65767.png)
+
+**步骤二：使用微信进行扫码**
+使用微信扫描上述二维码，在弹出的页面中点击「连接」，即可完成绑定。
+![连接确认](https://bjcdn.openstorage.cn/aicontest/2026-03-27/aa7fc599-f956-446f-aae6-28b00efbe39d.png)
+
+> **注意：** 二维码有效期为 30 秒。若超时未扫，请点击遮罩层上的「点击刷新」重新获取。
+![超时刷新](https://bjcdn.openstorage.cn/aicontest/2026-03-30/1fa6ca11-0d49-4e58-8697-ba20b974795c.png)
+
+### 添加多账号与解绑
+
+**添加多账号：** 若需关联多个微信，点击「+ 添加账号」重复上述扫码步骤即可。
+![添加账号](https://bjcdn.openstorage.cn/aicontest/2026-03-30/dfc5292c-bdc7-4620-8de5-4ef3f41946b3.png)
+
+---
+
 ## 微博渠道配置指南
 
 **步骤一：获取凭证**

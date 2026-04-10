@@ -60,3 +60,12 @@ In the "My Skills" panel, you can:
 *   **Delete**: Remove skills
 *   **Download**: Export skills
 *   **Enable/Disable**: Control the calling status of skills
+
+### How to Use After Custom Skill Creation
+After the skill is created:
+👉 No extra operation needed, it's ready to use directly
+
+**Example:**
+> Help me analyze this financial report and give investment advice
+
+The system will automatically call the newly created "Financial Report Analysis Skill"
