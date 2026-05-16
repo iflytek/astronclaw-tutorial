@@ -145,7 +145,7 @@ Use WeChat to scan the QR code above, and click "Connect" on the pop-up page to 
 Open the Weibo client and send a private message to `https://weibo.com/u/6808810981`
 ![Private Message Weibo Account](/astronclaw/channels/weibo-app-credential1.png)
 
-Send private message: `Connect Lobster`. Get the app credentials:
+Send private message: `连接龙虾`. Get the app credentials:
 ![Get Weibo Credentials](/astronclaw/channels/weibo-app-credential2.png)
 
 **Step 2: Complete Configuration in AstronClaw**

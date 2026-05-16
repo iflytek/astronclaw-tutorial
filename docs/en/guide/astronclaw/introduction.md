@@ -28,5 +28,5 @@ Reading time: about 5 minutes
 | Environment | No dependencies needed | Needs Node, Docker, etc. |
 | Skills Install | One-click from Skill Market | Manual search, download, install |
 | Uptime | Cloud 24/7 running | Stops when computer is off |
-| Channels | Feishu, DingTalk, WeCom, Weibo | Needs manual configuration |
+| Channels | Feishu, DingTalk, WeCom, WeChat, Weibo | Needs manual configuration |
 | Maintenance | Platform hosted, zero ops | Needs self-hosted server or PC on |

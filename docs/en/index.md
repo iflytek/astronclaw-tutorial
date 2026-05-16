@@ -17,21 +17,21 @@ hero:
 
 features:
   - title: 01 One-Click Cloud Deployment
-    details: Minimalist process, zero code configuration, farewell to environment dependencies. Runs 24/7 in the cloud, available anytime, anywhere.
+    details: Minimal setup, zero code configuration, no environment dependencies. Runs 24/7 in the cloud, available anytime, anywhere.
     link: /en/guide/astronclaw/getting-started
   - title: 02 Rich Built-in Skills System
-    details: Supports 130+ official skills, one-click installation and use. Also supports conversational automatic installation and custom skill expansion.
+    details: Supports 130+ official skills with one-click installation. Also supports auto-installation via chat and custom skill creation.
     link: /en/guide/astronclaw/skills
   - title: 03 24/7 Multi-Channel Response
-    details: Supports seamless integration with Feishu, DingTalk, and WeCom. Complete daily tasks in your familiar office collaboration software.
+    details: Seamlessly integrates with Feishu, DingTalk, and WeCom. Complete daily tasks right within your familiar office tools.
   - title: 04 Loomy Desktop Deep Collaboration
-    details: Oriented towards real office scenarios, focusing on "low threshold, high security, strong adaptation, and active collaboration". Easy integration with localized tools.
+    details: Designed for real office scenarios — low barrier, high security, strong adaptability, and proactive collaboration. Easy integration with localized tools.
     link: /en/guide/loomy/introduction
-  - title: 05 Rich Typical Work Scenarios
-    details: Covers multiple real business loops such as social media operation, daily office collaboration, investment monitoring, and e-commerce operation.
+  - title: 05 Typical Work Scenarios
+    details: Covers real business workflows including social media operations, daily office collaboration, investment tracking, and e-commerce operations.
     link: /en/guide/loomy/scenarios
-  - title: 06 High Security & Zero Maintenance Cost
-    details: Platform hosting, enterprise-level security protection; Loomy's directory-level authorization ensures local data privacy, making AI land safely.
+  - title: 06 High Security & Zero Maintenance
+    details: Platform-hosted with enterprise-grade security. Loomy's directory-level authorization protects local data privacy, making AI deployment safe and reliable.
 
 ---
 

@@ -1,6 +1,6 @@
 # Frequently Asked Questions (FAQ)
 
-## Privacy and Security Related
+## Privacy and Security
 
 ### Will my files be uploaded to the cloud?
 
@@ -12,7 +12,7 @@ Loomy can only access the **working directories you explicitly authorize**. For 
 
 ### Can Loomy use my own model service provider API Key?
 
-Yes. Loomy provides default model services for users out of the box; if you have your own model service provider, you can also configure your own API Key in Loomy to use.
+Yes. Loomy provides default model services for out-of-the-box use; if you have your own model service provider, you can also configure your API Key in Loomy.
 When you use your own API Key, Loomy will not upload any additional confidential information. The relevant Key will only be saved locally and used locally when you initiate the corresponding model call, and will not be hosted or synchronized to the cloud by the Loomy platform.
 
 ## Target Audience
@@ -27,4 +27,4 @@ Loomy is suitable for people who need to frequently handle information organizat
 *   E-commerce practitioners
 *   Individual users who hope to hand over repetitive processes to AI for assistance
 
-If your work frequently requires switching back and forth between chats, emails, documents, web pages, and to-dos, Loomy will be easier to play its value.
+If your work frequently requires switching back and forth between chats, emails, documents, web pages, and to-dos, Loomy can more easily deliver its value.

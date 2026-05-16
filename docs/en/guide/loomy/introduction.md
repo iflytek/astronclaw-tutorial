@@ -1,20 +1,16 @@
-# Loomy: Your Desktop Companion
+# Loomy: Your Desktop AI Companion
 
-Loomy is a desktop application based on the OpenClaw framework. It goes beyond web-based AI assistants by directly integrating with your local operating system and files, becoming your reliable work companion.
+**Loomy** is an AI work companion designed for real-world office scenarios. Built on AstronClaw's powerful underlying engine, it focuses on four core principles: **low barrier, high security, strong adaptability, and proactive collaboration**, helping users truly execute complex, repetitive, and cross-tool workflows.
 
----
+Compared to geek-oriented and complex-to-deploy Agent tools, Loomy emphasizes **out-of-the-box usability** and **compatibility with the Chinese office environment**.
 
-## Why Loomy?
+## Why Choose Loomy?
 
-While cloud assistants (like AstronClaw) are great for anytime, anywhere access, many professional tasks require deep interaction with local files, applications, and operating systems. Loomy fills this gap by offering:
+*   **Easy to Get Started**: No need to fiddle with command lines or complex environment configurations. Just complete basic authorization and tool binding, and you can start using AI chat, task management, working directory switching, remote collaboration, and more.
+*   **More Than Just "Following Instructions"**: Loomy doesn't just want to be an assistant that follows instructions, but a work partner more like a colleague. It can break down tasks around user goals, connect multiple tools, and execute multi-step workflows.
+*   **Understands Your Habits**: Gradually understands user habits during daily use, providing a collaboration experience closer to actual work.
 
-1.  **Local Context**: Directly read and edit local files without uploading them manually.
-2.  **OS Integration**: Automate system tasks, manage calendars, or send emails through local clients.
-3.  **Privacy Control**: Sensitive data stays on your machine, processed securely.
+## Security and Practicality
 
-## Key Features
-
-*   **File Mastery**: Drag, drop, and process documents (Word, Excel, PDF) natively.
-*   **Skill Toolbox**: Extend capabilities with customized local skills.
-*   **Scheduled Tasks**: Run background operations even when you are away from the keyboard.
-*   **Remote Control**: Trigger local actions remotely via mobile apps like WeChat or Feishu.
+In terms of product positioning, Loomy also particularly emphasizes security and practicality.
+Through **directory-level authorization**, **enterprise scenario adaptation**, **localized tool integration**, and other methods, it minimizes data risks and deployment barriers, allowing AI to truly enter team workflows instead of staying at the demo stage.

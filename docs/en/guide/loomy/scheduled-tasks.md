@@ -68,8 +68,8 @@ That is to say:
 Whether it involves the consumption of other capabilities is subject to the current rules and actual function descriptions within the product.
 
 > **API Key Security Instructions**
-> The API Key you configure yourself will only be saved on your local device, and Loomy will not host, upload, or leak these key information.
-> **Keep your keys safe**: API Keys are sensitive information, please do not share them randomly with others, and do not save or transmit them in untrusted environments. If the key is leaked, it may cause a third party to fraudulently use your model service quota or access capabilities.
+> The API Key you configure yourself will only be saved on your local device. Loomy will not host, upload, or leak this key information.
+> **Keep your keys safe**: API Keys are sensitive information, please do not share them randomly with others, and do not save or transmit them in untrusted environments. If the key is leaked, it may allow a third party to misuse your model service quota or access capabilities.
 
 ### How to get points
 You can get points in the following ways:

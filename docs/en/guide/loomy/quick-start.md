@@ -6,7 +6,7 @@ First, apply to join the Waiting List on the official website, submit basic info
 ![Join Waiting List](/loomy/quick-start/waiting.png)
 
 ## Get Invitation Code
-After your application is approved, you will receive an exclusive invitation code. The invitation code is a necessary credential to log in and experience Loomy currently, please keep it safe.
+After your application is approved, you will receive an exclusive invitation code. The invitation code is a necessary credential to log in and experience Loomy — please keep it safe.
 
 ![Get Invitation Code](/loomy/quick-start/qmail.png)
 
