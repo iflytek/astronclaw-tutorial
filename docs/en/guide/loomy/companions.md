@@ -1,99 +1,99 @@
 # AI Companions
 
-Loomy's AI companions are not cold, mechanical tools, but digital partners with personality, an understanding of your tasks, and the ability to push work forward alongside you. A companion can help you break down tasks, organize your thoughts, and spark ideas, and gradually gets familiar with your rhythm through repeated collaboration to become a teammate who understands you better.
+Loomy's AI Companions are not just cold tools, but digital partners with personality, task awareness, and the ability to help you move things forward. They can decompose tasks, organize thoughts, and spark inspiration, gradually getting used to your pace through each collaboration to become better teammates.
 
-In terms of experience, switching companions means switching collaboration styles. Different companions have different names, avatars, personas, tones, and working preferences, but the tools they can call, their memory, and their basic task abilities remain the same. You can think of a companion as a different collaborative personality on the same set of Loomy capabilities.
+Switching companions is like switching collaboration styles. Each companion has a different name, avatar, persona, tone, and working preference, but their available tools, memory, and basic task abilities remain the same. You can consider companions as different collaboration personas built on the same Loomy capabilities.
 
-![Your AI companion team has assembled](/loomy/companions/companion-team-hero.png)
+![Your team of AI companions has assembled](/loomy/companions/companion-team-hero.png)
 
-## The Default Companion, Loomy
-On first use, Loomy selects the official companion "Loomy" by default. Its style is warm, careful, and conscientious, suitable for daily office work, information organization, document processing, and task progression.
+## Default Companion: Loomy
+When starting out, Loomy will automatically select the official companion “Loomy” for you. This companion has a warm, attentive, and responsible style, suitable for daily office work, information organization, document processing, and general task progress.
 
-![Default Loomy companion selection](/loomy/companions/default-loomy.png)
+![Default selection: Loomy companion](/loomy/companions/default-loomy.png)
 
-You can ask directly in the input box, for example:
+You can ask questions directly in the input box, for example:
 
 > Who are you?
 
-Loomy will reply in its own identity and style.
+Loomy will reply in line with its own identity and style.
 
-![Asking Loomy's identity](/loomy/companions/ask-loomy-who.png)
+![Ask Loomy who it is](/loomy/companions/ask-loomy-who.png)
 
-## Switch or Create Companions
-At the bottom of the chat box, hover over the current companion's avatar and click to expand the companion menu. Here you can switch between existing companions, or click "Create My Companion" to start creating a new one.
+## Switch or Create a Companion
+At the bottom of the chat window, hover your mouse over the current companion avatar and click to expand the companion menu. Here you can switch among existing companions or click “Create My Companion” to start creating a new one.
 
-![Open companion dropdown menu](/loomy/companions/companion-dropdown.png)
+![Open the companion dropdown menu](/loomy/companions/companion-dropdown.png)
 
-After clicking "Create My Companion", Loomy starts a new task and shows the companion selection page. Two template companions are provided by default:
+After clicking “Create My Companion”, Loomy will start a new task and display the companion selection screen. There are currently two built-in template companions:
 
-*   **Xiaolin**: A calm and rational efficiency driver, suitable for task breakdown, plan evaluation, code debugging, and other scenarios that need priorities and structured results.
-*   **Xiaonuan**: A sunny and energetic creative partner, suitable for brainstorming, content creation, emotional companionship, and relaxed collaboration.
+* **Lin**: A calm and logical productivity booster, suitable for task breakdown, plan evaluation, code debugging, and other scenarios needing prioritization and structured results.
+* **Warm**: A sunshine-filled, creative partner, suited to brainstorming, content creation, emotional support, and light, collaborative tasks.
 
-You can also choose "Custom" to create your own dedicated companion.
+You can also choose “Custom” to create a companion just for yourself.
 
 ![Companion selection page](/loomy/companions/companion-selection.png)
 
 ## Using Template Companions
-After selecting a template companion, Loomy displays its default persona. Take "Xiaolin" as an example: it is positioned as a calm and rational efficiency driver, with more direct expression and more structured output.
+After selecting a template companion, Loomy will display its default persona. For example, “Lin” is positioned as a calm, logical productivity booster, communicates more directly, and outputs more structured results.
 
-![Xiaolin template preview](/loomy/companions/template-lin-preview.png)
+![Lin template preview](/loomy/companions/template-lin-preview.png)
 
-After confirming, reply "Save" to create it successfully. Once created, you can see the new companion in the companion menu of the input box and switch to it to continue the conversation.
+Reply “Save” to confirm and create. Afterwards, you can see the new companion in the menu and switch to continue the conversation.
 
-After switching to Xiaolin, the reply style changes noticeably: more calm, rational, and results-oriented, with no small talk and no cuteness, better suited for breaking tasks into steps and pushing them forward.
+When using Lin, the reply style becomes noticeably different: more calm, rational, and result-oriented; not chatty or cute—better for advancing tasks step by step.
 
-![Conversation after switching to Xiaolin](/loomy/companions/chat-with-lin.png)
+![Conversation with Lin](/loomy/companions/chat-with-lin.png)
 
-## Creating a Custom Companion
-If you want a companion that better matches your preferences, click the "Custom" card on the companion selection page.
+## Create a Custom Companion
+If you want a companion even better suited to your preferences, click the “Custom” card on the selection page.
 
-![Click to customize a companion](/loomy/companions/custom-card.png)
+![Click to create a custom companion](/loomy/companions/custom-card.png)
 
-You can then tell Loomy directly what kind of companion you want to create, including the name, character temperament, positioning, speaking style, applicable scenarios, and more. For example:
+You can then tell Loomy directly what kind of companion you wish to create, including name, character traits, position, speaking style, and applicable scenarios. For example:
 
-> Help me create a Li Bai companion modeled after the ancient poet Li Bai.
+> Help me create a companion modeled after the ancient poet Li Bai.
 
-Loomy will first help you sort out the companion's settings through conversation, and can also search for relevant character traits based on your requirements to generate a more complete persona.
+Loomy will guide you to define your companion in conversation, and can search for relevant character traits as needed to generate a complete persona.
 
-![Creating a Li Bai companion through conversation](/loomy/companions/create-li-bai.png)
+![Create Li Bai companion via dialog](/loomy/companions/create-li-bai.png)
 
-Once the persona is confirmed, Loomy generates a dedicated avatar for it. When there is nothing left to adjust, click or reply "Save" to create it successfully.
+After the persona is confirmed, Loomy will generate a dedicated image for your companion. When you are satisfied, click or reply “Save” to complete creation.
 
-![Li Bai companion's dedicated avatar](/loomy/companions/li-bai-avatar.png)
+![Li Bai companion's customized avatar](/loomy/companions/li-bai-avatar.png)
 
-After creation, switch to this companion to continue chatting, and it will collaborate with you according to the corresponding persona. For example, you can ask:
+Once created, you can switch and chat with this companion, who will interact with you in the defined persona. For example, you can ask:
 
-> Who are you? What's the weather like in Hefei today?
+> Who are you? What's the weather in Hefei today?
 
-The companion keeps its own expressive style while still being able to call tools such as weather and web search to complete tasks.
+The companion will keep its style while still being able to use tools such as weather or web search to complete tasks.
 
-![Chatting with the Li Bai companion and checking the weather](/loomy/companions/chat-with-li-bai-weather.png)
+![Chat with Li Bai companion and check weather](/loomy/companions/chat-with-li-bai-weather.png)
 
 ## View and Adjust Companions
-In the companion dropdown menu of the input box, click the edit icon to the right of a companion to view its profile.
+In the input box's companion menu, click the edit icon next to a companion to view its profile.
 
-![Click the companion editing entry](/loomy/companions/edit-companion-entry.png)
+![Click edit companion entry](/loomy/companions/edit-companion-entry.png)
 
-The companion profile shows its name, positioning, avatar, persona, language style, and applicable scenarios. Here you can delete the companion or continue adjusting its settings.
-
-If you want to keep modifying it, click "Adjust Partner Settings" in the lower right corner. Loomy starts a new task, and you can continue adjusting the companion's avatar, persona, tone, positioning, or applicable scenarios through conversation.
+The companion profile displays the name, position, avatar, persona, language style, and applicable scenarios. Here you can delete the companion or continue editing its settings.
 
 ![Companion profile details](/loomy/companions/companion-profile.png)
 
-> **Note**: The companion currently in use in the chat box cannot be deleted or adjusted, and the corresponding buttons are grayed out. Loomy's official built-in companions also cannot be modified or deleted.
+If you want further changes, click “Adjust Companion Settings” at the bottom right. Loomy will start a new task for you to continue adjusting the companion's avatar, persona, tone, positioning, or scenarios through conversation.
 
-## Select a Companion from a New Task
-In addition to switching companions at the bottom of the chat box, you can also quickly select a companion from the "New Task" entry.
+> **Note:** The companion currently in use in the chat window cannot be deleted or edited; the corresponding buttons will be grayed out. Official Loomy built-in companions also cannot be modified or deleted.
 
-Hover over the "New Task" button on the left, and an expand arrow appears on the right. After expanding, you can directly select the companion you want to work with and start a new task with it.
+## Select a Companion When Starting a New Task
+In addition to switching at the bottom of the chat window, you can quickly choose a companion via the “New Task” entry.
 
-![Select a companion from the new task entry](/loomy/companions/new-task-companion.png)
+Hover over the “New Task” button on the left; an arrow will expand on the right. Click to directly choose your companion and start a new task with it.
 
-## Usage Suggestions
-You can have multiple companions, letting companions of different personalities accompany you on different tasks:
+![Select companion from New Task entry](/loomy/companions/new-task-companion.png)
 
-*   For steadier task progression, choose Loomy or Xiaolin.
-*   For more relaxed inspiration and companionship, choose Xiaonuan.
-*   For a specific character temperament, create a custom companion, such as a Zhang Fei type, Li Bai type, project manager type, editor type, or study companion.
+## Tips
+You can have multiple companions, each with different personalities to help tackle different tasks:
 
-Start by choosing one companion to work with, and create the one that understands you best whenever you like.
+* For stable and structured task progress, choose Loomy or Lin.
+* For inspiration and light-hearted support, choose Warm.
+* To meet special character traits, create a custom companion, such as “Zhang Fei” type, “Li Bai” type, “Project Manager” type, “Editor” type, or a “Study Companion.”
+
+Choose a companion to start, and you can always create the one that understands you best.

@@ -1,7 +1,7 @@
 {
   "source": "loomy",
   "name": "Loomy Docs",
-  "pageCount": 23,
+  "pageCount": 24,
   "pages": {
     "https://loomy.xunfei.cn/docs": {
       "url": "https://loomy.xunfei.cn/docs",
@@ -276,6 +276,38 @@
       "images": [],
       "textHash": "09c27379523c0c03",
       "textLen": 1905
+    },
+    "https://loomy.xunfei.cn/docs/user-guide/companions": {
+      "url": "https://loomy.xunfei.cn/docs/user-guide/companions",
+      "title": "AI 搭子 | Loomy",
+      "headings": [
+        "h1:AI 搭子",
+        "h2:默认搭子 Loomy",
+        "h2:切换或创建搭子",
+        "h2:使用模板搭子",
+        "h2:创建自定义搭子",
+        "h2:查看和调整搭子",
+        "h2:从新任务选择搭子",
+        "h2:使用建议"
+      ],
+      "images": [
+        "https://loomy.xunfei.cn/docs/images/companions/companion-team-hero.png",
+        "https://loomy.xunfei.cn/docs/images/companions/default-loomy.png",
+        "https://loomy.xunfei.cn/docs/images/companions/ask-loomy-who.png",
+        "https://loomy.xunfei.cn/docs/images/companions/companion-dropdown.png",
+        "https://loomy.xunfei.cn/docs/images/companions/companion-selection.png",
+        "https://loomy.xunfei.cn/docs/images/companions/template-lin-preview.png",
+        "https://loomy.xunfei.cn/docs/images/companions/chat-with-lin.png",
+        "https://loomy.xunfei.cn/docs/images/companions/custom-card.png",
+        "https://loomy.xunfei.cn/docs/images/companions/create-li-bai.png",
+        "https://loomy.xunfei.cn/docs/images/companions/li-bai-avatar.png",
+        "https://loomy.xunfei.cn/docs/images/companions/chat-with-li-bai-weather.png",
+        "https://loomy.xunfei.cn/docs/images/companions/edit-companion-entry.png",
+        "https://loomy.xunfei.cn/docs/images/companions/companion-profile.png",
+        "https://loomy.xunfei.cn/docs/images/companions/new-task-companion.png"
+      ],
+      "textHash": "f63bcff310592f1d",
+      "textLen": 1540
     },
     "https://loomy.xunfei.cn/docs/user-guide/credits": {
       "url": "https://loomy.xunfei.cn/docs/user-guide/credits",
