@@ -1,7 +1,7 @@
 {
   "source": "loomy",
   "name": "Loomy Docs",
-  "pageCount": 24,
+  "pageCount": 25,
   "pages": {
     "https://loomy.xunfei.cn/docs": {
       "url": "https://loomy.xunfei.cn/docs",
@@ -472,6 +472,48 @@
       ],
       "textHash": "21649b5033a20af6",
       "textLen": 944
+    },
+    "https://loomy.xunfei.cn/docs/user-guide/knowledge-base": {
+      "url": "https://loomy.xunfei.cn/docs/user-guide/knowledge-base",
+      "title": "资料库 | Loomy",
+      "headings": [
+        "h1:资料库",
+        "h2:授权访问本地资料",
+        "h2:浏览资料",
+        "h3:文档",
+        "h3:图片",
+        "h3:应用",
+        "h2:智能识图",
+        "h3:查看识图描述",
+        "h2:在对话中检索资料",
+        "h2:搜索弹框",
+        "h3:开启与设置快捷键",
+        "h3:快速搜索应用、文件与命令",
+        "h3:把任务交给 Loomy",
+        "h2:常见问题",
+        "h3:Loomy 会上传我的本地文件吗？",
+        "h3:不开启智能识图能用吗？",
+        "h3:唤不出搜索弹框怎么办？"
+      ],
+      "images": [
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/kb-authorize.png",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/kb-select-folder.png",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/kb-documents.png",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/kb-images.png",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/kb-apps.png",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/kb-smart-vision.png",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/kb-image-menu.png",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/kb-image-detail.png",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/kb-chat-search.png",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/search-settings.png",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/search-popup.gif",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/search-file.gif",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/search-photo.gif",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/search-app.gif",
+        "https://loomy.xunfei.cn/docs/images/knowledge-base/search-ask-loomy.gif"
+      ],
+      "textHash": "c94b0817b021e3ab",
+      "textLen": 1715
     },
     "https://loomy.xunfei.cn/docs/user-guide/models": {
       "url": "https://loomy.xunfei.cn/docs/user-guide/models",
