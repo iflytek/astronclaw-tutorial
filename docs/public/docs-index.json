@@ -331,6 +331,111 @@
   },
   {
     "lang": "zh",
+    "heading": "桌面宠物",
+    "content": "桌面宠物是 Loomy 里的一只桌面精灵。它不只是贴在桌面上的动画形象，而是一只能感知 AI 会话状态、会抽卡换人格、会被你戳会害羞、还会临场点评你干活的小伙伴。\n\n开启后，它会常驻在桌面上陪你工作：任务刚开始时给你打气，任务完成后挥手点评，出错时安慰你，空闲时也可能冒出一句不太正经但很贴心的话。"
+  },
+  {
+    "lang": "zh",
+    "heading": "开启桌面宠物",
+    "content": "进入「设置」-「宠物」，打开「显示桌面宠物」开关。\n\n![开启桌面宠物入口](/loomy/desktop-pet/settings-off.png)\n\n如果你还没有自己的桌宠，开启后可以点击「抽取桌宠」开始召唤。"
+  },
+  {
+    "lang": "zh",
+    "heading": "抽卡与出战",
+    "content": "抽取桌宠时，Loomy 会先召唤出一个候选桌宠。你可以选择「再抽一次」，也可以点击「出战」让它成为你的当前桌宠。\n\n![抽取桌宠结果](/loomy/desktop-pet/summon-result.png)\n\n每只桌宠都有不同的外观和人格风格，例如温柔陪伴型、元气打气型、轻微毒舌型、害羞反应型、知识型、戏剧化表达型等。不同风格会影响它的说话方式、互动反应和任务点评语气。\n\n你不需要提前选择人格，抽卡时 Loomy 会随机召唤出一个候选桌宠。桌宠也有不同稀有度，稀有度越高，召唤时的光效越特别，也更有抽到惊喜的感觉。\n\n> **注意**\n>\n> 抽出的桌宠只是候选，只有点击「出战」后才会生效。更换桌宠会清空旧桌宠的记忆，请确认后再切换。"
+  },
+  {
+    "lang": "zh",
+    "heading": "桌宠图鉴",
+    "content": "桌宠图鉴用来记录已经公开的桌宠。每只桌宠都有自己的外观、气质和互动风格，抽到喜欢的那一只后，可以点击「出战」让它陪你一起工作。\n\n![桌宠图鉴主视觉](/loomy/desktop-pet/desktop-pet-gallery-hero.png)\n\n图鉴不会提前剧透完整抽卡规则。它更像一本小相册：你可以在这里认识当前几只桌宠，看看它们大概是什么感觉、适合怎样陪你工作。"
+  },
+  {
+    "lang": "zh",
+    "heading": "Loomy",
+    "content": "![Loomy](/loomy/desktop-pet/loomy-pixel.png)\n\nLoomy 本体的手绘浓像素风版本，保留深棕长发、大眼睛、黑色 Loomy T、浅色牛仔裤和白鞋。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阿比",
+    "content": "![阿比](/loomy/desktop-pet/digua.png)\n\n阿比的手绘浓像素风版本，蓝灰毛色、橙色大眼、大耳朵、奶油胸脸和薄荷绿像素蝴蝶结都很有辨识度。"
+  },
+  {
+    "lang": "zh",
+    "heading": "小布偶",
+    "content": "![小布偶](/loomy/desktop-pet/loomy-pixel-ragdoll.png)\n\n小布偶是布偶猫的手绘浓像素风版本，奶油白长毛、灰褐重点色脸耳、蓝眼睛和大蓬尾都很柔软。"
+  },
+  {
+    "lang": "zh",
+    "heading": "卡皮巴拉",
+    "content": "![卡皮巴拉](/loomy/desktop-pet/loomy-pixel-capybara.png)\n\n卡皮巴拉是水豚的手绘浓像素风版本，棕色圆润身体、短耳朵和薄荷绿围巾构成主要外观。"
+  },
+  {
+    "lang": "zh",
+    "heading": "小海豹",
+    "content": "![小海豹](/loomy/desktop-pet/loomy-pixel-seal-unified.png)\n\n小海豹的手绘浓像素风版本，白色圆润身体、浅色斑点、柔软表情和薄荷绿围巾都很醒目。"
+  },
+  {
+    "lang": "zh",
+    "heading": "墨团",
+    "content": "![墨团](/loomy/desktop-pet/loomy-pixel-inkball.png)\n\n墨团是黑紫色毛绒感像素桌宠，圆滚滚的身体、卷曲耳角、尾巴和头顶薄荷绿双叶很有识别度。"
+  },
+  {
+    "lang": "zh",
+    "heading": "小企鹅",
+    "content": "![小企鹅](/loomy/desktop-pet/loomy-pixel-classy-penguin.png)\n\n小企鹅戴着墨镜、读着报纸，还配了薄荷绿像素领结。"
+  },
+  {
+    "lang": "zh",
+    "heading": "doge",
+    "content": "![doge](/loomy/desktop-pet/loomy-pixel-shiba.png)\n\ndoge 是小柴犬的手绘浓像素风版本，橙色毛发、圆眼睛、卷尾巴和薄荷绿颈饰组成主要外观。"
+  },
+  {
+    "lang": "zh",
+    "heading": "吗喽",
+    "content": "![吗喽](/loomy/desktop-pet/loomy-pixel-ma-lou.png)\n\n吗喽背着紫色大书包，穿着白背心小领带，还带着薄荷绿书包挂件。"
+  },
+  {
+    "lang": "zh",
+    "heading": "熊猫",
+    "content": "![熊猫](/loomy/desktop-pet/loomy-pixel-panda-bamboo.png)\n\n熊猫抱着竹子，黑白圆滚滚的身体、绿色竹叶和脚掌细节都很有存在感。"
+  },
+  {
+    "lang": "zh",
+    "heading": "管理当前桌宠",
+    "content": "出战后，你可以在宠物设置页看到当前桌宠的名称、人格、稀有度和简介，也可以随时重抽。\n\n![当前桌宠设置](/loomy/desktop-pet/settings-on.png)\n\n下面的「桌宠闲聊」区域可以调整桌宠的说话程度、说话时机，以及是否允许它了解你。"
+  },
+  {
+    "lang": "zh",
+    "heading": "调整说话风格",
+    "content": "你可以在「话痨程度」里选择桌宠的活跃程度：\n\n- **安静**：尽量少打扰，只在重要节点出现。\n- **适中**：保持陪伴感，在关键时机说几句。\n- **活泼**：更爱冒泡，空闲和互动时更容易说话。\n\n如果你喜欢安静工作，可以选「安静」；如果你希望桌宠更像一个随时在旁边陪你吐槽的搭子，可以选「活泼」。"
+  },
+  {
+    "lang": "zh",
+    "heading": "设置说话时机",
+    "content": "桌宠会在这些时机冒出一句短短的个性化点评：\n\n- **完成点评**：对话或任务结束后出现，通常会总结刚才的推进情况。\n- **新任务起手**：开启新任务时出现，给你一点进入状态的提示。\n- **空闲搭话**：一段时间没有操作时，桌宠可能主动找你说话。\n- **出错安慰**：任务遇到错误时，桌宠会用自己的性格安慰你。\n- **每日问候**：每天首次使用时出现。\n- **久违回归**：超过 4 小时没活动后再次回来时出现。\n\n桌宠不会在 Loomy 正忙的时候乱插话。当任务正在推进、检查或等待你确认时，它会尽量保持安静，避免打断你和 AI 的协作节奏。"
+  },
+  {
+    "lang": "zh",
+    "heading": "让桌宠了解你",
+    "content": "开启「让桌宠了解你」后，桌宠可以结合最近互动与 Loomy 的记忆摘要来生成更贴近你的点评。\n\n桌宠会记住一段时间内你们的互动，并形成一份相处印象。这样它不只是随机说台词，而是会逐渐知道你偏好的节奏、常做的任务和容易卡住的地方。\n\n> **隐私说明**\n>\n> 桌宠的点评不会出现在你的正式会话列表里。"
+  },
+  {
+    "lang": "zh",
+    "heading": "你可以怎么撩它",
+    "content": "桌宠支持多种桌面互动：\n\n- **单击**：戳一下它，会触发反应气泡。\n- **连戳**：连续戳会触发不同反应，戳太多了它可能会「装死」一小会儿不理你。\n- **双击**：唤回 Loomy 主程序，偶尔也会触发彩蛋台词。\n- **拖拽**：拖动时它会朝光标方向跑。\n- **拖到屏幕角落**：会触发「塞角落」相关台词。\n- **缩放**：它可能会抱怨自己被捏来捏去。\n- **长时间 hover**：盯着它看一会儿，它会害羞。\n\n![桌宠桌面形象](/loomy/desktop-pet/pet-idle.png)\n\n不同人格会有不同的表达方式，同一个动作也可能得到不一样的回应。\n\n![桌宠点评气泡](/loomy/desktop-pet/pet-comment.png)"
+  },
+  {
+    "lang": "zh",
+    "heading": "右键菜单",
+    "content": "在桌宠上点击右键，可以打开快捷菜单：\n\n- **打开 Loomy**：回到 Loomy 主程序。\n- **打开 AI 搜索框**：快速唤起 AI 搜索入口。\n- **退出宠物**：关闭当前桌宠。\n\n![桌宠右键菜单](/loomy/desktop-pet/context-menu.png)"
+  },
+  {
+    "lang": "zh",
+    "heading": "适合什么时候用",
+    "content": "桌宠适合那些希望工作过程更有陪伴感的人。它不会替代 AI 搭子，也不会改变 Loomy 的核心任务能力；它更像是贴在桌面的情绪层和反馈层，让 AI 协作不只发生在对话框里。\n\n你可以把它当成一个会观察任务状态的小伙伴：平时安静陪你，关键节点冒出来点评一句，偶尔被你戳到炸毛，也会在任务完成时认真和你庆祝一下。"
+  },
+  {
+    "lang": "zh",
     "heading": "我的文件会被上传到云端吗？",
     "content": "Loomy 的文件操作默认在本地完成，不会直接把你的整个工作目录上传到云端。但为了实现 AI 理解、总结和分析，相关文本内容会发送给大模型 API 服务商进行处理。"
   },
@@ -1253,6 +1358,111 @@
     "lang": "en",
     "heading": "Usage Suggestions",
     "content": "You can have multiple companions, letting companions of different personalities accompany you on different tasks:\n\n*   For steadier task progression, choose Loomy or Xiaolin.\n*   For more relaxed inspiration and companionship, choose Xiaonuan.\n*   For a specific character temperament, create a custom companion, such as a Zhang Fei type, Li Bai type, project manager type, editor type, or study companion.\n\nStart by choosing one companion to work with, and create the one that understands you best whenever you like."
+  },
+  {
+    "lang": "en",
+    "heading": "Desktop Pet",
+    "content": "Desktop Pet is a little sprite that lives on your desktop within Loomy. It’s more than just an animated image—it senses your AI session status, lets you unlock random personalities, reacts when you poke it (sometimes shyly), and gives live commentary as you work.\n\nWhen activated, the Desktop Pet always stays on your desktop, keeping you company: it cheers you up as you start a task, waves with a comment when you finish, offers comfort if you run into trouble, and occasionally tosses out a cheeky but caring remark during downtime."
+  },
+  {
+    "lang": "en",
+    "heading": "How to Enable Desktop Pet",
+    "content": "Go to **Settings** → **Pet**, and toggle on \"Show Desktop Pet\".\n\n![Enable Desktop Pet](/loomy/desktop-pet/settings-off.png)\n\nIf you don’t have a pet yet, after enabling the feature you can click \"Summon Desktop Pet\" to draw one."
+  },
+  {
+    "lang": "en",
+    "heading": "Drawing and Deploying",
+    "content": "When drawing a pet, Loomy first summons a candidate. You can choose \"Draw Again\" for another candidate, or click \"Deploy\" to set it as your current desktop pet.\n\n![Summon Result](/loomy/desktop-pet/summon-result.png)\n\nEach pet comes with different looks and personality styles—gentle, energetic, teasing, shy, intellectual, or dramatic, for example. The style affects the way it talks, interacts, and comments on your progress.\n\nYou don’t need to choose a personality in advance. Loomy will summon a candidate at random. Pets also come in various rarities; the rarer the pet, the more special the summoning effect and the bigger the surprise.\n\n> **Note**\n>\n> Drawn pets are just candidates. The new pet only takes effect after you click \"Deploy\". Switching pets will clear the old pet’s memory. Please confirm before changing."
+  },
+  {
+    "lang": "en",
+    "heading": "Pet Gallery",
+    "content": "The Pet Gallery records all publicly available pets. Each has its own appearance, personality, and interaction style. Once you draw a pet you like, click \"Deploy\" to let it accompany your work.\n\n![Pet Gallery Hero](/loomy/desktop-pet/desktop-pet-gallery-hero.png)\n\nThe gallery doesn’t reveal all drawing rules in advance. It’s more like a mini photo album: get to know the current pets and see which ones might match your style."
+  },
+  {
+    "lang": "en",
+    "heading": "Loomy",
+    "content": "![Loomy](/loomy/desktop-pet/loomy-pixel.png)\n\nPixelated hand-drawn Loomy with signature dark brown hair, big eyes, black Loomy T-shirt, light denim jeans, and white sneakers."
+  },
+  {
+    "lang": "en",
+    "heading": "Abi",
+    "content": "![Abi](/loomy/desktop-pet/digua.png)\n\nPixel art version, with blue-gray fur, orange big eyes, large ears, a creamy face and chest, and a recognizable mint-green pixel bow."
+  },
+  {
+    "lang": "en",
+    "heading": "Ragdoll",
+    "content": "![Ragdoll](/loomy/desktop-pet/loomy-pixel-ragdoll.png)\n\nRagdoll cat in pixel art: creamy white long fur, gray-brown points on face and ears, blue eyes, and fluffy tail."
+  },
+  {
+    "lang": "en",
+    "heading": "Capybara",
+    "content": "![Capybara](/loomy/desktop-pet/loomy-pixel-capybara.png)\n\nPixel art capybara: round brown body, short ears, and a mint-green scarf."
+  },
+  {
+    "lang": "en",
+    "heading": "Little Seal",
+    "content": "![Little Seal](/loomy/desktop-pet/loomy-pixel-seal-unified.png)\n\nPixel art seal: round white body, light spots, soft expression, and eye-catching mint-green scarf."
+  },
+  {
+    "lang": "en",
+    "heading": "Inkball",
+    "content": "![Inkball](/loomy/desktop-pet/loomy-pixel-inkball.png)\n\nA fluffy dark purple inkball: round body, curled ears, a tail, and mint-green leaf twins on its head."
+  },
+  {
+    "lang": "en",
+    "heading": "Penguin",
+    "content": "![Penguin](/loomy/desktop-pet/loomy-pixel-classy-penguin.png)\n\nThis penguin wears sunglasses, reads a newspaper, and sports a mint-green pixel bow tie."
+  },
+  {
+    "lang": "en",
+    "heading": "doge",
+    "content": "![doge](/loomy/desktop-pet/loomy-pixel-shiba.png)\n\nPixel Shiba Inu: orange fur, round eyes, curled tail, and a mint-green collar."
+  },
+  {
+    "lang": "en",
+    "heading": "Ma Lou",
+    "content": "![Ma Lou](/loomy/desktop-pet/loomy-pixel-ma-lou.png)\n\nCarries a large purple backpack, wears a white vest with a small tie, and has a mint-green backpack accessory."
+  },
+  {
+    "lang": "en",
+    "heading": "Panda",
+    "content": "![Panda](/loomy/desktop-pet/loomy-pixel-panda-bamboo.png)\n\nHolds bamboo, with a round black-and-white body, green bamboo leaves, and detailed paws."
+  },
+  {
+    "lang": "en",
+    "heading": "Manage Your Current Pet",
+    "content": "After deployment, you can view the name, personality, rarity, and a brief description of your current pet on the Pet Settings page. You can also redraw at any time.\n\n![Pet Settings](/loomy/desktop-pet/settings-on.png)\n\nThe \"Pet Chat\" area below lets you adjust talkativeness, when the pet speaks, and whether to let it know you better."
+  },
+  {
+    "lang": "en",
+    "heading": "Adjust Personality & Activity",
+    "content": "Under \"Talkativeness\", choose your pet’s activity level:\n\n- **Quiet**: Only speaks at important events, rarely interrupts.\n- **Medium**: Keeps you company, says something at key times.\n- **Lively**: Chats more, speaks during idle times and interactions.\n\nIf you like a quiet workspace, choose \"Quiet\"; if you want your pet to feel like a chatty companion, pick \"Lively\"."
+  },
+  {
+    "lang": "en",
+    "heading": "Set When the Pet Speaks",
+    "content": "Your pet comments with short, personalized lines at these times:\n\n- **Completion comment**: Appears after a dialog or task ends, usually summarizing your progress.\n- **New task start**: Appears when starting a new task, motivating you to get into the flow.\n- **Idle comment**: Speaks up if you’re inactive for a while.\n- **Error comfort**: Offers comfort when you hit an error, using its own personality.\n- **Daily greeting**: Shows up the first time you use Loomy each day.\n- **Long break return**: Appears after being inactive more than 4 hours.\n\nThe pet tries not to interrupt when Loomy is busy. During active tasks, checks, or when waiting for your response, it stays quiet to avoid interfering."
+  },
+  {
+    "lang": "en",
+    "heading": "Let Your Pet Know You",
+    "content": "Enable \"Let Pet Know You\" so the pet can combine recent interactions and Loomy's recent memory to give more personalized comments.\n\nYour pet remembers past interactions and forms impressions. It doesn’t just say random lines—it learns your pace, the types of tasks you do, and when you’re likely to get stuck.\n\n> **Privacy Note**\n>\n> Pet comments will not appear in your formal chat list."
+  },
+  {
+    "lang": "en",
+    "heading": "Ways to Interact with It",
+    "content": "The pet supports various desktop interactions:\n\n- **Single click**: Tap it to trigger a reaction bubble.\n- **Repeated taps**: Tap it several times for different reactions; tap too many times and it may \"play dead\" for a while.\n- **Double click**: Bring Loomy main window to the foreground; sometimes triggers a hidden line.\n- **Drag**: The pet runs toward your pointer as you drag.\n- **Drag to screen corner**: Triggers a \"cornered\" comment.\n- **Scale**: Sometimes complains about being squished.\n- **Long hover**: Stare at it for a while and it gets shy.\n\n![Pet on Desktop](/loomy/desktop-pet/pet-idle.png)\n\nDifferent personalities express themselves differently, and the same action can trigger various responses.\n\n![Pet Comment Bubble](/loomy/desktop-pet/pet-comment.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "Right-click Menu",
+    "content": "Right-click on the pet for a quick menu:\n\n- **Open Loomy**: Return to the main Loomy program.\n- **Open AI Search Box**: Quickly launch the AI search bar.\n- **Exit Pet**: Close the current desktop pet.\n\n![Pet Context Menu](/loomy/desktop-pet/context-menu.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "When Should You Use the Pet?",
+    "content": "Desktop Pet is for those who want a stronger sense of companionship while working. It doesn’t replace your AI Companion or change Loomy’s core task abilities. Instead, it’s an emotional and feedback layer on your desktop—AI collaboration isn’t just in your chatbox anymore.\n\nThink of it as a buddy who observes your progress: quietly accompanying you, emerging for comments at key milestones, sometimes getting flustered if you poke it, and always ready to celebrate your completed tasks with you."
   },
   {
     "lang": "en",
