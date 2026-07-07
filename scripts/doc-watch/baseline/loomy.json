@@ -1,7 +1,7 @@
 {
   "source": "loomy",
   "name": "Loomy Docs",
-  "pageCount": 25,
+  "pageCount": 26,
   "pages": {
     "https://loomy.xunfei.cn/docs": {
       "url": "https://loomy.xunfei.cn/docs",
@@ -367,6 +367,54 @@
       ],
       "textHash": "1934cf38704cb9a6",
       "textLen": 2057
+    },
+    "https://loomy.xunfei.cn/docs/user-guide/desktop-pet": {
+      "url": "https://loomy.xunfei.cn/docs/user-guide/desktop-pet",
+      "title": "桌面宠物 | Loomy",
+      "headings": [
+        "h1:桌面宠物",
+        "h2:开启桌面宠物",
+        "h2:抽卡与出战",
+        "h2:桌宠图鉴",
+        "h3:Loomy",
+        "h3:阿比",
+        "h3:小布偶",
+        "h3:卡皮巴拉",
+        "h3:小海豹",
+        "h3:墨团",
+        "h3:小企鹅",
+        "h3:doge",
+        "h3:吗喽",
+        "h3:熊猫",
+        "h2:管理当前桌宠",
+        "h2:调整说话风格",
+        "h2:设置说话时机",
+        "h2:让桌宠了解你",
+        "h2:你可以怎么撩它",
+        "h2:右键菜单",
+        "h2:适合什么时候用"
+      ],
+      "images": [
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/settings-off.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/summon-result.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/desktop-pet-gallery-hero.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/gallery/loomy-pixel.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/gallery/digua.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/gallery/loomy-pixel-ragdoll.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/gallery/loomy-pixel-capybara.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/gallery/loomy-pixel-seal-unified.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/gallery/loomy-pixel-inkball.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/gallery/loomy-pixel-classy-penguin.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/gallery/loomy-pixel-shiba.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/gallery/loomy-pixel-ma-lou.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/gallery/loomy-pixel-panda-bamboo.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/settings-on.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/pet-idle.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/pet-comment.png",
+        "https://loomy.xunfei.cn/docs/images/desktop-pet/context-menu.png"
+      ],
+      "textHash": "7064561375bc38b0",
+      "textLen": 2154
     },
     "https://loomy.xunfei.cn/docs/user-guide/dingding-bot": {
       "url": "https://loomy.xunfei.cn/docs/user-guide/dingding-bot",
