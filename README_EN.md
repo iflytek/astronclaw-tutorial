@@ -85,9 +85,9 @@ Before submitting a PR, please read our [Contributing Guide](CONTRIBUTING.md). W
 
 Welcome to join our official communities to communicate with developers and other users:
 
-| ☁️ AstronClaw Official Community | 💻 Loomy Community |
-| :---: | :---: |
-| <img src="docs/public/astronclaw-qr.jpg" alt="AstronClaw Official Community" width="250"> | <img src="docs/public/loomy-qr.png" alt="Loomy Community" width="250"> |
+| ☁️ AstronClaw Official Community | 💻 Loomy Community | 💬 Astron Open Source Community |
+| :---: | :---: | :---: |
+| <img src="docs/public/astronclaw-qr.jpg" alt="AstronClaw Official Community" width="250"> | <img src="docs/public/loomy-qr.png" alt="Loomy Community" width="250"> | <img src="https://github.com/iflytek/astron-agent/raw/main/docs/imgs/WeCom_Group.png" alt="Astron Open Source Community" width="250"> |
 
 ## License
 

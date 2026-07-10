@@ -85,9 +85,9 @@ npm run docs:build
 
 欢迎扫码加入官方交流群，与开发者和其他用户一起交流：
 
-| ☁️ AstronClaw 官方社群 | 💻 Loomy 交流群 |
-| :---: | :---: |
-| <img src="docs/public/astronclaw-qr.jpg" alt="AstronClaw 官方社群" width="250"> | <img src="docs/public/loomy-qr.png" alt="Loomy 交流群" width="250"> |
+| ☁️ AstronClaw 官方社群 | 💻 Loomy 交流群 | 💬 Astron 开源交流群 |
+| :---: | :---: | :---: |
+| <img src="docs/public/astronclaw-qr.jpg" alt="AstronClaw 官方社群" width="250"> | <img src="docs/public/loomy-qr.png" alt="Loomy 交流群" width="250"> | <img src="https://github.com/iflytek/astron-agent/raw/main/docs/imgs/WeCom_Group.png" alt="Astron 开源交流群" width="250"> |
 
 ## 开源协议
 
