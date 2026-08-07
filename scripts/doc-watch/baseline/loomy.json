@@ -94,6 +94,7 @@
         "h4:2.7 本地配置存储（ electron-store ）",
         "h4:2.8 iDATA 数据服务能力",
         "h4:2.9 订单管理系统 API / 交易服务接口",
+        "h4:2.10 Microsoft Clarity 网站行为分析 SDK",
         "h3:3. 转让与公开披露",
         "h3:4. 共享、转让、公开披露个人信息时事先征得授权同意的例外",
         "h2:四、我们如何存储与保护您的信息",
@@ -112,8 +113,8 @@
         "h2:九、其他"
       ],
       "images": [],
-      "textHash": "b389e0cc9f5330c5",
-      "textLen": 14440
+      "textHash": "8877ec3235b49a7d",
+      "textLen": 14923
     },
     "https://loomy.xunfei.cn/docs/Safe/Loomy-user": {
       "url": "https://loomy.xunfei.cn/docs/Safe/Loomy-user",
