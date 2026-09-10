@@ -78,8 +78,8 @@
         "h4:2.1 积分",
         "h4:2.2 数据分析与服务提升",
         "h4:2.3 运行日志与安全风控",
-        "h2:三、Android 移动端权限清单及特别说明",
-        "h3:1. Android 权限清单",
+        "h2:三、Loomy 手机端权限清单及特别说明",
+        "h3:1. 手机端权限清单",
         "h3:2. 图片、文件选择与保存",
         "h3:3. 权限管理入口",
         "h3:4. 云电脑与我的电脑",
@@ -111,8 +111,8 @@
         "h2:十、其他"
       ],
       "images": [],
-      "textHash": "ee02d43720c22c8e",
-      "textLen": 13772
+      "textHash": "f4f8a614a11e91cb",
+      "textLen": 13777
     },
     "https://loomy.xunfei.cn/docs/Safe/Loomy-privacy": {
       "url": "https://loomy.xunfei.cn/docs/Safe/Loomy-privacy",
