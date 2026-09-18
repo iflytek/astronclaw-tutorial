@@ -15,6 +15,10 @@ Loomy can only access the **working directories you explicitly authorize**. For 
 Yes. Loomy provides default model services for users out of the box; if you have your own model service provider, you can also configure your own API Key in Loomy to use.
 When you use your own API Key, Loomy will not upload any additional confidential information. The relevant key will only be saved locally and used locally when you initiate the corresponding model call. It will not be hosted or synchronized to the cloud by the Loomy platform.
 
+### Does the Loomy mobile app read my clipboard?
+
+Only when you act. When you tap copy on a message, Loomy writes the selected content to the system clipboard; when you choose paste in the input box, it reads only the text you are pasting and fills it in. Loomy does not read the clipboard continuously or periodically in the background, and pasting alone does not upload clipboard content to its servers — the text is processed as your instruction only after you confirm sending it. See section 2.4 of the [Loomy Privacy Policy (Mobile)](https://loomy.xunfei.cn/docs/Safe/Loomy-mobile-privacy) for details.
+
 ## Target Audience
 
 ### What kind of users is it suitable for?
