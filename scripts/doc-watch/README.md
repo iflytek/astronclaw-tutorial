@@ -56,6 +56,8 @@ node scripts/doc-watch/check-updates.mjs --update
 
 `.github/workflows/doc-watch.yml` 每天 01:00 UTC（北京时间 09:00）运行脚本。发现变化时，
 自动维护**一条**带 `doc-watch` 标签的 Issue，列出新增页面 / 小节 / 图片 URL，供后续补全。
+抓取失败（退出码 `2`）另外维护一条「⚠️ 巡检抓取失败」Issue，连续失败只追加评论并附上日志末尾；
+下一次抓取成功时自动关闭。两类 Issue 按标题区分，互不覆盖。
 免费、纯确定性，但不含联网搜索与自动起草。
 
 ### 第二层 A：OpenAI 起草（在 GitHub Actions 里跑你自己的 API，省 Claude 额度）✅ 推荐
