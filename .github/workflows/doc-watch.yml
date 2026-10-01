@@ -39,8 +39,10 @@ jobs:
         id: watch
         run: |
           set +e
-          node scripts/doc-watch/check-updates.mjs --report doc-watch-report.md
-          echo "code=$?" >> "$GITHUB_OUTPUT"
+          node scripts/doc-watch/check-updates.mjs --report doc-watch-report.md 2> doc-watch-stderr.log
+          code=$?
+          cat doc-watch-stderr.log >&2
+          echo "code=$code" >> "$GITHUB_OUTPUT"
           set -e
 
       - name: Upsert summary issue on changes
@@ -58,7 +60,9 @@ jobs:
           } >> "$BODY_FILE"
 
           TITLE="[doc-watch] 上游文档有新增内容待补全"
-          EXISTING=$(gh issue list --label doc-watch --state open --json number --jq '.[0].number' 2>/dev/null)
+          # 按标题精确匹配：同标签下还可能有抓取失败的 Issue，不能取第一条了事。
+          EXISTING=$(gh issue list --label doc-watch --state open --limit 100 --json number,title \
+            | jq -r --arg t "$TITLE" 'map(select(.title == $t)) | .[0].number // empty')
           if [ -n "$EXISTING" ]; then
             gh issue edit "$EXISTING" --body-file "$BODY_FILE"
             gh issue comment "$EXISTING" --body "🔄 巡检报告已于本次 run 更新（run #${{ github.run_number }}）。"
@@ -112,11 +116,38 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh label create doc-watch --color FBCA04 --description "上游文档巡检" 2>/dev/null || true
-          gh issue create \
-            --title "[doc-watch] ⚠️ 巡检抓取失败" \
-            --label doc-watch \
-            --body "doc-watch 工作流抓取上游文档时出错，请查看 run [#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) 日志。可能是上游站点改版或网络问题。"
+          TITLE="[doc-watch] ⚠️ 巡检抓取失败"
+          RUN_LINK="run [#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+          {
+            echo "doc-watch 工作流抓取上游文档时出错（$RUN_LINK）。可能是上游站点改版或网络问题。"
+            echo ""
+            echo '```'
+            tail -n 20 doc-watch-stderr.log
+            echo '```'
+          } > doc-watch-failure.md
+
+          # 连续失败只维护一条 Issue，不再每次新开。
+          EXISTING=$(gh issue list --label doc-watch --state open --limit 100 --json number,title \
+            | jq -r --arg t "$TITLE" 'map(select(.title == $t)) | .[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body-file doc-watch-failure.md
+            echo "Commented on issue #$EXISTING"
+          else
+            gh label create doc-watch --color FBCA04 --description "上游文档巡检" 2>/dev/null || true
+            gh issue create --title "$TITLE" --label doc-watch --body-file doc-watch-failure.md
+          fi
+
+      - name: Close capture-failure issue after recovery
+        if: steps.watch.outputs.code == '0' || steps.watch.outputs.code == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="[doc-watch] ⚠️ 巡检抓取失败"
+          gh issue list --label doc-watch --state open --limit 100 --json number,title \
+            | jq -r --arg t "$TITLE" '.[] | select(.title == $t) | .number' \
+            | while read -r n; do
+                gh issue close "$n" --comment "✅ run #${{ github.run_number }} 抓取恢复正常，自动关闭。"
+              done
 
       - name: Upload report artifact
         if: steps.watch.outputs.code == '1'

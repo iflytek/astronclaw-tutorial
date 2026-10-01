@@ -27,10 +27,31 @@ export const SOURCES = [
   },
 ];
 
+const FETCH_ATTEMPTS = 3;
+const FETCH_TIMEOUT_MS = 30_000;
+
+// 上游站点偶发 `fetch failed` / `terminated`，单次失败不应让整轮巡检报错：
+// 网络错误、超时、429 与 5xx 按指数退避重试，其余 HTTP 错误直接抛出。
 export async function fetchText(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA }, redirect: 'follow' });
-  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
-  return res.text();
+  let lastError;
+  for (let attempt = 1; attempt <= FETCH_ATTEMPTS; attempt++) {
+    try {
+      const res = await fetch(url, {
+        headers: { 'User-Agent': UA },
+        redirect: 'follow',
+        signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+      });
+      if (res.ok) return await res.text();
+      const err = new Error(`HTTP ${res.status} for ${url}`);
+      if (res.status !== 429 && res.status < 500) throw Object.assign(err, { fatal: true });
+      lastError = err;
+    } catch (e) {
+      if (e.fatal) throw e;
+      lastError = e;
+    }
+    if (attempt < FETCH_ATTEMPTS) await new Promise((r) => setTimeout(r, 2000 * 2 ** (attempt - 1)));
+  }
+  throw lastError;
 }
 
 export function decodeEntities(s) {

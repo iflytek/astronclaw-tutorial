@@ -43,6 +43,8 @@ node scripts/doc-watch/check-updates.mjs --update
 
 退出码：`0` 无变化 · `1` 有新增/变化 · `2` 抓取失败。
 
+单个页面请求遇到网络错误、超时（30s）、429 或 5xx 时会指数退避重试，最多 3 次；仍失败才记为抓取异常。
+
 ## 工作机制
 
 1. Loomy 站点是 VitePress，HTML 里直接含侧边栏全部页面链接 → 自动发现页面清单，无需浏览器。
@@ -56,6 +58,8 @@ node scripts/doc-watch/check-updates.mjs --update
 
 `.github/workflows/doc-watch.yml` 每天 01:00 UTC（北京时间 09:00）运行脚本。发现变化时，
 自动维护**一条**带 `doc-watch` 标签的 Issue，列出新增页面 / 小节 / 图片 URL，供后续补全。
+抓取失败（退出码 `2`）另外维护一条「⚠️ 巡检抓取失败」Issue，连续失败只追加评论并附上日志末尾；
+下一次抓取成功时自动关闭。两类 Issue 按标题区分，互不覆盖。
 免费、纯确定性，但不含联网搜索与自动起草。
 
 ### 第二层 A：OpenAI 起草（在 GitHub Actions 里跑你自己的 API，省 Claude 额度）✅ 推荐
